@@ -1,0 +1,52 @@
+deviceTypesCommon = require '@resin.io/device-types/common'
+{ networkOptions, commonImg, instructions } = deviceTypesCommon
+
+GOOEE_DART_6_UL_FLASH = 'Power up the <%= TYPE_NAME %>. Holding down the SW2 button, press the SW1 button and then release both buttons.'
+
+postProvisioningInstructions = [
+	instructions.BOARD_SHUTDOWN
+	instructions.REMOVE_INSTALL_MEDIA
+	instructions.BOARD_REPOWER
+]
+
+module.exports =
+	version: 1
+	slug: 'imx6ul-var-dart'
+	name: 'Variscite DART-6UL'
+	arch: 'armv7hf'
+	state: 'experimental'
+
+	stateInstructions:
+		postProvisioning: postProvisioningInstructions
+
+	instructions: [
+		instructions.ETCHER_SD
+		instructions.EJECT_SD
+		instructions.FLASHER_WARNING
+		GOOEE_DART_6_UL_FLASH
+	].concat(postProvisioningInstructions)
+
+	gettingStartedLink:
+		windows: 'http://docs.resin.io/#/pages/installing/gettingStarted-Variscite-DART-6UL.md#windows'
+		osx: 'http://docs.resin.io/#/pages/installing/gettingStarted-Variscite-DART-6UL.md#on-mac-and-linux'
+		linux: 'http://docs.resin.io/#/pages/installing/gettingStarted-Variscite-DART-6UL.md#on-mac-and-linux'
+
+	supportsBlink: true
+
+	yocto:
+		machine: 'imx6ul-var-dart'
+		image: 'resin-image-flasher'
+		fstype: 'resinos-img'
+		version: 'yocto-krogoth'
+		deployArtifact: 'resin-image-flasher-imx6ul-var-dart.resinos-img'
+		compressed: true
+
+	options: [ networkOptions.group ]
+
+	configuration:
+		config:
+			partition:
+				primary: 1
+			path: '/config.json'
+
+	initialization: commonImg.initialization
