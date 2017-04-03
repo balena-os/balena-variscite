@@ -1,6 +1,9 @@
 Change log
 -----------
 
+# v2.0.0+rev1 - 2017-04-03
+
+* Update the meta-resin submodule to version v2.0.0 [Andrei]
 * Update .coffee flashing instructions [Florin]
 * Update the meta-variscite-imx submodule [Florin]
 
