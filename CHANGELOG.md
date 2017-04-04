@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.0.0+rev2 - 2017-04-04
+
+* Avoid unused image types coming from BSP [Andrei]
+* Bump resin-yocto-scripts to fix resinOS docker registry push [Andrei]
+
 # v2.0.0+rev1 - 2017-04-03
 
 * Update the meta-resin submodule to version v2.0.0 [Andrei]
