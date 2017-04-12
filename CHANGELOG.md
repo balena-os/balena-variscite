@@ -1,6 +1,8 @@
 Change log
 -----------
 
+* Bump resin-yocto-scripts to include deployment routine [Andrei]
+
 # v2.0.0+rev2 - 2017-04-04
 
 * Avoid unused image types coming from BSP [Andrei]
