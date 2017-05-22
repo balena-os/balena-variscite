@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Update the resin-yocto-scripts submodule [Florin]
 * Update resin-yocto-scripts to master [Will]
 
 # v2.0.2+rev2 - 2017-05-01
