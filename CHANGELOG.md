@@ -1,6 +1,9 @@
 Change log
 -----------
 
+# v2.0.9+rev1 - 2017-07-12
+
+* Update the meta-resin submodule to version v2.0.9 [Florin]
 * Update the resin-yocto-scripts submodule to HEAD of master [Florin]
 
 # v2.0.4+rev2 - 2017-05-23
