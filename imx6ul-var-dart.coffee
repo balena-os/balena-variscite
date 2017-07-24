@@ -27,9 +27,9 @@ module.exports =
 	].concat(postProvisioningInstructions)
 
 	gettingStartedLink:
-		windows: 'http://docs.resin.io/#/pages/installing/gettingStarted-Variscite-DART-6UL.md#windows'
-		osx: 'http://docs.resin.io/#/pages/installing/gettingStarted-Variscite-DART-6UL.md#on-mac-and-linux'
-		linux: 'http://docs.resin.io/#/pages/installing/gettingStarted-Variscite-DART-6UL.md#on-mac-and-linux'
+		windows: 'http://docs.resin.io/dart6ul/nodejs/getting-started/#adding-your-first-device'
+		osx: 'http://docs.resin.io/dart6ul/nodejs/getting-started/#adding-your-first-device'
+		linux: 'http://docs.resin.io/dart6ul/nodejs/getting-started/#adding-your-first-device'
 
 	supportsBlink: true
 
