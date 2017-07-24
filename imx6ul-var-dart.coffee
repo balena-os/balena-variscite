@@ -38,7 +38,8 @@ module.exports =
 		image: 'resin-image-flasher'
 		fstype: 'resinos-img'
 		version: 'yocto-krogoth'
-		deployArtifact: 'resin-image-flasher-imx6ul-var-dart.resinos-img'
+		deployArtifact: 'resin-image-imx6ul-var-dart.resinos-img'
+		deployFlasherArtifact: 'resin-image-flasher-imx6ul-var-dart.resinos-img'
 		compressed: true
 
 	options: [ networkOptions.group ]
