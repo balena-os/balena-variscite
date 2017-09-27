@@ -17,6 +17,7 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-resin/meta-resin-common \
     ${TOPDIR}/../layers/meta-resin/meta-resin-krogoth \
     ${TOPDIR}/../layers/meta-resin-imx6ul-var-dart \
+    ${TOPDIR}/../layers/meta-rust \
     ${TOPDIR}/../layers/oe-meta-go \
     "
 
