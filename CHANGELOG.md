@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Switch from aufs to overlayfs for the docker storage driver [Florin]
 * Update the meta-variscite-imx submodule to commit d686ad5cef31136754f082f2c5be0de652dfa7d9 from the Krogoth-imx-4.1.15-var01 branch [Florin]
 * Update poky to latest krogoth branch [Will]
 * Update meta-rust to morty [Will]
