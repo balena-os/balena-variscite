@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Update the resin-yocto-scripts submodule to e3a06d48a2f8b7e32d3047c33066a5b896e6ae93 (on master branch) [Florin]
 * Switch from aufs to overlayfs for the docker storage driver [Florin]
 * Update the meta-variscite-imx submodule to commit d686ad5cef31136754f082f2c5be0de652dfa7d9 from the Krogoth-imx-4.1.15-var01 branch [Florin]
 * Update poky to latest krogoth branch [Will]
