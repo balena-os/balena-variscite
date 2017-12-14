@@ -1,0 +1,30 @@
+From 49714d88cfaf1a95195fe2e89cb6e42c45c1358d Mon Sep 17 00:00:00 2001
+From: Sebastian Panceac <sebastian@resin.com>
+Date: Thu, 14 Dec 2017 15:29:29 +0200
+Subject: [PATCH] [Issue#25] Search for flasher image only when booting from SD
+ card
+
+Upstream-Status: Inappropriate [configuration]
+
+Signed-off-by: Sebastian Panceac <sebastian@resin.io>
+
+---
+ include/env_resin.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/env_resin.h b/include/env_resin.h
+index 8fc6019..b7fd098 100644
+--- a/include/env_resin.h
++++ b/include/env_resin.h
+@@ -45,7 +45,7 @@
+                "echo Scanning MMC and USB devices ${resin_uboot_devices}; " \
+                "for resin_scan_dev_type in mmc usb; do " \
+                        "for resin_scan_dev_index in ${resin_uboot_devices}; do " \
+-                               "if run resin_flasher_detect; then " \
++                               "if test ${boot_dev} = sd && run resin_flasher_detect; then " \
+                                        "setenv resin_flasher_dev_index ${resin_scan_dev_index}; " \
+                                        "setenv resin_dev_type ${resin_scan_dev_type}; " \
+                                        "exit; " \
+-- 
+2.7.4
+

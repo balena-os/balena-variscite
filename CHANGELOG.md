@@ -1,6 +1,8 @@
 Change log
 -----------
 
+* Search for flasher image only when booting from SD card [Sebastian]
+
 # v2.7.8+rev1
 ## (2017-11-17)
 
