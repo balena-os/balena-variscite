@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Disable FORTIFY_SOURCE security feature for dropbear to fix ssh issue
 * Search for flasher image only when booting from SD card [Sebastian]
 
 # v2.7.8+rev1
