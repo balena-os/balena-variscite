@@ -1,6 +1,9 @@
 Change log
 -----------
 
+# v2.7.8+rev2
+## (2017-12-22)
+
 * Update the resin-yocto-scripts submodule to 6f7a9ab326bb822196e3e48b08ef1d73d08caec6 (on master branch) [Florin]
 * Disable FORTIFY_SOURCE security feature for dropbear to fix ssh issue [Sebastian]
 * Search for flasher image only when booting from SD card [Sebastian]
