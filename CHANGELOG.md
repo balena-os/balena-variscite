@@ -1,6 +1,9 @@
 Change log
 -----------
 
+* Add hostapp update hook that allows flashing the bootloader when doing host OS updates [Florin]
+* Deploy the bootloader files to resin-boot so we can use them when doing hostOS updates [Florin]
+
 # v2.7.8+rev2
 ## (2017-12-22)
 
