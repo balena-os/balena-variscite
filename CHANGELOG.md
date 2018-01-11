@@ -1,6 +1,10 @@
 Change log
 -----------
 
+# v2.9.6+rev1
+## (2018-01-13)
+
+* Update the meta-resin submodule to version v2.9.6 [Florin]
 * Add hostapp update hook that allows flashing the bootloader when doing host OS updates [Florin]
 * Deploy the bootloader files to resin-boot so we can use them when doing hostOS updates [Florin]
 
