@@ -1,0 +1,53 @@
+#!/bin/sh
+
+#
+# Script used by hostapps updater to flash bootloader onto internal media
+#
+
+set -o errexit
+
+# machine specific data
+spl_file="SPL"
+uboot_file="u-boot-imx6ul-var-dart.img"
+block_size_spl=512
+seek_blocks_spl=2
+block_size_uboot=1024
+seek_blocks_uboot=69
+device="/dev/mmcblk0"
+
+#
+# SPL
+#
+
+# calculate size and md5sum of the SPL from the update bundle
+update_spl_size=$(ls -al /resin-boot/$spl_file | awk '{print $5}')
+update_spl_md5sum=$(md5sum /resin-boot/$spl_file | awk '{print $1'})
+
+# calculate number of bytes to skip when computing the existing SPL checksum
+let skip_bytes_spl=$block_size_spl*$seek_blocks_spl
+
+# calculate md5sum of the SPL already written to $device, using $update_spl_size bytes and skipping $skip_bytes_spl from $device
+existing_spl_md5sum=$(dd if=$device skip=$skip_bytes_spl bs=1 count=$update_spl_size &>/dev/null | md5sum | awk '{print $1}')
+
+if [ ! "$existing_spl_md5sum" = "$update_spl_md5sum" ]; then
+    dd if=/resin-boot/$spl_file of=$device conv=fdatasync seek=$seek_blocks_spl bs=$block_size_spl
+fi
+
+
+#
+# u-boot binary
+#
+
+# calculate size and md5sum of the u-boot binary from the update bundle
+update_uboot_size=$(ls -al /resin-boot/$uboot_file | awk '{print $5}')
+update_uboot_md5sum=$(md5sum /resin-boot/$uboot_file | awk '{print $1'})
+
+# calculate number of bytes to skip when computing the existing u-boot binary checksum
+let skip_bytes_uboot=$block_size_uboot*$seek_blocks_uboot
+
+# calculate md5sum of the u-boot binary already written to $device, using $update_uboot_size bytes and skipping $skip_bytes_uboot from $device
+existing_uboot_md5sum=$(dd if=$device skip=$skip_bytes_uboot bs=1 count=$update_uboot_size &>/dev/null | md5sum | awk '{print $1}')
+
+if [ ! "$existing_uboot_md5sum" = "$update_uboot_md5sum" ]; then
+    dd if=/resin-boot/$uboot_file of=$device conv=fdatasync seek=$seek_blocks_uboot bs=$block_size_uboot
+fi
