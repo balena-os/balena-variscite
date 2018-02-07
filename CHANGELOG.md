@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Update the resin-yocto-scripts submodule to d209b8c9c797ebd52a0f5ce404ea2420c248724c (on master branch) [Florin]
 * Use BALENA_STORAGE instead of DOCKER_STORAGE [Florin]
 
 # v2.9.6+rev1
