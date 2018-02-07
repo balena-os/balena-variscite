@@ -1,6 +1,8 @@
 Change log
 -----------
 
+* Use BALENA_STORAGE instead of DOCKER_STORAGE [Florin]
+
 # v2.9.6+rev1
 ## (2018-01-13)
 
