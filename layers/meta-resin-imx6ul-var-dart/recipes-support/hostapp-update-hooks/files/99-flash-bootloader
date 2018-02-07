@@ -15,7 +15,7 @@ uboot_file="u-boot-imx6ul-var-dart.img"
 uboot_block_size=1024
 uboot_seek_blocks=69
 
-device="/dev/mmcblk0"
+device="/dev/mmcblk1"
 
 update_files="spl uboot"
 
@@ -35,6 +35,7 @@ for i in $update_files; do
         existing_md5sum=$(dd if=$device skip=$skip_bytes bs=1 count=$update_size &>/dev/null | md5sum | awk '{print $1}')
 
         if [ ! "$existing_md5sum" = "$update_md5sum" ]; then
+                echo "Flashing $current_update_file to $device"
                 dd if=/resin-boot/$current_update_file of=$device conv=fdatasync seek=$seek_blocks bs=$block_size
         fi
 done
