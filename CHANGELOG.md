@@ -1,6 +1,10 @@
 Change log
 -----------
 
+# v2.12.3+rev1
+## (2018-03-16)
+
+* Update the meta-resin submodule to version v2.12.3 [Florin]
 * Update the resin-yocto-scripts submodule to dc9dfe466e48d934e55fb20a05156886873b1ab1 (on master branch) [Florin]
 * Fix 99-flash-bootloader bootloader md5sum check from hostapp-update-hooks [Florin]
 * Update the resin-yocto-scripts submodule to d209b8c9c797ebd52a0f5ce404ea2420c248724c (on master branch) [Florin]
