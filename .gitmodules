@@ -1,6 +1,3 @@
-[submodule "layers/meta-fsl-arm"]
-	path = layers/meta-fsl-arm
-	url = git://git.yoctoproject.org/meta-fsl-arm
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
@@ -22,3 +19,6 @@
 [submodule "layers/meta-rust"]
 	path = layers/meta-rust
 	url = https://github.com/meta-rust/meta-rust.git
+[submodule "layers/meta-freescale"]
+	path = layers/meta-freescale
+	url = https://github.com/Freescale/meta-freescale.git
