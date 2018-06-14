@@ -4,9 +4,6 @@
 [submodule "layers/meta-resin"]
 	path = layers/meta-resin
 	url = https://github.com/resin-os/meta-resin.git
-[submodule "layers/meta-variscite-imx"]
-	path = layers/meta-variscite-imx
-	url = https://github.com/varigit/meta-variscite-imx.git
 [submodule "layers/oe-meta-go"]
 	path = layers/oe-meta-go
 	url = https://github.com/mem/oe-meta-go.git
@@ -22,3 +19,6 @@
 [submodule "layers/meta-freescale"]
 	path = layers/meta-freescale
 	url = https://github.com/Freescale/meta-freescale.git
+[submodule "layers/meta-variscite-fslc"]
+	path = layers/meta-variscite-fslc
+	url = https://github.com/varigit/meta-variscite-fslc.git

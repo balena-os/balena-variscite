@@ -13,7 +13,7 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-openembedded/meta-networking \
     ${TOPDIR}/../layers/meta-openembedded/meta-python \
     ${TOPDIR}/../layers/meta-freescale \
-    ${TOPDIR}/../layers/meta-variscite-imx \
+    ${TOPDIR}/../layers/meta-variscite-fslc \
     ${TOPDIR}/../layers/meta-resin/meta-resin-common \
     ${TOPDIR}/../layers/meta-resin/meta-resin-krogoth \
     ${TOPDIR}/../layers/meta-resin-imx6ul-var-dart \
