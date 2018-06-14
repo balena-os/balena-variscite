@@ -18,5 +18,4 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-resin/meta-resin-sumo \
     ${TOPDIR}/../layers/meta-resin-imx6ul-var-dart \
     ${TOPDIR}/../layers/meta-rust \
-    ${TOPDIR}/../layers/oe-meta-go \
     "
