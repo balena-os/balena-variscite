@@ -1,6 +1,6 @@
-From 85ea9c5207225a1359e8275bb165eb99848a216b Mon Sep 17 00:00:00 2001
+From 83868c4bba5cd19f14de383c4d8d16e30a2cc170 Mon Sep 17 00:00:00 2001
 From: Florin Sarbu <florin@resin.io>
-Date: Fri, 20 Oct 2017 06:59:34 +0200
+Date: Fri, 15 Jun 2018 08:51:15 +0200
 Subject: [PATCH] imx6ul-var-dart machine specific integration of resin
  environment configuration.
 
@@ -12,22 +12,22 @@ Signed-off-by: Florin Sarbu <florin@resin.io>
  1 file changed, 9 insertions(+), 1 deletion(-)
 
 diff --git a/include/configs/mx6ul_var_dart.h b/include/configs/mx6ul_var_dart.h
-index 8aeadc5..deeb08a 100644
+index 0839185..2a979d5 100644
 --- a/include/configs/mx6ul_var_dart.h
 +++ b/include/configs/mx6ul_var_dart.h
-@@ -27,6 +27,10 @@
- 
+@@ -15,6 +15,10 @@
+ /* DCDC used on DART-6UL, no PMIC */
  #undef CONFIG_LDO_BYPASS_CHECK
  
 +/* We need the part command */
 +#define CONFIG_PARTITION_UUIDS
 +#define CONFIG_CMD_PART
 +
- #define CONFIG_MX6
- #define CONFIG_ROM_UNIFIED_SECTIONS
- #define CONFIG_SYS_GENERIC_BOARD
-@@ -177,7 +181,7 @@
- 	"mmcbootpart=" __stringify(CONFIG_SYS_MMC_IMG_LOAD_PART) "\0" \
+ #ifdef CONFIG_SPL
+ #include "imx6_spl.h"
+ #endif
+@@ -78,7 +82,7 @@
+ 	"mmcbootpart=1\0" \
  	"mmcrootpart=2\0" \
  	"mmcargs=setenv bootargs console=${console},${baudrate} " \
 -		"root=/dev/mmcblk${mmcblk}p${mmcrootpart} rootwait rw " \
@@ -35,17 +35,17 @@ index 8aeadc5..deeb08a 100644
  		"${cma_size}\0" \
  	"loadbootenv=" \
  		"load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${bootenv}\0" \
-@@ -222,6 +226,10 @@
- #else
- #define BOOT_ENV_SETTINGS	MMC_BOOT_ENV_SETTINGS
+@@ -113,6 +117,10 @@
+ #ifdef CONFIG_NAND_BOOT
+ #define BOOT_ENV_SETTINGS	NAND_BOOT_ENV_SETTINGS
  #define CONFIG_BOOTCOMMAND \
 +	"setenv resin_kernel_load_addr ${loadaddr};" \
 +	"run resin_set_kernel_root;" \
 +	"setenv mmcdev ${resin_dev_index};" \
 +	"setenv mmcbootpart ${resin_boot_part};" \
  	"run ramsize_check; " \
- 	"mmc dev ${mmcdev};" \
- 	"mmc dev ${mmcdev}; if mmc rescan; then " \
+ 	"run nandboot || " \
+ 	"run netboot"
 -- 
 2.7.4
 
