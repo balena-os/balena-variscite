@@ -59,3 +59,10 @@ BB_DISKMON_DIRS = "\
     ABORT,${SSTATE_DIR},100M,1K"
 
 CONF_VERSION = "1"
+
+# the BSP layer (meta-variscite-fslc) now introduces the need for cc as a host tool (the gcc package)
+# we remove it as we don't use it and we have no need for the gcc suite to be installed in the build env
+HOSTTOOLS_remove = "cc"
+
+# Allow use of host docker from recipes
+HOSTTOOLS += "docker iptables"

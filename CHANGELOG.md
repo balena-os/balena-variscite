@@ -1,6 +1,9 @@
 Change log
 -----------
 
+* Switch to Yocto Rocko 18.0.1 [Florin]
+* Switch the BSP layer from meta-fsl-arm to meta-freescale [Florin]
+
 # v2.12.7+rev1
 ## (2018-05-04)
 
