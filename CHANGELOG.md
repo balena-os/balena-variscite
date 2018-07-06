@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Update the resin-yocto-scripts submodule to 6eddcc9a637e00dbca94815f9af0f2b7bf61eb88 (on master branch) [Florin]
 * Fix overlayfs copy up opaqueness issue [Florin]
 
 # v2.12.7+rev1
