@@ -5,3 +5,6 @@ FILESEXTRAPATHS_append_imx6ul-var-dart := ":${THISDIR}/patches"
 SRC_URI_append_imx6ul-var-dart = " \
     file://imx6ul-var-dart-integrate-with-resin-configuration.patch \
 "
+
+# u-boot wants to build a libfdt Python module
+inherit pythonnative
