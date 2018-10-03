@@ -4,6 +4,7 @@ inherit resin-u-boot
 FILESEXTRAPATHS_append_imx6ul-var-dart := ":${THISDIR}/patches"
 SRC_URI_append_imx6ul-var-dart = " \
     file://imx6ul-var-dart-integrate-with-resin-configuration.patch \
+    file://0001-Fix-SPL-compile-error-with-gcc-7.3.0.patch \
 "
 
 # u-boot wants to build a libfdt Python module
