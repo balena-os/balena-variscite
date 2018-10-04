@@ -11,5 +11,5 @@ RESIN_BOOT_PARTITION_FILES_imx6ul-var-dart = " \
 
 IMAGE_CMD_resinos-img_append_imx6ul-var-dart () {
     dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY} of=${RESIN_RAW_IMG} conv=notrunc seek=2 bs=512
-    dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.${UBOOT_SUFFIX_SDCARD} of=${RESIN_RAW_IMG} conv=notrunc seek=69 bs=1K
+    dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img of=${RESIN_RAW_IMG} conv=notrunc seek=69 bs=1K
 }
