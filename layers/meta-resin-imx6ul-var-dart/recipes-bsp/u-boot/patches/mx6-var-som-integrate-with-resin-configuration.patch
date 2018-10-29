@@ -1,0 +1,49 @@
+From 83c3bc27c9afb281d7615f65c03f22acce54aee7 Mon Sep 17 00:00:00 2001
+From: Sebastian Panceac <sebastian@resin.io>
+Date: Wed, 10 Oct 2018 15:40:50 +0200
+Subject: [PATCH] Integrate Resin u-boot environment
+
+Upstream-Status: Inappropriate [configuration]
+
+Signed-off-by: Sebastian Panceac <sebastian@resin.io>
+---
+ configs/mx6var_som_sd_defconfig | 2 ++
+ include/configs/mx6var_som.h | 6 +++++-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/include/configs/mx6var_som.h b/include/configs/mx6var_som.h
+index 1db7afb..573b94e 100644
+--- a/include/configs/mx6var_som.h
++++ b/include/configs/mx6var_som.h
+@@ -98,7 +98,7 @@
+ 	"mmcbootpart=1\0" \
+ 	"mmcrootpart=" __stringify(MMC_ROOT_PART) "\0" \
+ 	"mmcargs=setenv bootargs console=${console},${baudrate} " \
+-		"root=/dev/mmcblk${mmcblk}p${mmcrootpart} rootwait rw\0" \
++		"${resin_kernel_root} rootwait rw\0" \
+ 	"loadbootenv=" \
+ 		"load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${bootenv};\0" \
+ 	"importbootenv=echo Importing bootenv from mmc ...; " \
+@@ -131,6 +131,10 @@
+ 
+ 
+ #define MMC_BOOTCMD \
++	"setenv resin_kernel_load_addr ${loadaddr};" \
++	"run resin_set_kernel_root;" \
++	"setenv mmcdev ${resin_dev_index};" \
++	"setenv mmcbootpart ${resin_boot_part};" \
+ 	"mmc dev ${mmcdev};" \
+ 	"if mmc rescan; then " \
+ 		"if run loadbootenv; then " \
+diff --git a/configs/mx6var_som_sd_defconfig b/configs/mx6var_som_sd_defconfig
+--- a/configs/mx6var_som_sd_defconfig
++++ b/configs/mx6var_som_sd_defconfig
+@@ -50,3 +50,5 @@ CONFIG_G_DNL_VENDOR_NUM=0x0525
+ CONFIG_G_DNL_PRODUCT_NUM=0xa4a5
+ # CONFIG_VIDEO_SW_CURSOR is not set
+ CONFIG_OF_LIBFDT=y
++CONFIG_PARTITION_UUIDS=y
++CONFIG_CMD_PART=y
+-- 
+2.7.4
+
