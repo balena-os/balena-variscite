@@ -1,4 +1,5 @@
 IMAGE_FSTYPES_append_imx6ul-var-dart = " resinos-img"
+IMAGE_FSTYPES_append_var-som-mx6 = " resinos-img"
 
 # Customize resinos-img
 RESIN_BOOT_PARTITION_FILES_imx6ul-var-dart = " \
@@ -10,6 +11,28 @@ RESIN_BOOT_PARTITION_FILES_imx6ul-var-dart = " \
     "
 
 IMAGE_CMD_resinos-img_append_imx6ul-var-dart () {
+    dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY} of=${RESIN_RAW_IMG} conv=notrunc seek=2 bs=512
+    dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img of=${RESIN_RAW_IMG} conv=notrunc seek=69 bs=1K
+}
+
+RESIN_BOOT_PARTITION_FILES_var-som-mx6 = " \
+    uImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/uImage \
+    uImage-imx6dl-var-som-cap.dtb:/imx6dl-var-som-cap.dtb \
+    uImage-imx6dl-var-som-res.dtb:/imx6dl-var-som-res.dtb \
+    uImage-imx6dl-var-som-solo-cap.dtb:/imx6dl-var-som-solo-cap.dtb \
+    uImage-imx6dl-var-som-solo-res.dtb:/imx6dl-var-som-solo-res.dtb \
+    uImage-imx6dl-var-som-solo-vsc.dtb:/imx6dl-var-som-solo-vsc.dtb \
+    uImage-imx6dl-var-som-vsc.dtb:/imx6dl-var-som-vsc.dtb \
+    uImage-imx6q-var-dart.dtb:/imx6q-var-dart.dtb \
+    uImage-imx6q-var-som-cap.dtb:/imx6q-var-som-cap.dtb \
+    uImage-imx6q-var-som-res.dtb:/imx6q-var-som-res.dtb \
+    uImage-imx6q-var-som-vsc.dtb:/imx6q-var-som-vsc.dtb \
+    uImage-imx6qp-var-som-cap.dtb:/imx6qp-var-som-cap.dtb \
+    uImage-imx6qp-var-som-res.dtb:/imx6qp-var-som-res.dtb \
+    uImage-imx6qp-var-som-vsc.dtb:/imx6qp-var-som-vsc.dtb \
+    "
+
+IMAGE_CMD_resinos-img_append_var-som-mx6 () {
     dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY} of=${RESIN_RAW_IMG} conv=notrunc seek=2 bs=512
     dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img of=${RESIN_RAW_IMG} conv=notrunc seek=69 bs=1K
 }
