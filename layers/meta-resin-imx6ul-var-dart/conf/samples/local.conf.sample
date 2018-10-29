@@ -67,3 +67,5 @@ HOSTTOOLS_remove = "cc"
 
 # Allow use of host docker from recipes
 HOSTTOOLS += "docker iptables"
+
+ACCEPT_FSL_EULA = "1"
