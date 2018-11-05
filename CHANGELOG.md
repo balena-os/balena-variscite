@@ -1,6 +1,18 @@
 Change log
 -----------
 
+# v2.25.0+rev1
+## (2018-11-05)
+
+* Update meta-resin from v2.19.0 to v2.25.0 [Sebastian Panceac]
+* Var-som-mx6: Add coffee file for var-som-mx6 machine [Sebastian Panceac]
+* Dropbear: Don't override compiler security flags [Sebastian Panceac]
+* Hostapp-update-hooks: Add hooks for var-som-mx6 [Sebastian Panceac]
+* Resin-image: Add var-som-mx6 specific files in boot partition [Sebastian Panceac]
+* U-boot-variscite: Integrate with Balena environment [Sebastian Panceac]
+* Local.conf: Accept Freescale license for graphics packages [Sebastian Panceac]
+* Libdrm: Avoid applying twice the same patch [Sebastian Panceac]
+
 # v2.19.0+rev1
 ## (2018-10-04)
 

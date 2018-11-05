@@ -1,4 +1,92 @@
 - commits:
+    - subject: Update meta-resin from v2.19.0 to v2.25.0
+      hash: 5605a8759f762d82aba0ad5f16f8844c9e45f56b
+      body: |
+        Update meta-resin from 2.19.0 to 2.25.0
+      footer:
+        Changelog-entry: Update meta-resin from v2.19.0 to v2.25.0
+        changelog-entry: Update meta-resin from v2.19.0 to v2.25.0
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: 'var-som-mx6: Add coffee file for var-som-mx6 machine'
+      hash: 82704c6f92133b08f6dd062649fdfedea8718b56
+      body: ''
+      footer:
+        Changelog-entry: 'var-som-mx6: Add coffee file for var-som-mx6 machine'
+        changelog-entry: 'var-som-mx6: Add coffee file for var-som-mx6 machine'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: 'dropbear: Don''t override compiler security flags'
+      hash: c7a81b8f6eab36c52ff5e609276896ded321e530
+      body: |
+        In the past we removed FORTIFY_SOURCE compiler flag because
+        this flag in combination with the old gcc broke ssh connections.
+        Now we are using newer gcc and we don't need to override this
+        flag anymore.
+      footer:
+        Changelog-entry: 'dropbear: Don''t override compiler security flags'
+        changelog-entry: 'dropbear: Don''t override compiler security flags'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: 'hostapp-update-hooks: Add hooks for var-som-mx6'
+      hash: e16d7757c4e2f4557f142aae40f183944c2f0397
+      body: ''
+      footer:
+        Changelog-entry: 'hostapp-update-hooks: Add hooks for var-som-mx6'
+        changelog-entry: 'hostapp-update-hooks: Add hooks for var-som-mx6'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: 'resin-image: Add var-som-mx6 specific files in boot partition'
+      hash: 71d386e0a702e342939dc76fa4ba1ee73e6c22d5
+      body: ''
+      footer:
+        Changelog-entry: 'resin-image: Add var-som-mx6 specific files in boot partition'
+        changelog-entry: 'resin-image: Add var-som-mx6 specific files in boot partition'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: 'u-boot-variscite: Integrate with Balena environment'
+      hash: 609794b8b0abe39e9edfbb91ec0f823b5f6178b0
+      body: |
+        Disable SDP and USB gadget support in u-boot SPL for var-som-mx6
+        board so the SPL image can fit in SRAM. Also integrate the Balena OS
+        specific variables in u-boot environment.
+      footer:
+        Changelog-entry: 'u-boot-variscite: Integrate with Balena environment'
+        changelog-entry: 'u-boot-variscite: Integrate with Balena environment'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: 'local.conf: Accept Freescale license for graphics packages'
+      hash: dffbe2da45f8a11eedb72a6cc7a81fde0bc1e929
+      body: ''
+      footer:
+        Changelog-entry: 'local.conf: Accept Freescale license for graphics packages'
+        changelog-entry: 'local.conf: Accept Freescale license for graphics packages'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: 'libdrm: Avoid applying twice the same patch'
+      hash: 239b7434c2cd201b575007da0c5d5d3c1c36e75e
+      body: |
+        Mask in local.conf the libdrm recipe from BSP layer to
+        avoid applying the drm-update-arm.patch which is already
+        applied from meta-freescale layer.
+        We also add in our layers a libdrm bbappend file to set the
+        SRCREV of the package as in the BSP layer.
+      footer:
+        Changelog-entry: 'libdrm: Avoid applying twice the same patch'
+        changelog-entry: 'libdrm: Avoid applying twice the same patch'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+  version: 2.25.0+rev1
+  date: 2018-11-05T10:02:28.396Z
+- commits:
     - subject: Update the meta-resin submodule from v2.14.3 to v2.19.0
       hash: e1049c21b1035999061e162acf8ca5fdbc2be83b
       body: |
