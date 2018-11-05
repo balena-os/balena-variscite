@@ -9,19 +9,36 @@ This commit fixes the following build error:
 | arm-poky-linux-gnueabi-ld.bfd: region `.sram' overflowed by 3448 bytes
 
 In order to fix this we need to shrink the SPL size. Because we do not make use of SDP we
-remove bost USB gadget and SDP support from SPL.
+remove both USB gadget and SDP support from SPL.
 
 Upstream-Status: Pending
 Signed-off-by: Florin Sarbu <florin@resin.io>
+Signed-off-by: Sebastian Panceac <sebastian@resin.io>
 ---
  configs/mx6ul_var_dart_mmc_defconfig | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
+ configs/mx6var_som_sd_defconfig | 4 ++--
 
 diff --git a/configs/mx6ul_var_dart_mmc_defconfig b/configs/mx6ul_var_dart_mmc_defconfig
 index 9bfbfc4..b27d41d 100644
 --- a/configs/mx6ul_var_dart_mmc_defconfig
 +++ b/configs/mx6ul_var_dart_mmc_defconfig
 @@ -16,8 +16,8 @@ CONFIG_SPL_ENV_SUPPORT=y
+ CONFIG_SPL_EXT_SUPPORT=y
+ CONFIG_SPL_I2C_SUPPORT=y
+ CONFIG_SPL_USB_HOST_SUPPORT=y
+-CONFIG_SPL_USB_GADGET_SUPPORT=y
+-CONFIG_SPL_USB_SDP_SUPPORT=y
++#CONFIG_SPL_USB_GADGET_SUPPORT=y
++#CONFIG_SPL_USB_SDP_SUPPORT=y
+ CONFIG_HUSH_PARSER=y
+ CONFIG_CMD_BOOTZ=y
+ # CONFIG_CMD_IMLS is not set
+diff --git a/configs/mx6var_som_sd_defconfig b/configs/mx6var_som_sd_defconfig
+index dedb362..b35d44b 100644
+--- a/configs/mx6var_som_sd_defconfig
++++ b/configs/mx6var_som_sd_defconfig
+@@ -18,8 +18,8 @@ CONFIG_SPL_ENV_SUPPORT=y
  CONFIG_SPL_EXT_SUPPORT=y
  CONFIG_SPL_I2C_SUPPORT=y
  CONFIG_SPL_USB_HOST_SUPPORT=y

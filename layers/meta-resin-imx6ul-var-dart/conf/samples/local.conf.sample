@@ -1,5 +1,8 @@
 # Supported machines
 #MACHINE ?= "imx6ul-var-dart"
+#MACHINE ?= "var-som-mx6"
+
+BBMASK .= "|.*/meta-variscite-fslc/recipes-graphics/drm/libdrm_%.bbappend"
 
 # We use the overlayfs docker storage driver for the imx6ul-var-dart machine
 BALENA_STORAGE = "overlay2"
@@ -64,3 +67,5 @@ HOSTTOOLS_remove = "cc"
 
 # Allow use of host docker from recipes
 HOSTTOOLS += "docker iptables"
+
+ACCEPT_FSL_EULA = "1"
