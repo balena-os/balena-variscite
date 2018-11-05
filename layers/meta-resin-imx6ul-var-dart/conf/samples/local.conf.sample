@@ -1,6 +1,7 @@
 # Supported machines
 #MACHINE ?= "imx6ul-var-dart"
 #MACHINE ?= "var-som-mx6"
+#MACHINE ?= "imx7-var-som"
 
 BBMASK .= "|.*/meta-variscite-fslc/recipes-graphics/drm/libdrm_%.bbappend"
 
