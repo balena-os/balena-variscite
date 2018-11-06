@@ -1,6 +1,7 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
+SWITCH_SD = "Set the BOOT_SELECT switch to the MMC position"
 postProvisioningInstructions = [
 ]
 
@@ -15,6 +16,7 @@ module.exports =
 		postProvisioning: postProvisioningInstructions
 
 	instructions: [
+		SWITCH_SD
 		instructions.ETCHER_SD
 	].concat(postProvisioningInstructions)
 
