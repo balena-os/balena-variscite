@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.25.0+rev2
+## (2018-11-06)
+
+* var-som-mx6.coffee: Add board instruction on setting switch to boot from SD card [Sebastian Panceac]
+
 # v2.25.0+rev1
 ## (2018-11-05)
 

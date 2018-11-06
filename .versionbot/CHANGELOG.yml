@@ -1,4 +1,22 @@
 - commits:
+    - subject: >-
+        var-som-mx6.coffee: Add board instruction on setting switch to boot from
+        SD card
+      hash: 5bf2f4d440913285f249584f94f81a224e4691a6
+      body: ''
+      footer:
+        Changelog-entry: >-
+          var-som-mx6.coffee: Add board instruction on setting switch to boot
+          from SD card
+        changelog-entry: >-
+          var-som-mx6.coffee: Add board instruction on setting switch to boot
+          from SD card
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+  version: 2.25.0+rev2
+  date: 2018-11-06T10:03:50.372Z
+- commits:
     - subject: Update meta-resin from v2.19.0 to v2.25.0
       hash: 5605a8759f762d82aba0ad5f16f8844c9e45f56b
       body: |
