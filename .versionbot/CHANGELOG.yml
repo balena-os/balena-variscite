@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update contribution commit guidelines
+      hash: a73d76d5ca841e6dd769af0e984774d315e6b3b4
+      body: ''
+      footer:
+        Changelog-Entry: Update contribution commit guidelines
+        changelog-entry: Update contribution commit guidelines
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.26.0+rev2
+  date: 2018-11-15T13:11:58.185Z
+- commits:
     - subject: Update the resin-yocto-scripts submodule to master HEAD
       hash: c1d840b75c126a34c0d3f727114e39c3c1db185f
       body: ''
