@@ -51,3 +51,10 @@ IMAGE_CMD_resinos-img_append_imx7-var-som () {
     dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY}-sd of=${RESIN_RAW_IMG} conv=notrunc seek=2 bs=512
     dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img-sd of=${RESIN_RAW_IMG} conv=notrunc seek=69 bs=1K
 }
+
+IMAGE_INSTALL_append_imx7-var-som = " \
+				     bcm43xx-utils \
+				     linux-firmware-bcm4339 \
+				     linux-firmware-bcm43430 \
+				     brcm-patchram-plus \
+"
