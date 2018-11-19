@@ -1,4 +1,93 @@
 - commits:
+    - subject: 'hostapp-update-hooks: Added hooks for imx7-var-som'
+      hash: 3d3f59d834d2d6e276dfb6c8a414810a877956c1
+      body: |
+        Added necessary hooks for hostapp-update
+      footer:
+        Changelog-entry: 'hostapp-update-hooks: Added hooks for imx7-var-som'
+        changelog-entry: 'hostapp-update-hooks: Added hooks for imx7-var-som'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+    - subject: 'image: Install bt & wifi tools in imx7 balena image'
+      hash: 52074ec1b89c45cf84104a042bd96072ef4d2a2c
+      body: |
+        Updated resin-image to allow installing necessary bluetooth
+        & wifi drivers and scripts needed for the imx7-var-som
+        resin images. Done this because otherwise we had to
+        update upstream layers' machine.conf to use the
+        MACHINE_ESSENTIAL_EXTRA_RDEPENDS variable, as by default it
+        was not working.
+      footer:
+        Changelog-entry: 'image: Install bt & wifi tools in imx7 balena image'
+        changelog-entry: 'image: Install bt & wifi tools in imx7 balena image'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+    - subject: 'init-flasher: Add kernel device for imx7-var-som'
+      hash: 7c7b4f774679f895a5b819d5ad36292ec30fa8a4
+      body: |
+        Set corresponding emmc in INTERNAL_DEVICE_KERNEL for
+        the imx7-var-som machine
+      footer:
+        Changelog-entry: 'init-flasher: Add kernel device for imx7-var-som'
+        changelog-entry: 'init-flasher: Add kernel device for imx7-var-som'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+    - subject: 'imx7-var-som: Add coffee file for imx7-var-som'
+      hash: edfbc7a3f3db3cf61d0f10074231aa773bdc0cc6
+      body: |
+        Added coffee file for the Variscite imx7-var-som machine
+      footer:
+        Changelog-entry: 'imx7-var-som: Add coffee file for imx7-var-som'
+        changelog-entry: 'imx7-var-som: Add coffee file for imx7-var-som'
+        Signed-off-by: Alexandru Costache <alexnadru@balena.io>
+        signed-off-by: Alexandru Costache <alexnadru@balena.io>
+      author: Alexandru Costache
+    - subject: 'u-boot-variscite: Integrate with Balena environment'
+      hash: 719a3169c309adbdebda405378f3779ff10b9bd5
+      body: |
+        * Integrated Balena OS specific variables in the u-boot
+          environment.
+        * Enabled uenv import in u-boot configs to allow hostapp-update
+          to run correctly
+      footer:
+        Changelog-entry: 'u-boot-variscite: Integrate with Balena environment'
+        changelog-entry: 'u-boot-variscite: Integrate with Balena environment'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+    - subject: 'u-boot-variscite: Fix boot on imx7 older than D'
+      hash: d2d1dc10a92248cfaa98779e9e553b658cf71bc7
+      body: |
+        Removed patch provided by u-boot-variscite upstream
+        that was designed for newer versions of the imx7 SOC,
+        starting from revision D. That patch increased the SPL
+        text section base and garbage was being executed instead
+        of the right start ruoutine. That patch isn't suitable
+        for the current SOC revisions supported by balena, as it
+        breaks booting.
+      footer:
+        Changelog-entry: 'u-boot-variscite: Fix boot on imx7 older than D'
+        changelog-entry: 'u-boot-variscite: Fix boot on imx7 older than D'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+    - subject: 'core/images: Add balena variables for imx7-var-som'
+      hash: 0e385a10e79d87295f1a15dbd6f2aaf6d0d31d61
+      body: |
+        Added necessary balena variables for generating images
+        for Variscite imx7-var-som
+      footer:
+        Changelog-entry: 'core/images: Add balena variables for imx7-var-som'
+        changelog-entry: 'core/images: Add balena variables for imx7-var-som'
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+  version: 2.26.0+rev3
+  date: 2018-11-19T09:38:22.831Z
+- commits:
     - subject: Update contribution commit guidelines
       hash: a73d76d5ca841e6dd769af0e984774d315e6b3b4
       body: ''

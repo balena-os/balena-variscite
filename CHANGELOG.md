@@ -1,6 +1,17 @@
 Change log
 -----------
 
+# v2.26.0+rev3
+## (2018-11-19)
+
+* hostapp-update-hooks: Added hooks for imx7-var-som [Alexandru Costache]
+* image: Install bt & wifi tools in imx7 balena image [Alexandru Costache]
+* init-flasher: Add kernel device for imx7-var-som [Alexandru Costache]
+* imx7-var-som: Add coffee file for imx7-var-som [Alexandru Costache]
+* u-boot-variscite: Integrate with Balena environment [Alexandru Costache]
+* u-boot-variscite: Fix boot on imx7 older than D [Alexandru Costache]
+* core/images: Add balena variables for imx7-var-som [Vicentiu Galanopulo]
+
 # v2.26.0+rev2
 ## (2018-11-15)
 
