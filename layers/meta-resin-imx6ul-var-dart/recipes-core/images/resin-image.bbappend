@@ -14,3 +14,8 @@ RESIN_BOOT_PARTITION_FILES_append_var-som-mx6 = " \
     ${SPL_BINARY}: \
     u-boot-${MACHINE}.img: \
 "
+
+RESIN_BOOT_PARTITION_FILES_append_imx7-var-som = " \
+    ${SPL_BINARY}: \
+    u-boot-${MACHINE}.img: \
+"

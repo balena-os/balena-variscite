@@ -9,3 +9,8 @@ HOSTAPP_HOOKS_append_var-som-mx6 = " \
     99-resin-uboot \
     99-flash-bootloader-var-som-mx6 \
 "
+
+HOSTAPP_HOOKS_append_imx7-var-som = " \
+    99-resin-uboot \
+    99-flash-bootloader-imx7-var-som \
+"
