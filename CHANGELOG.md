@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.26.0+rev4
+## (2018-11-20)
+
+* Clarify contribution commit guidelines [Florin Sarbu]
+
 # v2.26.0+rev3
 ## (2018-11-19)
 

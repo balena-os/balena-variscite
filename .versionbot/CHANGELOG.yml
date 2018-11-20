@@ -1,4 +1,16 @@
 - commits:
+    - subject: Clarify contribution commit guidelines
+      hash: db61bd0ca5e7d1490b2a9673f2d9b3f64d3d7b50
+      body: ''
+      footer:
+        Changelog-entry: Clarify contribution commit guidelines
+        changelog-entry: Clarify contribution commit guidelines
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.26.0+rev4
+  date: 2018-11-20T10:10:49.513Z
+- commits:
     - subject: 'hostapp-update-hooks: Added hooks for imx7-var-som'
       hash: 3d3f59d834d2d6e276dfb6c8a414810a877956c1
       body: |
