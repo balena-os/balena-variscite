@@ -64,7 +64,7 @@ The header of each commit must not exceed 72 characters in length and must be in
 
 The header and the subject of each commit must be separated by an empty line.
 
-The subject of each commit must not exceed 72 characters in length but can be wrapped to several lines.
+The subject of each commit must not exceed 72 characters per line and can be wrapped to several lines.
 
 The subject and the footer of each commit must be separated by an empty line.
 
