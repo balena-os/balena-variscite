@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.26.0+rev5
+## (2018-11-25)
+
+* Add icon for imx7 VAR SoM [Florin Sarbu]
+
 # v2.26.0+rev4
 ## (2018-11-20)
 

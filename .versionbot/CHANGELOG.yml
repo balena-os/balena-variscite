@@ -1,4 +1,16 @@
 - commits:
+    - subject: Add icon for imx7 VAR SoM
+      hash: fbe74d9528ad4759f60b1fa573bf62d0ebf29bac
+      body: ''
+      footer:
+        Changelog-entry: Add icon for imx7 VAR SoM
+        changelog-entry: Add icon for imx7 VAR SoM
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.26.0+rev5
+  date: 2018-11-25T01:36:10.471Z
+- commits:
     - subject: Clarify contribution commit guidelines
       hash: db61bd0ca5e7d1490b2a9673f2d9b3f64d3d7b50
       body: ''
