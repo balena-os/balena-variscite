@@ -58,3 +58,10 @@ IMAGE_INSTALL_append_imx7-var-som = " \
 				     linux-firmware-bcm43430 \
 				     brcm-patchram-plus \
 "
+
+IMAGE_INSTALL_append_imx6ul-var-dart = " \
+    bcm43xx-utils \
+    linux-firmware-bcm4339 \
+    linux-firmware-bcm43430 \
+    brcm-patchram-plus \
+"
