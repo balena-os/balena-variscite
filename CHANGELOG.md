@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.26.0+rev6
+## (2018-11-26)
+
+* Add WiFi, BT firmware and dependencies to rootfs for imx6ul-var-dart [Florin Sarbu]
+
 # v2.26.0+rev5
 ## (2018-11-25)
 

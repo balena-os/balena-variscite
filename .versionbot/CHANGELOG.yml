@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'Add WiFi, BT firmware and dependencies to rootfs for imx6ul-var-dart'
+      hash: a94b716ff366c6380813fc01fd9b9d88c9cc3e75
+      body: ''
+      footer:
+        Changelog-entry: 'Add WiFi, BT firmware and dependencies to rootfs for imx6ul-var-dart'
+        changelog-entry: 'Add WiFi, BT firmware and dependencies to rootfs for imx6ul-var-dart'
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.26.0+rev6
+  date: 2018-11-26T05:29:45.102Z
+- commits:
     - subject: Add icon for imx7 VAR SoM
       hash: fbe74d9528ad4759f60b1fa573bf62d0ebf29bac
       body: ''
