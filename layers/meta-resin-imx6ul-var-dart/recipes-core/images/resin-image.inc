@@ -10,6 +10,12 @@ RESIN_BOOT_PARTITION_FILES_imx6ul-var-dart = " \
     zImage-${MACHINE}-nand_wifi.dtb:/${MACHINE}-nand_wifi.dtb \
     zImage-${MACHINE}-sd_emmc.dtb:/${MACHINE}-sd_emmc.dtb \
     zImage-${MACHINE}-sd_nand.dtb:/${MACHINE}-sd_nand.dtb \
+    zImage-imx6ull-var-dart-emmc_wifi.dtb:/imx6ull-var-dart-emmc_wifi.dtb \
+    zImage-imx6ull-var-dart-5g-emmc_wifi.dtb:/imx6ull-var-dart-5g-emmc_wifi.dtb \
+    zImage-imx6ull-var-dart-sd_emmc.dtb:/imx6ull-var-dart-sd_emmc.dtb \
+    zImage-imx6ull-var-dart-nand_wifi.dtb:/imx6ull-var-dart-nand_wifi.dtb \
+    zImage-imx6ull-var-dart-5g-nand_wifi.dtb:/imx6ull-var-dart-5g-nand_wifi.dtb \
+    zImage-imx6ull-var-dart-sd_nand.dtb:/imx6ull-var-dart-sd_nand.dtb \
     "
 
 IMAGE_CMD_resinos-img_append_imx6ul-var-dart () {
