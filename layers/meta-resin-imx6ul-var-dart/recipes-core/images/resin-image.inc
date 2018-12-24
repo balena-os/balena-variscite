@@ -90,9 +90,10 @@ RESIN_BOOT_PARTITION_FILES_imx8m-var-dart = " \
 IMAGE_INSTALL_append_imx8m-var-dart = " \
                                         imx-boot \
                                         linux-firmware-bcm4339 \
-                                        bcm43xx-utils \
+                                        bcm43xx-utils-mx8 \
                                         brcm-patchram-plus \
                                         kernel-modules \
+                                        bluez5 \
 "
 
 IMAGE_CMD_resinos-img_append_imx8m-var-dart () {
