@@ -1,0 +1,41 @@
+From e5fa2bd5140ffc810e6e5fcf40eb3edaf85d7329 Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Mon, 24 Dec 2018 12:21:48 +0100
+Subject: [PATCH] imx8m-var-dart: Use wifi dtb if booting from emmc
+
+WiFi & BT module uses same bus as the SD Card
+thus it is necessary to use a different dtb
+when booting from EMMC in order to use Wifi
+
+Removed undefine for CMD_IMPORTENV to allow
+choosing the right partition after hostapp-update
+
+Upstream-status: Inappropriate [configuration]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ include/configs/imx8m_var_dart.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/configs/imx8m_var_dart.h b/include/configs/imx8m_var_dart.h
+index a33ffdb..f35be95 100644
+--- a/include/configs/imx8m_var_dart.h
++++ b/include/configs/imx8m_var_dart.h
+@@ -73,7 +73,6 @@
+ #define CONFIG_OF_BOARD_SETUP
+ 
+ #undef CONFIG_CMD_EXPORTENV
+-#undef CONFIG_CMD_IMPORTENV
+ #undef CONFIG_CMD_IMLS
+ 
+ #undef CONFIG_CMD_CRC32
+@@ -168,6 +167,7 @@
+            "run resin_set_kernel_root;" \
+            "setenv mmcdev ${resin_dev_index};" \
+            "setenv mmcbootpart ${resin_boot_part};" \
++           "if test ${mmcdev} = 0; then setenv fdt_file imx8m-var-dart-emmc-wifi-hdmi-4k.dtb; fi;" \
+ 	   "mmc dev ${mmcdev}; if mmc rescan; then " \
+ 		   "if run loadbootscript; then " \
+ 			   "run bootscript; " \
+-- 
+2.7.4
+

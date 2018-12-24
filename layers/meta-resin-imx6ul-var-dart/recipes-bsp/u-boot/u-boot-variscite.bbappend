@@ -22,6 +22,7 @@ SRC_URI_append_imx7-var-som = " \
 
 SRC_URI_append_imx8m-var-dart = " \
     file://mx8m-var-dart-integrate-with-balena-configuration.patch \
+    file://imx8m-var-dart-Use-wifi-dtb-if-booting-from-emmc.patch \
     "
 
 SRC_URI_remove_imx8m-var-dart = " \
