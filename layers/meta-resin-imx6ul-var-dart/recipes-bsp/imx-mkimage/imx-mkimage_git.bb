@@ -31,6 +31,7 @@ SYSROOT_DIRS += "/boot"
 do_install () {
     cd ${S}
     install -d ${D}${bindir}
+    install -d ${DEPLOY_DIR_IMAGE}/${BOOT_TOOLS}/
     install -m 0755 iMX8M/mkimage_imx8 ${D}${bindir}/mkimage_imx8m
     install -m 0755 iMX8M/mkimage_imx8 ${DEPLOY_DIR_IMAGE}/${BOOT_TOOLS}/mkimage_imx8m
     install -m 0755 mkimage_imx8 ${D}${bindir}/mkimage_imx8
