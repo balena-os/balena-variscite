@@ -15,7 +15,7 @@ module.exports =
         version: 1
         slug: 'imx8m-var-dart'
         name: 'Variscite DART-MX8M'
-        arch: 'armv7hf'
+        arch: 'aarch64'
         state: 'experimental'
  
         stateInstructions:
