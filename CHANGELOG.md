@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.29.0+rev2
+## (2019-01-07)
+
+* Add icon for IMX8M-VAR-DART [Alexandru Costache]
+
 # v2.29.0+rev1
 ## (2019-01-04)
 
