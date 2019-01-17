@@ -8,8 +8,9 @@ Upstream-Status: Inappropriate [configuration]
 Signed-off-by: Sebastian Panceac <sebastian@resin.io>
 ---
  configs/mx6var_som_sd_defconfig | 2 ++
+ configs/mx6var_som_nand_defconfig | 2 ++
  include/configs/mx6var_som.h | 6 +++++-
- 2 files changed, 5 insertions(+), 1 deletion(-)
+ 3 files changed, 9 insertions(+), 1 deletion(-)
 
 diff --git a/include/configs/mx6var_som.h b/include/configs/mx6var_som.h
 index 1db7afb..573b94e 100644
@@ -39,6 +40,16 @@ diff --git a/configs/mx6var_som_sd_defconfig b/configs/mx6var_som_sd_defconfig
 --- a/configs/mx6var_som_sd_defconfig
 +++ b/configs/mx6var_som_sd_defconfig
 @@ -50,3 +50,5 @@ CONFIG_G_DNL_VENDOR_NUM=0x0525
+ CONFIG_G_DNL_PRODUCT_NUM=0xa4a5
+ # CONFIG_VIDEO_SW_CURSOR is not set
+ CONFIG_OF_LIBFDT=y
++CONFIG_PARTITION_UUIDS=y
++CONFIG_CMD_PART=y
+diff --git a/configs/mx6var_som_nand_defconfig b/configs/mx6var_som_nand_defconfig
+index 1fa9d0306c..799e0e3b45 100644
+--- a/configs/mx6var_som_nand_defconfig
++++ b/configs/mx6var_som_nand_defconfig
+@@ -48,3 +48,5 @@ CONFIG_G_DNL_VENDOR_NUM=0x0525
  CONFIG_G_DNL_PRODUCT_NUM=0xa4a5
  # CONFIG_VIDEO_SW_CURSOR is not set
  CONFIG_OF_LIBFDT=y

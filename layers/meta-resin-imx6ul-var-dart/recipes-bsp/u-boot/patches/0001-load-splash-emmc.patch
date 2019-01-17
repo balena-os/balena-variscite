@@ -1,0 +1,27 @@
+From 1e42191d69ce19dfe37ec3fd9d56e335a6eb1f46 Mon Sep 17 00:00:00 2001
+From: Sebastian Panceac <sebastian@balena.io>
+Date: Mon, 17 Dec 2018 16:58:41 +0100
+Subject: [PATCH] Load splash screen from emmc when booting from NAND
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+---
+ board/variscite/mx6var_som/mx6var_som.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/board/variscite/mx6var_som/mx6var_som.c b/board/variscite/mx6var_som/mx6var_som.c
+index 526a11f41a..57e42ffca0 100644
+--- a/board/variscite/mx6var_som/mx6var_som.c
++++ b/board/variscite/mx6var_som/mx6var_som.c
+@@ -196,7 +196,7 @@ static void set_splashsource_to_boot_rootfs(void)
+ 		return;
+ 
+ #ifdef CONFIG_NAND_BOOT
+-	setenv("splashsource", getenv("rootfs_device"));
++	setenv("splashsource", "emmc");
+ #else
+ 	if (mmc_get_env_dev() == 0)
+ 		setenv("splashsource", "sd");
+-- 
+2.17.1
+
