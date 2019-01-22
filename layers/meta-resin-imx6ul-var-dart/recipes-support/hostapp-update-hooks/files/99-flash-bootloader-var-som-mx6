@@ -7,36 +7,55 @@
 set -o errexit
 
 # machine specific data
-spl_file="SPL"
-spl_block_size=512
-spl_seek_blocks=2
+spl_file="SPL-nand"
+spl_block_size=1
+spl_seek_blocks=0 # needs to be found
+spl_device="/dev/mtd0"
+spl_header="d1 00 20 40" # needed to find SPL start offset
 
-uboot_file="u-boot-var-som-mx6.img"
-uboot_block_size=1024
-uboot_seek_blocks=69
-
-device="/dev/mmcblk1"
-
+uboot_file="u-boot-var-som-mx6.img-nand"
+uboot_block_size=0
+uboot_seek_blocks=0
+uboot_device="/dev/mtd1"
 update_files="spl uboot"
 
 for i in $update_files; do
         current_update_file=$(eval echo \$${i}_file)
         block_size=$(eval echo \$${i}_block_size)
         seek_blocks=$(eval echo \$${i}_seek_blocks)
+        current_device=$(eval echo \$${i}_device)
 
         # calculate size and md5sum of the binary to update from the update bundle
         update_size=$(ls -al /resin-boot/$current_update_file | awk '{print $5}')
         update_md5sum=$(md5sum /resin-boot/$current_update_file | awk '{print $1'})
 
+        if [ "$i" = "spl" ]; then
+                # find SPL start offset
+                seek_blocks=`hexdump -C $spl_device | grep "$spl_header" | head -1 | awk '{print "0x"$1}' | xargs printf "%d"`
+        fi
+
         # calculate number of bytes to skip when computing the checksum of the data we want to update (i.e. the data already written to $device)
+        set +o errexit # let multiply with zero returns 1 so we unset error exit for this operation
         let skip_bytes=$block_size*$seek_blocks
+        set -o errexit
 
         # calculate md5sum of the data already written to $device, using $update_size bytes and skipping $skip_bytes from $device
-        existing_md5sum=$(dd if=$device skip=$skip_bytes bs=1 count=$update_size status=none | md5sum | awk '{print $1}')
+        existing_md5sum=$(dd if=$current_device skip=$skip_bytes bs=1 count=$update_size status=none | md5sum | awk '{print $1}')
 
         if [ ! "$existing_md5sum" = "$update_md5sum" ]; then
-                echo "Flashing $current_update_file to $device"
-                dd if=/resin-boot/$current_update_file of=$device conv=fdatasync seek=$seek_blocks bs=$block_size
+                echo "Flashing $current_update_file to $current_device"
+
+                if [ "$i" = "spl" ]; then
+                        pushd .
+                        cd /tmp #kobs-ng needs to create a temporary file
+                        kobs-ng -x -v -w --chip_0_device_path=$current_device /resin-boot/$current_update_file
+                        popd
+                fi
+
+                if [ "$i" = "uboot" ]; then
+                        flash_erase $current_device 0 0 # erase u-boot partition
+                        nandwrite $current_device /resin-boot/$current_update_file -p # write u-boot binary
+                fi
         fi
 done
 
