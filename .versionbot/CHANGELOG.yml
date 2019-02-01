@@ -1,4 +1,59 @@
 - commits:
+    - subject: 'hostapp-update-hooks: Modify hooks for NAND flashing of SPL and u-boot'
+      hash: 701a060501d93274a29c9d7a087fdef322fcf7eb
+      body: |
+        Now that SPL and u-boot will be written on the NAND memory
+        we modify the update hooks accordingly
+      footer:
+        Changelog-entry: 'hostapp-update-hooks: Modify hooks for NAND flashing of SPL and u-boot'
+        changelog-entry: 'hostapp-update-hooks: Modify hooks for NAND flashing of SPL and u-boot'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: 'linux-variscite: Disable reboot on kernel panic'
+      hash: 64d94717cdbae0599f1a8a0881bcaea6cd4d9962
+      body: |
+        Because of a issue that makes the kernel panic at shutdown
+        the board gets rebooted.
+
+        Issue tracked here:
+        https://github.com/balena-os/balena-variscite/issues/76
+
+        We disable the reboot at kernel panic to have a board that
+        remains in the shutdown state after flashing
+      footer:
+        Changelog-entry: 'linux-variscite: Disable reboot on kernel panic'
+        changelog-entry: 'linux-variscite: Disable reboot on kernel panic'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: 'u-boot-variscite: Prepare for var-som-mx6 eMMC booting'
+      hash: 0b60b77a1625e244b77bd09e8bb41c313ceda08c
+      body: |
+        The Variscite IMX6 board is unable to start u-boot from eMMC but
+        it can start it from the NAND memory. So in order to have eMMC boot
+        we flash SPL and u-boot binary on NAND and u-boot will load the
+        kernel from eMMC
+      footer:
+        Changelog-entry: 'u-boot-variscite: Prepare for var-som-mx6 eMMC booting'
+        changelog-entry: 'u-boot-variscite: Prepare for var-som-mx6 eMMC booting'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: Update meta-resin from 2.29.0 to 2.29.2
+      hash: 8cb2436f0e53f0e2cae19bbadfc7a5777acbab0b
+      body: |
+        Update meta-resin from 2.29.0 to 2.29.2
+      footer:
+        Changelog-entry: Update meta-resin from 2.29.0 to 2.29.2
+        changelog-entry: Update meta-resin from 2.29.0 to 2.29.2
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+      nested: []
+  version: 2.29.2+rev1
+  date: 2019-01-22T12:20:17.465Z
+- commits:
     - subject: Add icon for IMX8M-VAR-DART
       hash: b8e3f90f5487753b9f246317a40d915a8ce63271
       body: ''

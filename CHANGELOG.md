@@ -1,6 +1,14 @@
 Change log
 -----------
 
+# v2.29.2+rev1
+## (2019-01-22)
+
+* hostapp-update-hooks: Modify hooks for NAND flashing of SPL and u-boot [Sebastian Panceac]
+* linux-variscite: Disable reboot on kernel panic [Sebastian Panceac]
+* u-boot-variscite: Prepare for var-som-mx6 eMMC booting [Sebastian Panceac]
+* Update meta-resin from 2.29.0 to 2.29.2 [Sebastian Panceac]
+
 # v2.29.0+rev2
 ## (2019-01-07)
 
