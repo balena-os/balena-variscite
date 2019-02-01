@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+# Flash the SPL on the NAND
+pushd .
+cd /tmp #kobs-ng needs to create a temporary file
+kobs-ng -x -v -w --chip_0_device_path=/dev/mtd0 /mnt/boot/SPL-nand
+popd
+
+# Flash u-boot on the NAND
+flash_erase /dev/mtd1 0 0 # erase u-boot partition
+nandwrite /dev/mtd1 /mnt/boot/u-boot-var-som-mx6.img-nand -p # write u-boot binary
+
+exit 0

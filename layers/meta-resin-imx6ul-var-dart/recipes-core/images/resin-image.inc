@@ -38,6 +38,8 @@ RESIN_BOOT_PARTITION_FILES_var-som-mx6 = " \
     uImage-imx6qp-var-som-cap.dtb:/imx6qp-var-som-cap.dtb \
     uImage-imx6qp-var-som-res.dtb:/imx6qp-var-som-res.dtb \
     uImage-imx6qp-var-som-vsc.dtb:/imx6qp-var-som-vsc.dtb \
+    ${SPL_BINARY}-nand: \
+    u-boot-${MACHINE}.img-nand: \
     "
 
 IMAGE_CMD_resinos-img_append_var-som-mx6 () {
@@ -100,3 +102,7 @@ IMAGE_CMD_resinos-img_append_imx8m-var-dart () {
     dd if=${DEPLOY_DIR_IMAGE}/imx-boot-tools/imx-boot-sd.bin of=${RESIN_RAW_IMG} conv=notrunc seek=33 bs=1K
 }
 
+IMAGE_INSTALL_append_var-som-mx6 = " \
+    mtd-utils \
+    imx-kobs \
+"
