@@ -1,4 +1,19 @@
 - commits:
+    - subject: 'u-boot-variscite: Apply NAND patches only for var-som-mx6 machine'
+      hash: 59c5f4c6a915572335eb0d8195bcd09c9f169118
+      body: |
+        This change applies the NAND u-boot patches only for the var-som-mx6
+        machine to avoid patching failure for var-som-mx8 machine, that
+        uses a different revision of the sources
+      footer:
+        Changelog-entry: 'u-boot-variscite: Apply NAND patches only for var-som-mx6 machine'
+        changelog-entry: 'u-boot-variscite: Apply NAND patches only for var-som-mx6 machine'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+  version: 2.29.2+rev2
+  date: 2019-02-04T09:56:17.785Z
+- commits:
     - subject: 'hostapp-update-hooks: Modify hooks for NAND flashing of SPL and u-boot'
       hash: 701a060501d93274a29c9d7a087fdef322fcf7eb
       body: |

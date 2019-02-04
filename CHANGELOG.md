@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.29.2+rev2
+## (2019-02-04)
+
+* u-boot-variscite: Apply NAND patches only for var-som-mx6 machine [Sebastian Panceac]
+
 # v2.29.2+rev1
 ## (2019-01-22)
 
