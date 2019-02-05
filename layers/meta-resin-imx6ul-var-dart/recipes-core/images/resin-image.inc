@@ -95,6 +95,8 @@ IMAGE_INSTALL_append_imx8m-var-dart = " \
                                         bcm43xx-utils-mx8 \
                                         brcm-patchram-plus \
                                         kernel-modules \
+                                        pm-utils \
+                                        pm-utils-mx8 \
                                         bluez5 \
 "
 
