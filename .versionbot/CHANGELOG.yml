@@ -1,4 +1,16 @@
 - commits:
+    - subject: Added LED2 as identification led
+      hash: dd913f7cbc043f854256c010c90660756ee947e1
+      body: ''
+      footer:
+        Changelog-entry: Added LED2 as identification led
+        changelog-entry: Added LED2 as identification led
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+  version: 2.29.2+rev3
+  date: 2019-02-06T12:23:04.596Z
+- commits:
     - subject: 'u-boot-variscite: Apply NAND patches only for var-som-mx6 machine'
       hash: 59c5f4c6a915572335eb0d8195bcd09c9f169118
       body: |

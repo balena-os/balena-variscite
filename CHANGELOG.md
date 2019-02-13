@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.29.2+rev3
+## (2019-02-06)
+
+* Added LED2 as identification led [Alexandru Costache]
+
 # v2.29.2+rev2
 ## (2019-02-04)
 
