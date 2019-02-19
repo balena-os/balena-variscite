@@ -96,6 +96,7 @@ IMAGE_INSTALL_append_imx8m-var-dart = " \
                                         brcm-patchram-plus \
                                         kernel-modules \
                                         bluez5 \
+					pm-scripts-mx8 \
 "
 
 IMAGE_CMD_resinos-img_append_imx8m-var-dart () {
