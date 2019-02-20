@@ -65,6 +65,8 @@ IMAGE_INSTALL_append_imx7-var-som = " \
 				     linux-firmware-bcm4339 \
 				     linux-firmware-bcm43430 \
 				     brcm-patchram-plus \
+				     pm-utils \
+				     pm-services \
 "
 
 IMAGE_INSTALL_append_imx6ul-var-dart = " \
@@ -72,6 +74,8 @@ IMAGE_INSTALL_append_imx6ul-var-dart = " \
     linux-firmware-bcm4339 \
     linux-firmware-bcm43430 \
     brcm-patchram-plus \
+    pm-utils \
+    pm-services \
 "
 
 RESIN_BOOT_PARTITION_FILES_imx8m-var-dart = " \
@@ -97,6 +101,7 @@ IMAGE_INSTALL_append_imx8m-var-dart = " \
                                         kernel-modules \
                                         bluez5 \
 					pm-scripts-mx8 \
+					pm-services \
 "
 
 IMAGE_CMD_resinos-img_append_imx8m-var-dart () {
