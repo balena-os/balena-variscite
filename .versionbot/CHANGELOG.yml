@@ -1,4 +1,22 @@
 - commits:
+    - subject: Add services to fix WiFi/BT resume issues
+      hash: b59a7ab66127c770039c85ff18cae2e188aed4cd
+      body: |
+        Created package with systemd service files
+        that reload  WiFi and Bluetooth after system
+        was suspended.
+
+        These packages are added for imx8m, imx7 and imx6ul.
+        imx6-var-som does not encounter the present issues.
+      footer:
+        Changelog-entry: Add services to fix WiFi/BT resume issues
+        changelog-entry: Add services to fix WiFi/BT resume issues
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+  version: 2.29.2+rev4
+  date: 2019-02-20T13:43:38.129Z
+- commits:
     - subject: Added LED2 as identification led
       hash: dd913f7cbc043f854256c010c90660756ee947e1
       body: ''

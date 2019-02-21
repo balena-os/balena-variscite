@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.29.2+rev4
+## (2019-02-20)
+
+* Add services to fix WiFi/BT resume issues [Alexandru Costache]
+
 # v2.29.2+rev3
 ## (2019-02-06)
 
