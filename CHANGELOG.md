@@ -1,6 +1,25 @@
 Change log
 -----------
 
+# v2.31.5+rev1
+## (2019-03-22)
+
+* Update meta-resin from v2.31.3 to v2.31.5 [Florin Sarbu]
+
+<details>
+<summary> View details </summary>
+
+## meta-resin-2.31.5
+### (2019-03-21)
+
+* Update resin-supervisor to v9.11.3 [Andrei Gherzan]
+
+## meta-resin-2.31.4
+### (2019-03-20)
+
+* resin-supervisor: Recreate on start if config has changed [Rich Bayliss]
+</details>
+
 # v2.31.3+rev1
 ## (2019-03-21)
 
