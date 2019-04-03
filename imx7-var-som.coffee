@@ -14,7 +14,7 @@ postProvisioningInstructions = [
 module.exports =
 	version: 1
 	slug: 'imx7-var-som'
-	name: 'Variscite imx7-var-som'
+	name: 'Variscite VAR-SOM-MX7'
 	arch: 'armv7hf'
 	state: 'experimental'
 
