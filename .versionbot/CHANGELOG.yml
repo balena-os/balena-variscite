@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'imx7-var-som.coffee: Fix naming convention'
+      hash: e5dd8a1307ad577def7123a9214d366c9f606f99
+      body: |
+        Updated name to preserve consistency in dashboard
+      footer:
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+        Changelog-entry: 'imx7-var-som.coffee: Fix naming convention'
+        changelog-entry: 'imx7-var-som.coffee: Fix naming convention'
+      author: Alexandru Costache
+  version: 2.31.5+rev2
+  date: 2019-04-04T11:21:12.251Z
+- commits:
     - subject: Update meta-resin from v2.31.3 to v2.31.5
       hash: 6275136009af37b14c12f79ed1edd56ac4a5722c
       body: |

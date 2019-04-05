@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.31.5+rev2
+## (2019-04-04)
+
+* imx7-var-som.coffee: Fix naming convention [Alexandru Costache]
+
 # v2.31.5+rev1
 ## (2019-03-22)
 
