@@ -32,8 +32,6 @@ module.exports =
 		osx: 'http://docs.resin.io/dart6ul/nodejs/getting-started/#adding-your-first-device'
 		linux: 'http://docs.resin.io/dart6ul/nodejs/getting-started/#adding-your-first-device'
 
-	supportsBlink: true
-
 	yocto:
 		machine: 'var-som-mx6'
 		image: 'resin-image-flasher'
