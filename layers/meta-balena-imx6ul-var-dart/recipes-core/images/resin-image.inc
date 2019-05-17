@@ -48,10 +48,10 @@ IMAGE_CMD_resinos-img_append_var-som-mx6 () {
 
 RESIN_BOOT_PARTITION_FILES_imx7-var-som = " \
     zImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/zImage \
-    zImage-imx7d-var-som-emmc-m4.dtb:/imx7d-var-som-emmc-m4.dtb \
-    zImage-imx7d-var-som-emmc.dtb:/imx7d-var-som-emmc.dtb \
-    zImage-imx7d-var-som-nand-m4.dtb:/imx7d-var-som-nand-m4.dtb \
-    zImage-imx7d-var-som-nand.dtb:/imx7d-var-som-nand.dtb \
+    imx7d-var-som-emmc-m4.dtb:/imx7d-var-som-emmc-m4.dtb \
+    imx7d-var-som-emmc.dtb:/imx7d-var-som-emmc.dtb \
+    imx7d-var-som-nand-m4.dtb:/imx7d-var-som-nand-m4.dtb \
+    imx7d-var-som-nand.dtb:/imx7d-var-som-nand.dtb \
     "
 
 IMAGE_CMD_resinos-img_append_imx7-var-som () {
