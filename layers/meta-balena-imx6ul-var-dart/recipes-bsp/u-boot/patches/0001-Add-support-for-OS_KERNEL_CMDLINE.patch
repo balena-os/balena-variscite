@@ -1,0 +1,31 @@
+From f74e5b910be9b3487f62bb9b7da1c324721539e4 Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Fri, 17 May 2019 10:06:28 +0200
+Subject: [PATCH] Add support for OS_KERNEL_CMDLINE
+
+OS_KERNEL_CMDLINE from meta-balena contains cmdline arguments
+for production images, like supressing writing the boot log to console
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ include/env_default.h | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/include/env_default.h b/include/env_default.h
+index 453ecc34e7..0ff9f8ddf8 100644
+--- a/include/env_default.h
++++ b/include/env_default.h
+@@ -25,6 +25,9 @@ static char default_environment[] = {
+ const uchar default_environment[] = {
+ #endif
+     RESIN_ENV
++
++"cmdline=" __stringify(OS_KERNEL_CMDLINE) "\0" \
++
+ #ifdef	CONFIG_ENV_CALLBACK_LIST_DEFAULT
+ 	ENV_CALLBACK_VAR "=" CONFIG_ENV_CALLBACK_LIST_DEFAULT "\0"
+ #endif
+-- 
+2.17.1
+

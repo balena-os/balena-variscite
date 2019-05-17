@@ -6,6 +6,7 @@ DEPENDS_append = " dtc-native"
 FILESEXTRAPATHS_append := ":${THISDIR}/patches"
 
 SRC_URI_append = " \
+    0001-Add-support-for-OS_KERNEL_CMDLINE.patch \
     file://imx6ul-var-dart-integrate-with-resin-configuration.patch \
     file://0001-Fix-SPL-compile-error-with-gcc-7.3.0.patch \
     file://mx6-var-som-integrate-with-resin-configuration.patch \
@@ -20,6 +21,11 @@ SRC_URI_append_var-som-mx6 = " \
 SRC_URI_append_imx7-var-som = " \
     file://0001-Revert-imx-mx7-spl-Support-mask-3N09P-of-i.MX7-revis.patch \
 "
+
+do_generate_resin_uboot_configuration_append() {
+    fl = open(os.path.join(d.getVar('S'), 'include', 'config_resin.h'), 'a')
+    fl.write("#define %s %s\n" % ('OS_KERNEL_CMDLINE', d.getVar('OS_KERNEL_CMDLINE')))
+}
 
 PROVIDES += "u-boot"
 
