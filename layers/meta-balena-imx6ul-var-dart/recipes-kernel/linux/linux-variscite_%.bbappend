@@ -1,5 +1,7 @@
 inherit kernel-resin
 
+FILESEXTRAPATHS_append := ":${THISDIR}/${PN}"
+
 RESIN_CONFIGS_append_var-som-mx6 = " no_panic_reboot"
 
 RESIN_CONFIGS[no_panic_reboot] = " \
