@@ -1,4 +1,4 @@
-From f6ba9d3d2b5e6b8aa34c1498f80215145ab5de79 Mon Sep 17 00:00:00 2001
+From 126b6e99cd6bfa00ed935fbeead9eecdfafd1224 Mon Sep 17 00:00:00 2001
 From: Florin Sarbu <florin@resin.io>
 Date: Thu, 4 Oct 2018 07:42:45 +0200
 Subject: [PATCH] imx6ul-var-dart machine specific integration of resin
@@ -13,29 +13,29 @@ Signed-off-by: Florin Sarbu <florin@resin.io>
  2 files changed, 8 insertions(+), 1 deletion(-)
 
 diff --git a/configs/mx6ul_var_dart_mmc_defconfig b/configs/mx6ul_var_dart_mmc_defconfig
-index 9dea59e..9bfbfc4 100644
+index e034a659ef..c147ac5517 100644
 --- a/configs/mx6ul_var_dart_mmc_defconfig
 +++ b/configs/mx6ul_var_dart_mmc_defconfig
-@@ -47,3 +47,5 @@ CONFIG_G_DNL_VENDOR_NUM=0x0525
- CONFIG_G_DNL_PRODUCT_NUM=0xa4a5
+@@ -47,3 +47,5 @@ CONFIG_USB_GADGET_DOWNLOAD=y
+ CONFIG_VIDEO=y
  # CONFIG_VIDEO_SW_CURSOR is not set
  CONFIG_OF_LIBFDT=y
 +CONFIG_PARTITION_UUIDS=y
 +CONFIG_CMD_PART=y
 diff --git a/include/configs/mx6ul_var_dart.h b/include/configs/mx6ul_var_dart.h
-index 0839185..5d84513 100644
+index 21072c3c6b..93d1d86996 100644
 --- a/include/configs/mx6ul_var_dart.h
 +++ b/include/configs/mx6ul_var_dart.h
-@@ -78,7 +78,7 @@
+@@ -79,7 +79,7 @@
  	"mmcbootpart=1\0" \
  	"mmcrootpart=2\0" \
  	"mmcargs=setenv bootargs console=${console},${baudrate} " \
 -		"root=/dev/mmcblk${mmcblk}p${mmcrootpart} rootwait rw " \
-+		"${resin_kernel_root} rootwait rw " \
++		"${resin_kernel_root} rootwait rw {cmdline}" \
  		"${cma_size}\0" \
  	"loadbootenv=" \
  		"load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${bootenv}\0" \
-@@ -120,6 +120,11 @@
+@@ -121,6 +121,11 @@
  #else
  #define BOOT_ENV_SETTINGS	MMC_BOOT_ENV_SETTINGS
  #define CONFIG_BOOTCOMMAND \
@@ -48,5 +48,5 @@ index 0839185..5d84513 100644
  	"mmc dev ${mmcdev};" \
  	"mmc dev ${mmcdev}; if mmc rescan; then " \
 -- 
-2.7.4
+2.17.1
 

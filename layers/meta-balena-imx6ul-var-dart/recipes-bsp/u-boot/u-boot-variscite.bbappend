@@ -6,9 +6,8 @@ DEPENDS_append = " dtc-native"
 FILESEXTRAPATHS_append := ":${THISDIR}/patches"
 
 SRC_URI_append = " \
-    0001-Add-support-for-OS_KERNEL_CMDLINE.patch \
-    file://imx6ul-var-dart-integrate-with-resin-configuration.patch \
-    file://0001-Fix-SPL-compile-error-with-gcc-7.3.0.patch \
+    file://0001-Add-support-for-OS_KERNEL_CMDLINE.patch \
+    file://imx6ul-var-dart-integrate-with-resin-configuration.patch \ 
     file://mx6-var-som-integrate-with-resin-configuration.patch \
     file://mx7-var-som-integrate-with-balena-configuration.patch \
 "

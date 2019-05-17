@@ -1,4 +1,4 @@
-From 83c3bc27c9afb281d7615f65c03f22acce54aee7 Mon Sep 17 00:00:00 2001
+From 02b4609d166f808c5075a92386c148608a2fdaab Mon Sep 17 00:00:00 2001
 From: Sebastian Panceac <sebastian@resin.io>
 Date: Wed, 10 Oct 2018 15:40:50 +0200
 Subject: [PATCH] Integrate Resin u-boot environment
@@ -7,25 +7,45 @@ Upstream-Status: Inappropriate [configuration]
 
 Signed-off-by: Sebastian Panceac <sebastian@resin.io>
 ---
- configs/mx6var_som_sd_defconfig | 2 ++
  configs/mx6var_som_nand_defconfig | 2 ++
- include/configs/mx6var_som.h | 6 +++++-
+ configs/mx6var_som_sd_defconfig   | 2 ++
+ include/configs/mx6var_som.h      | 6 +++++-
  3 files changed, 9 insertions(+), 1 deletion(-)
 
+diff --git a/configs/mx6var_som_nand_defconfig b/configs/mx6var_som_nand_defconfig
+index 6bbcc854af..da558e3b17 100644
+--- a/configs/mx6var_som_nand_defconfig
++++ b/configs/mx6var_som_nand_defconfig
+@@ -49,3 +49,5 @@ CONFIG_USB_GADGET_DOWNLOAD=y
+ CONFIG_VIDEO=y
+ # CONFIG_VIDEO_SW_CURSOR is not set
+ CONFIG_OF_LIBFDT=y
++CONFIG_PARTITION_UUIDS=y
++CONFIG_CMD_PART=y
+diff --git a/configs/mx6var_som_sd_defconfig b/configs/mx6var_som_sd_defconfig
+index 1d40a7313f..2bdc467c37 100644
+--- a/configs/mx6var_som_sd_defconfig
++++ b/configs/mx6var_som_sd_defconfig
+@@ -50,3 +50,5 @@ CONFIG_USB_GADGET_DOWNLOAD=y
+ CONFIG_VIDEO=y
+ # CONFIG_VIDEO_SW_CURSOR is not set
+ CONFIG_OF_LIBFDT=y
++CONFIG_PARTITION_UUIDS=y
++CONFIG_CMD_PART=y
 diff --git a/include/configs/mx6var_som.h b/include/configs/mx6var_som.h
-index 1db7afb..573b94e 100644
+index d4cc0eb1ad..327ecbe802 100644
 --- a/include/configs/mx6var_som.h
 +++ b/include/configs/mx6var_som.h
-@@ -98,7 +98,7 @@
+@@ -99,7 +99,7 @@
  	"mmcbootpart=1\0" \
  	"mmcrootpart=" __stringify(MMC_ROOT_PART) "\0" \
  	"mmcargs=setenv bootargs console=${console},${baudrate} " \
 -		"root=/dev/mmcblk${mmcblk}p${mmcrootpart} rootwait rw\0" \
-+		"${resin_kernel_root} rootwait rw\0" \
++		"${resin_kernel_root} rootwait rw ${cmdline} \0" \
  	"loadbootenv=" \
  		"load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${bootenv};\0" \
  	"importbootenv=echo Importing bootenv from mmc ...; " \
-@@ -131,6 +131,10 @@
+@@ -132,6 +132,10 @@
  
  
  #define MMC_BOOTCMD \
@@ -36,25 +56,6 @@ index 1db7afb..573b94e 100644
  	"mmc dev ${mmcdev};" \
  	"if mmc rescan; then " \
  		"if run loadbootenv; then " \
-diff --git a/configs/mx6var_som_sd_defconfig b/configs/mx6var_som_sd_defconfig
---- a/configs/mx6var_som_sd_defconfig
-+++ b/configs/mx6var_som_sd_defconfig
-@@ -50,3 +50,5 @@ CONFIG_G_DNL_VENDOR_NUM=0x0525
- CONFIG_G_DNL_PRODUCT_NUM=0xa4a5
- # CONFIG_VIDEO_SW_CURSOR is not set
- CONFIG_OF_LIBFDT=y
-+CONFIG_PARTITION_UUIDS=y
-+CONFIG_CMD_PART=y
-diff --git a/configs/mx6var_som_nand_defconfig b/configs/mx6var_som_nand_defconfig
-index 1fa9d0306c..799e0e3b45 100644
---- a/configs/mx6var_som_nand_defconfig
-+++ b/configs/mx6var_som_nand_defconfig
-@@ -48,3 +48,5 @@ CONFIG_G_DNL_VENDOR_NUM=0x0525
- CONFIG_G_DNL_PRODUCT_NUM=0xa4a5
- # CONFIG_VIDEO_SW_CURSOR is not set
- CONFIG_OF_LIBFDT=y
-+CONFIG_PARTITION_UUIDS=y
-+CONFIG_CMD_PART=y
 -- 
-2.7.4
+2.17.1
 
