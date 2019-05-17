@@ -14,8 +14,3 @@ HOSTAPP_HOOKS_append_imx7-var-som = " \
     99-resin-uboot \
     99-flash-bootloader-imx7-var-som \
 "
-
-HOSTAPP_HOOKS_append_imx8m-var-dart = " \
-    99-resin-uboot \
-    99-flash-bootloader-imx8m-var-dart \
-"
