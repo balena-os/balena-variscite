@@ -1,4 +1,25 @@
 - commits:
+    - subject: Update meta-balena from v2.33.0 to v2.36.0
+      hash: 0d7e3c5bf0275fa777d2c10d15873d74850ac14a
+      body: ''
+      footer:
+        Changelog-entry: Update meta-balena from v2.33.0 to v2.36.0
+        changelog-entry: Update meta-balena from v2.33.0 to v2.36.0
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+    - subject: Update the balena-yocto-scripts submodule to v1.1.1
+      hash: e6ed552996502cd0aa1e4d696bbf00443098f06d
+      body: ''
+      footer:
+        Changelog-entry: Update the balena-yocto-scripts submodule to v1.1.1
+        changelog-entry: Update the balena-yocto-scripts submodule to v1.1.1
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+  version: 2.36.0+rev1
+  date: 2019-05-21T06:53:39.127Z
+- commits:
     - subject: Update rust to 1.33
       hash: db2f896b13ca483ba90bdb251dc0d5c6e1eeb6f4
       body: ''

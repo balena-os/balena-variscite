@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.36.0+rev1
+## (2019-05-21)
+
+* Update meta-balena from v2.33.0 to v2.36.0 [Alexandru Costache]
+* Update the balena-yocto-scripts submodule to v1.1.1 [Alexandru Costache]
+
 # v2.33.0+rev1
 ## (2019-05-04)
 
