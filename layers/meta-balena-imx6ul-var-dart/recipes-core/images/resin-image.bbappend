@@ -14,7 +14,3 @@ RESIN_BOOT_PARTITION_FILES_append_imx7-var-som = " \
     ${SPL_BINARY}: \
     u-boot-${MACHINE}.img: \
 "
-
-RESIN_BOOT_PARTITION_FILES_append_imx8m-var-dart = " \
-    imx-boot-tools/imx-boot-sd.bin:/imx-boot-sd.bin \
-"
