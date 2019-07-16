@@ -1,4 +1,39 @@
 - commits:
+    - subject: Update the balena-yocto-scripts submodule to v1.3.5
+      hash: ee6d2da57dda81bc2860e27a3488e25a3a2566a2
+      body: ''
+      footer:
+        Changelog-entry: Update the balena-yocto-scripts submodule to v1.3.5
+        changelog-entry: Update the balena-yocto-scripts submodule to v1.3.5
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+    - subject: Update meta-balena from v2.38.2 to v2.38.3
+      hash: 049d9f3f7e344a167e7c67c24cbde72c039aefa6
+      body: |
+        Update meta-balena from 2.38.2 to 2.38.3
+      footer:
+        Changelog-entry: Update meta-balena from v2.38.2 to v2.38.3
+        changelog-entry: Update meta-balena from v2.38.2 to v2.38.3
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested:
+        - commits:
+            - subject: 'resin-proxy-config: fix up incorrect bash subshell command'
+              hash: 0c8de756c22f635b2ef499848b724f1350f555b0
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Matthew McGinn <matthew@balena.io>
+                signed-off-by: Matthew McGinn <matthew@balena.io>
+              author: Matthew McGinn
+          version: meta-balena-2.38.3
+          date: 2019-07-10T08:16:25.713Z
+  version: 2.38.3+rev1
+  date: 2019-07-16T06:42:56.298Z
+- commits:
     - subject: Update the balena-yocto-scripts submodule to v1.2.3
       hash: f670bb9e87423d545f25e6816f66281240069809
       body: ''
