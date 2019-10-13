@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.44.0+rev2
+## (2019-10-13)
+
+* Increase u-boot env size for imx6ul-var-dart [Florin Sarbu]
+
 # v2.44.0+rev1
 ## (2019-10-10)
 

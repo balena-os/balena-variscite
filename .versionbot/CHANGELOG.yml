@@ -1,4 +1,23 @@
 - commits:
+    - subject: Increase u-boot env size for imx6ul-var-dart
+      hash: 5c9bbe207aa3fcec72f752996889128b21e12d59
+      body: |
+        Recent meta-balena changes have increased u-boot env
+        size so that at runtime we get the following error:
+
+        env_buf [32 bytes] too small for value of "bootcmd"
+
+        In order to fix the above error we increase the env size
+        by 4K.
+      footer:
+        Changelog-entry: Increase u-boot env size for imx6ul-var-dart
+        changelog-entry: Increase u-boot env size for imx6ul-var-dart
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.44.0+rev2
+  date: 2019-10-13T07:57:52.592Z
+- commits:
     - subject: Update the meta-balena submodule from v2.38.3 to v2.44.0
       hash: a090de13c20b5f018e6e576fd562a4032bc8156e
       body: ''
