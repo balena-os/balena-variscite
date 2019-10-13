@@ -1,4 +1,4 @@
-From f6ba9d3d2b5e6b8aa34c1498f80215145ab5de79 Mon Sep 17 00:00:00 2001
+From 26ed5d41908568b60b1d122eb72b684c2a058746 Mon Sep 17 00:00:00 2001
 From: Florin Sarbu <florin@resin.io>
 Date: Thu, 4 Oct 2018 07:42:45 +0200
 Subject: [PATCH] imx6ul-var-dart machine specific integration of resin
@@ -9,11 +9,11 @@ Upstream-Status: Inappropriate [configuration]
 Signed-off-by: Florin Sarbu <florin@resin.io>
 ---
  configs/mx6ul_var_dart_mmc_defconfig | 2 ++
- include/configs/mx6ul_var_dart.h     | 7 ++++++-
- 2 files changed, 8 insertions(+), 1 deletion(-)
+ include/configs/mx6ul_var_dart.h     | 9 +++++++--
+ 2 files changed, 9 insertions(+), 2 deletions(-)
 
 diff --git a/configs/mx6ul_var_dart_mmc_defconfig b/configs/mx6ul_var_dart_mmc_defconfig
-index 9dea59e..9bfbfc4 100644
+index 8324fe8..b27d41d 100644
 --- a/configs/mx6ul_var_dart_mmc_defconfig
 +++ b/configs/mx6ul_var_dart_mmc_defconfig
 @@ -47,3 +47,5 @@ CONFIG_G_DNL_VENDOR_NUM=0x0525
@@ -23,7 +23,7 @@ index 9dea59e..9bfbfc4 100644
 +CONFIG_PARTITION_UUIDS=y
 +CONFIG_CMD_PART=y
 diff --git a/include/configs/mx6ul_var_dart.h b/include/configs/mx6ul_var_dart.h
-index 0839185..5d84513 100644
+index 0839185..6349db3 100644
 --- a/include/configs/mx6ul_var_dart.h
 +++ b/include/configs/mx6ul_var_dart.h
 @@ -78,7 +78,7 @@
@@ -47,6 +47,15 @@ index 0839185..5d84513 100644
  	"run ramsize_check; " \
  	"mmc dev ${mmcdev};" \
  	"mmc dev ${mmcdev}; if mmc rescan; then " \
+@@ -310,7 +315,7 @@
+ 
+ #if defined(CONFIG_ENV_IS_IN_MMC)
+ #define CONFIG_ENV_OFFSET		(14 * SZ_64K)
+-#define CONFIG_ENV_SIZE			SZ_8K
++#define CONFIG_ENV_SIZE			0x3000
+ #elif defined(CONFIG_ENV_IS_IN_NAND)
+ #define CONFIG_ENV_OFFSET		0x400000
+ #define CONFIG_ENV_SIZE			SZ_128K
 -- 
 2.7.4
 
