@@ -33,30 +33,31 @@ Cc: Jonathan Lemon <jonathan.lemon@gmail.com>
 Upstream-Status: Inappropriate [not author]
 Signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
 ---
- include/linux/tcp.h   |  3 +++
+ include/linux/tcp.h   |  4 ++++
  include/net/tcp.h     |  2 ++
  net/ipv4/tcp.c        |  1 +
  net/ipv4/tcp_input.c  | 26 ++++++++++++++++++++------
- net/ipv4/tcp_output.c |  4 ++--
- 5 files changed, 28 insertions(+), 8 deletions(-)
+ net/ipv4/tcp_output.c |  6 +++---
+ 5 files changed, 30 insertions(+), 9 deletions(-)
 
 diff --git a/include/linux/tcp.h b/include/linux/tcp.h
-index f50b717c..0dbb914 100644
+index fe322fa..60aea23 100644
 --- a/include/linux/tcp.h
 +++ b/include/linux/tcp.h
-@@ -433,4 +433,7 @@ static inline void tcp_saved_syn_free(struct tcp_sock *tp)
- 	tp->saved_syn = NULL;
- }
+@@ -450,4 +450,8 @@ static inline u16 tcp_mss_clamp(const struct tcp_sock *tp, u16 mss)
  
+ 	return (user_mss && user_mss < mss) ? user_mss : mss;
+ }
++
 +int tcp_skb_shift(struct sk_buff *to, struct sk_buff *from, int pcount,
 +		  int shiftlen);
 +
  #endif	/* _LINUX_TCP_H */
 diff --git a/include/net/tcp.h b/include/net/tcp.h
-index caf35e0..4c9477d 100644
+index 0c828aa..e8ced3c 100644
 --- a/include/net/tcp.h
 +++ b/include/net/tcp.h
-@@ -53,6 +53,8 @@ void tcp_time_wait(struct sock *sk, int state, int timeo);
+@@ -57,6 +57,8 @@ void tcp_time_wait(struct sock *sk, int state, int timeo);
  
  #define MAX_TCP_HEADER	(128 + MAX_HEADER)
  #define MAX_TCP_OPTION_SPACE 40
@@ -66,10 +67,10 @@ index caf35e0..4c9477d 100644
  /*
   * Never offer a window over 32767 without using window scaling. Some
 diff --git a/net/ipv4/tcp.c b/net/ipv4/tcp.c
-index 05d2bde..756ad29 100644
+index fd14501..633120f 100644
 --- a/net/ipv4/tcp.c
 +++ b/net/ipv4/tcp.c
-@@ -3298,6 +3298,7 @@ void __init tcp_init(void)
+@@ -3481,6 +3481,7 @@ void __init tcp_init(void)
  	unsigned long limit;
  	unsigned int i;
  
@@ -78,10 +79,10 @@ index 05d2bde..756ad29 100644
  		     FIELD_SIZEOF(struct sk_buff, cb));
  
 diff --git a/net/ipv4/tcp_input.c b/net/ipv4/tcp_input.c
-index 2f107e4..a8c4c97 100644
+index e24c0d7..c092c7c 100644
 --- a/net/ipv4/tcp_input.c
 +++ b/net/ipv4/tcp_input.c
-@@ -1312,7 +1312,7 @@ static bool tcp_shifted_skb(struct sock *sk, struct sk_buff *skb,
+@@ -1329,7 +1329,7 @@ static bool tcp_shifted_skb(struct sock *sk, struct sk_buff *skb,
  	TCP_SKB_CB(skb)->seq += shifted;
  
  	tcp_skb_pcount_add(prev, pcount);
@@ -90,7 +91,7 @@ index 2f107e4..a8c4c97 100644
  	tcp_skb_pcount_add(skb, -pcount);
  
  	/* When we're adding to gso_segs == 1, gso_size will be zero,
-@@ -1379,6 +1379,21 @@ static int skb_can_shift(const struct sk_buff *skb)
+@@ -1396,6 +1396,21 @@ static int skb_can_shift(const struct sk_buff *skb)
  	return !skb_headlen(skb) && skb_is_nonlinear(skb);
  }
  
@@ -112,7 +113,7 @@ index 2f107e4..a8c4c97 100644
  /* Try collapsing SACK blocks spanning across multiple skbs to a single
   * skb.
   */
-@@ -1487,7 +1502,7 @@ static struct sk_buff *tcp_shift_skb_data(struct sock *sk, struct sk_buff *skb,
+@@ -1504,7 +1519,7 @@ static struct sk_buff *tcp_shift_skb_data(struct sock *sk, struct sk_buff *skb,
  	if (!after(TCP_SKB_CB(skb)->seq + len, tp->snd_una))
  		goto fallback;
  
@@ -121,7 +122,7 @@ index 2f107e4..a8c4c97 100644
  		goto fallback;
  	if (!tcp_shifted_skb(sk, skb, state, pcount, len, mss, dup_sack))
  		goto out;
-@@ -1506,10 +1521,9 @@ static struct sk_buff *tcp_shift_skb_data(struct sock *sk, struct sk_buff *skb,
+@@ -1523,10 +1538,9 @@ static struct sk_buff *tcp_shift_skb_data(struct sock *sk, struct sk_buff *skb,
  		goto out;
  
  	len = skb->len;
@@ -136,10 +137,10 @@ index 2f107e4..a8c4c97 100644
  out:
  	state->fack_count += pcount;
 diff --git a/net/ipv4/tcp_output.c b/net/ipv4/tcp_output.c
-index 3d7b59e..403b308 100644
+index 24bad63..def09d1 100644
 --- a/net/ipv4/tcp_output.c
 +++ b/net/ipv4/tcp_output.c
-@@ -1343,8 +1343,8 @@ static inline int __tcp_mtu_to_mss(struct sock *sk, int pmtu)
+@@ -1442,8 +1442,8 @@ static inline int __tcp_mtu_to_mss(struct sock *sk, int pmtu)
  	mss_now -= icsk->icsk_ext_hdr_len;
  
  	/* Then reserve room for full set of TCP options and 8 bytes of data */
@@ -150,6 +151,15 @@ index 3d7b59e..403b308 100644
  	return mss_now;
  }
  
+@@ -2724,7 +2724,7 @@ static bool tcp_collapse_retrans(struct sock *sk, struct sk_buff *skb)
+ 		if (next_skb_size <= skb_availroom(skb))
+ 			skb_copy_bits(next_skb, 0, skb_put(skb, next_skb_size),
+ 				      next_skb_size);
+-		else if (!skb_shift(skb, next_skb, next_skb_size))
++		else if (!tcp_skb_shift(skb, next_skb, 1, next_skb_size))
+ 			return false;
+ 	}
+ 	tcp_highest_sack_replace(sk, next_skb, skb);
 -- 
 2.7.4
 
