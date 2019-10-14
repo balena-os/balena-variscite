@@ -10,6 +10,9 @@ RESIN_CONFIGS[no_panic_reboot] = " \
 
 SRC_URI_append_imx7-var-som = " \
 	file://0001-Add-LED-D10-as-identification-led.patch \
+"
+
+SRC_URI_append = " \
 	file://0002-NFLX-2019-001-SACK-Panic.patch \
 	file://0003-NFLX-2019-001-SACK-Panic-for-lteq-4.14.patch \
 	file://0004-NFLX-2019-001-SACK-Slowness.patch \
