@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.44.0+rev4
+## (2019-10-14)
+
+* Build net/dummy as module [Florin Sarbu]
+
 # v2.44.0+rev3
 ## (2019-10-13)
 

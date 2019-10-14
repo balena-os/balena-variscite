@@ -1,4 +1,27 @@
 - commits:
+    - subject: Build net/dummy as module
+      hash: 87305247df3874b408f4cd38d59654cc40a9aea5
+      body: |
+        Add dummy net driver support, which is used to
+        check if a container is privileged during
+        udev initialization.
+
+        Building it as module ensures that dummy
+        devices are not needlessly created during boot.
+
+        This commit is taken from Alex's PR
+        https://github.com/balena-os/meta-balena/pull/1703/commits
+        so we can drop these changes here when a meta-balena with
+        that PR is released and we will use it.
+      footer:
+        Changelog-entry: Build net/dummy as module
+        changelog-entry: Build net/dummy as module
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.44.0+rev4
+  date: 2019-10-14T19:18:12.598Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.4.0
       hash: 7ad32c9c9fabf9c7d7e6f03b360ab4f86ab7c8d2
       body: ''
