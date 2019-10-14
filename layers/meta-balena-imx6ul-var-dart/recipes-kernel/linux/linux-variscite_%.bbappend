@@ -16,3 +16,9 @@ SRC_URI_append_imx7-var-som = " \
 	file://0005-NFLX-2019-001-Resour-Consump-Low-MSS.patch \
 	file://0006-NFLX-2019-001-Resour-Consump-Low-MSS.patch \
 "
+
+# This adds support for creating dummy net devices
+RESIN_CONFIGS_append = " dummy"
+RESIN_CONFIGS[dummy] = " \
+	CONFIG_DUMMY=m \
+"
