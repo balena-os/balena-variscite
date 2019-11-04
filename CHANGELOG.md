@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.44.0+rev5
+## (2019-11-04)
+
+* Update the conf files for the thud update [Vicentiu Galanopulo]
+* Update the poky submodule to thud [Vicentiu Galanopulo]
+
 # v2.44.0+rev4
 ## (2019-10-14)
 

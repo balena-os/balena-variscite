@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update the conf files for the thud update
+      hash: d814e94b4931dcf3c673d3bb811768399a1e8096
+      body: |
+        Update the LAYERSERIES_COMPAT and BBLAYERS to thud.
+      footer:
+        Changelog-entry: Update the conf files for the thud update
+        changelog-entry: Update the conf files for the thud update
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+      author: Vicentiu Galanopulo
+    - subject: Update the poky submodule to thud
+      hash: 09d609f6d4e078b800d728119342c9e497dd9a73
+      body: |
+        Thud revision tag thud-20.0.3
+      footer:
+        Changelog-entry: Update the poky submodule to thud
+        changelog-entry: Update the poky submodule to thud
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+      author: Vicentiu Galanopulo
+  version: 2.44.0+rev5
+  date: 2019-11-04T11:52:45.010Z
+- commits:
     - subject: Build net/dummy as module
       hash: 87305247df3874b408f4cd38d59654cc40a9aea5
       body: |
