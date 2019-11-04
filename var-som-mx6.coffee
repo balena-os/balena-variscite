@@ -36,7 +36,7 @@ module.exports =
 		machine: 'var-som-mx6'
 		image: 'resin-image-flasher'
 		fstype: 'resinos-img'
-		version: 'yocto-sumo'
+		version: 'yocto-thud'
 		deployArtifact: 'resin-image-flasher-var-som-mx6.resinos-img'
 		compressed: true
 
