@@ -6,11 +6,11 @@ Subject: [PATCH] Load kernel and rootfs from MMC when booting from NAND
 Upstream-Status: Inappropriate [configuration]
 Signed-off-by: Sebastian Panceac <sebastian@balena.io>
 ---
- include/configs/mx6var_som.h | 37 +++++++-----------------------------
- 1 file changed, 7 insertions(+), 30 deletions(-)
+ include/configs/mx6var_som.h | 36 ++++--------------------------------
+ 1 file changed, 4 insertions(+), 32 deletions(-)
 
 diff --git a/include/configs/mx6var_som.h b/include/configs/mx6var_som.h
-index 573b94e0dd..13f7f6bcd6 100644
+index 834cd7e9b8..046c21acb4 100644
 --- a/include/configs/mx6var_som.h
 +++ b/include/configs/mx6var_som.h
 @@ -57,7 +57,11 @@
@@ -25,10 +25,11 @@ index 573b94e0dd..13f7f6bcd6 100644
  #ifndef CONFIG_SYS_MMC_ENV_PART
  #define CONFIG_SYS_MMC_ENV_PART		0
  #endif
-@@ -152,35 +156,8 @@
+@@ -152,40 +156,8 @@
+ 		"fi; " \
  	"else run netboot; fi;"
  
- #ifdef CONFIG_NAND_BOOT
+-#ifdef CONFIG_NAND_BOOT
 -#define NAND_BOOT_ENV_SETTINGS \
 -	"nandargs=setenv bootargs console=${console},${baudrate} ubi.mtd=3 " \
 -		"root=ubi0:rootfs rootfstype=ubifs\0" \
@@ -58,20 +59,13 @@ index 573b94e0dd..13f7f6bcd6 100644
 -		"fi;\0" \
 -	"mtdids=" MTDIDS_DEFAULT "\0" \
 -	"mtdparts=" MTDPARTS_DEFAULT "\0"
-+#define NAND_BOOT_ENV_SETTINGS ""
-+#define CONFIG_BOOTCOMMAND MMC_BOOTCMD
- #else
+-#else
  #define NAND_BOOT_ENV_SETTINGS ""
  #define CONFIG_BOOTCOMMAND	MMC_BOOTCMD
-@@ -323,7 +300,7 @@
+-#endif
  
- #ifdef CONFIG_NAND_BOOT
- #define CONFIG_CMD_NAND
--#define CONFIG_ENV_IS_IN_NAND
-+#define CONFIG_ENV_IS_IN_MMC
- #define CONFIG_SYS_NAND_U_BOOT_OFFS	0x200000
- #else
- #define CONFIG_ENV_IS_IN_MMC
+ #define OPT_ENV_SETTINGS \
+ 	"optargs=setenv bootargs ${bootargs} ${kernelargs};\0"
 -- 
 2.17.1
 

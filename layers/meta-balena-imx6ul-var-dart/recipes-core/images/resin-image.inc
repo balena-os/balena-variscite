@@ -5,16 +5,30 @@ IMAGE_FSTYPES_append_imx7-var-som = " resinos-img"
 # Customize resinos-img
 RESIN_BOOT_PARTITION_FILES_imx6ul-var-dart = " \
     zImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/zImage \
-    zImage-${MACHINE}-emmc_wifi.dtb:/${MACHINE}-emmc_wifi.dtb \
-    zImage-${MACHINE}-nand_wifi.dtb:/${MACHINE}-nand_wifi.dtb \
-    zImage-${MACHINE}-sd_emmc.dtb:/${MACHINE}-sd_emmc.dtb \
-    zImage-${MACHINE}-sd_nand.dtb:/${MACHINE}-sd_nand.dtb \
-    zImage-imx6ull-var-dart-emmc_wifi.dtb:/imx6ull-var-dart-emmc_wifi.dtb \
-    zImage-imx6ull-var-dart-5g-emmc_wifi.dtb:/imx6ull-var-dart-5g-emmc_wifi.dtb \
-    zImage-imx6ull-var-dart-sd_emmc.dtb:/imx6ull-var-dart-sd_emmc.dtb \
-    zImage-imx6ull-var-dart-nand_wifi.dtb:/imx6ull-var-dart-nand_wifi.dtb \
-    zImage-imx6ull-var-dart-5g-nand_wifi.dtb:/imx6ull-var-dart-5g-nand_wifi.dtb \
-    zImage-imx6ull-var-dart-sd_nand.dtb:/imx6ull-var-dart-sd_nand.dtb \
+    ${MACHINE}-6ulcustomboard-emmc-sd-card.dtb:/ \
+    ${MACHINE}-6ulcustomboard-emmc-wifi.dtb:/ \
+    ${MACHINE}-6ulcustomboard-nand-sd-card.dtb:/ \
+    ${MACHINE}-6ulcustomboard-nand-wifi.dtb:/ \
+    imx6ul-var-som-concerto-board-emmc-sd-card.dtb:/ \
+    imx6ul-var-som-concerto-board-emmc-wifi.dtb:/ \
+    imx6ul-var-som-concerto-board-nand-sd-card.dtb:/ \
+    imx6ul-var-som-concerto-board-nand-wifi.dtb:/ \
+    imx6ull-var-dart-6ulcustomboard-emmc-sd-card.dtb:/ \
+    imx6ull-var-dart-6ulcustomboard-emmc-wifi.dtb:/ \
+    imx6ull-var-dart-6ulcustomboard-nand-sd-card.dtb:/ \
+    imx6ull-var-dart-6ulcustomboard-nand-wifi.dtb:/ \
+    imx6ull-var-som-concerto-board-emmc-sd-card.dtb:/ \
+    imx6ull-var-som-concerto-board-emmc-wifi.dtb:/ \
+    imx6ull-var-som-concerto-board-nand-sd-card.dtb:/ \
+    imx6ull-var-som-concerto-board-nand-wifi.dtb:/ \
+    imx6ulz-var-dart-6ulcustomboard-emmc-sd-card.dtb:/ \
+    imx6ulz-var-dart-6ulcustomboard-emmc-wifi.dtb:/ \
+    imx6ulz-var-dart-6ulcustomboard-nand-sd-card.dtb:/ \
+    imx6ulz-var-dart-6ulcustomboard-nand-wifi.dtb:/ \
+    imx6ulz-var-som-concerto-board-emmc-sd-card.dtb:/ \
+    imx6ulz-var-som-concerto-board-emmc-wifi.dtb:/ \
+    imx6ulz-var-som-concerto-board-nand-sd-card.dtb:/ \
+    imx6ulz-var-som-concerto-board-nand-wifi.dtb:/ \
     "
 
 IMAGE_CMD_resinos-img_append_imx6ul-var-dart () {
@@ -24,19 +38,19 @@ IMAGE_CMD_resinos-img_append_imx6ul-var-dart () {
 
 RESIN_BOOT_PARTITION_FILES_var-som-mx6 = " \
     uImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/uImage \
-    uImage-imx6dl-var-som-cap.dtb:/imx6dl-var-som-cap.dtb \
-    uImage-imx6dl-var-som-res.dtb:/imx6dl-var-som-res.dtb \
-    uImage-imx6dl-var-som-solo-cap.dtb:/imx6dl-var-som-solo-cap.dtb \
-    uImage-imx6dl-var-som-solo-res.dtb:/imx6dl-var-som-solo-res.dtb \
-    uImage-imx6dl-var-som-solo-vsc.dtb:/imx6dl-var-som-solo-vsc.dtb \
-    uImage-imx6dl-var-som-vsc.dtb:/imx6dl-var-som-vsc.dtb \
-    uImage-imx6q-var-dart.dtb:/imx6q-var-dart.dtb \
-    uImage-imx6q-var-som-cap.dtb:/imx6q-var-som-cap.dtb \
-    uImage-imx6q-var-som-res.dtb:/imx6q-var-som-res.dtb \
-    uImage-imx6q-var-som-vsc.dtb:/imx6q-var-som-vsc.dtb \
-    uImage-imx6qp-var-som-cap.dtb:/imx6qp-var-som-cap.dtb \
-    uImage-imx6qp-var-som-res.dtb:/imx6qp-var-som-res.dtb \
-    uImage-imx6qp-var-som-vsc.dtb:/imx6qp-var-som-vsc.dtb \
+    imx6dl-var-som-cap.dtb:/imx6dl-var-som-cap.dtb \
+    imx6dl-var-som-res.dtb:/imx6dl-var-som-res.dtb \
+    imx6dl-var-som-solo-cap.dtb:/imx6dl-var-som-solo-cap.dtb \
+    imx6dl-var-som-solo-res.dtb:/imx6dl-var-som-solo-res.dtb \
+    imx6dl-var-som-solo-vsc.dtb:/imx6dl-var-som-solo-vsc.dtb \
+    imx6dl-var-som-vsc.dtb:/imx6dl-var-som-vsc.dtb \
+    imx6q-var-dart.dtb:/imx6q-var-dart.dtb \
+    imx6q-var-som-cap.dtb:/imx6q-var-som-cap.dtb \
+    imx6q-var-som-res.dtb:/imx6q-var-som-res.dtb \
+    imx6q-var-som-vsc.dtb:/imx6q-var-som-vsc.dtb \
+    imx6qp-var-som-cap.dtb:/imx6qp-var-som-cap.dtb \
+    imx6qp-var-som-res.dtb:/imx6qp-var-som-res.dtb \
+    imx6qp-var-som-vsc.dtb:/imx6qp-var-som-vsc.dtb \
     ${SPL_BINARY}-nand: \
     u-boot-${MACHINE}.img-nand: \
     "
@@ -48,10 +62,10 @@ IMAGE_CMD_resinos-img_append_var-som-mx6 () {
 
 RESIN_BOOT_PARTITION_FILES_imx7-var-som = " \
     zImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/zImage \
-    zImage-imx7d-var-som-emmc-m4.dtb:/imx7d-var-som-emmc-m4.dtb \
-    zImage-imx7d-var-som-emmc.dtb:/imx7d-var-som-emmc.dtb \
-    zImage-imx7d-var-som-nand-m4.dtb:/imx7d-var-som-nand-m4.dtb \
-    zImage-imx7d-var-som-nand.dtb:/imx7d-var-som-nand.dtb \
+    imx7d-var-som-emmc-m4.dtb:/imx7d-var-som-emmc-m4.dtb \
+    imx7d-var-som-emmc.dtb:/imx7d-var-som-emmc.dtb \
+    imx7d-var-som-nand-m4.dtb:/imx7d-var-som-nand-m4.dtb \
+    imx7d-var-som-nand.dtb:/imx7d-var-som-nand.dtb \
     "
 
 IMAGE_CMD_resinos-img_append_imx7-var-som () {

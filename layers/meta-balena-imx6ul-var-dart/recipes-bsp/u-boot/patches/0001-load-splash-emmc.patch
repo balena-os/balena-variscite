@@ -10,18 +10,18 @@ Signed-off-by: Sebastian Panceac <sebastian@balena.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/board/variscite/mx6var_som/mx6var_som.c b/board/variscite/mx6var_som/mx6var_som.c
-index 526a11f41a..57e42ffca0 100644
+index 45dbb8e0d8..263b7e3983 100644
 --- a/board/variscite/mx6var_som/mx6var_som.c
 +++ b/board/variscite/mx6var_som/mx6var_som.c
-@@ -196,7 +196,7 @@ static void set_splashsource_to_boot_rootfs(void)
+@@ -198,7 +198,7 @@ static void set_splashsource_to_boot_rootfs(void)
  		return;
  
  #ifdef CONFIG_NAND_BOOT
--	setenv("splashsource", getenv("rootfs_device"));
-+	setenv("splashsource", "emmc");
+-	env_set("splashsource", env_get("rootfs_device"));
++	env_set("splashsource", "emmc");
  #else
  	if (mmc_get_env_dev() == 0)
- 		setenv("splashsource", "sd");
+ 		env_set("splashsource", "sd");
 -- 
 2.17.1
 
