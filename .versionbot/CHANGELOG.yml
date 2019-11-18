@@ -1,4 +1,23 @@
 - commits:
+    - subject: 'u-boot: Switch imx6ul-var-dart environment to built-in'
+      hash: a3467de996ed2c09461af7023ca2355568b88dc7
+      body: |
+        ENV_SIZE was defined only for eMMC.
+        If there was a failure in loading env, default
+        would be loaded but it's size wasn't large enough
+        to fit it.
+
+        Switch to default env, keep 12K size but regardless
+        of location.
+      footer:
+        Changelog-entry: 'u-boot: Switch imx6ul-var-dart environment to built-in'
+        changelog-entry: 'u-boot: Switch imx6ul-var-dart environment to built-in'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+  version: 2.45.0+rev2
+  date: 2019-11-12T15:54:05.422Z
+- commits:
     - subject: Update the meta-balena submodule from v2.44.0 to v2.45.0
       hash: 8c9fe337ca6291a5903fe3e3325ef5a323b4f26f
       body: |

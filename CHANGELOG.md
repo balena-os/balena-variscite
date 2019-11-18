@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.45.0+rev2
+## (2019-11-12)
+
+* u-boot: Switch imx6ul-var-dart environment to built-in [Alexandru Costache]
+
 # v2.45.0+rev1
 ## (2019-11-04)
 
