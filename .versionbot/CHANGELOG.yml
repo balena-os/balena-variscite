@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.5.2
+      hash: d2c9e6e803cb63f1cc39b03a2901aac46379898c
+      body: ''
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to v1.5.2
+        changelog-entry: Update balena-yocto-scripts to v1.5.2
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.45.0+rev4
+  date: 2019-11-19T13:04:35.407Z
+- commits:
     - subject: Update the BSP layer to latest thud
       hash: 8c4b67d04f8e47d8c89206d70e16448eeaed7d25
       body: ''
