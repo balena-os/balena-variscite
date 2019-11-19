@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.45.0+rev3
+## (2019-11-18)
+
+* Update the BSP layer to latest thud [Florin Sarbu]
+
 # v2.45.0+rev2
 ## (2019-11-12)
 
