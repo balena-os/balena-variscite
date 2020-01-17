@@ -16,7 +16,7 @@ module.exports =
 	slug: 'var-som-mx6'
 	name: 'Variscite VAR-SOM-MX6'
 	arch: 'armv7hf'
-	state: 'experimental'
+	state: 'released'
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
