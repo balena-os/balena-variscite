@@ -15,6 +15,7 @@ module.exports =
 	name: 'Variscite DART-6UL'
 	arch: 'armv7hf'
 	state: 'released'
+	private: false
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
