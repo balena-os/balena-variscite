@@ -95,3 +95,5 @@ IMAGE_INSTALL_append_var-som-mx6 = " \
     mtd-utils \
     imx-kobs \
 "
+
+do_image_resinos-img[depends] += " virtual/bootloader:do_deploy"
