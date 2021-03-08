@@ -9,7 +9,7 @@ RESIN_CONFIGS[no_panic_reboot] = " \
 "
 
 SRC_URI_append_imx7-var-som = " \
-	file://0001-Add-LED-D10-as-identification-led.patch \
+       file://0001-Add-LED-D10-as-identification-led.patch \
 "
 
 SRC_URI_append = " \

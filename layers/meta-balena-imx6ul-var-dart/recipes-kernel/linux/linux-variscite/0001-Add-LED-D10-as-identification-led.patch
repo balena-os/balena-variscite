@@ -1,19 +1,19 @@
-From 4927d96a3d1775235d91646460236f8d04f0467f Mon Sep 17 00:00:00 2001
+From 966fcdf04ffe36b8b7b70d248702210dcf29c74c Mon Sep 17 00:00:00 2001
 From: Alexandru Costache <alexandru@balena.io>
-Date: Thu, 4 Apr 2019 08:05:05 +0200
+Date: Tue, 9 Mar 2021 07:57:20 +0100
 Subject: [PATCH] imx7d-var-som.dtsi: Add LED D10 as identification led
 
 Upstream-Status: Inappropriate [configuration]
-Signed-off-by: Alexandru Costache <alexandru@resin.io>
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
 ---
- arch/arm/boot/dts/imx7d-var-som.dtsi | 19 ++++++++++++++++++-
- 1 file changed, 18 insertions(+), 1 deletion(-)
+ arch/arm/boot/dts/imx7d-var-som.dtsi | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
 
 diff --git a/arch/arm/boot/dts/imx7d-var-som.dtsi b/arch/arm/boot/dts/imx7d-var-som.dtsi
-index 3f7be49..dc485a6 100644
+index b1791dece3db..3add19d8f10f 100644
 --- a/arch/arm/boot/dts/imx7d-var-som.dtsi
 +++ b/arch/arm/boot/dts/imx7d-var-som.dtsi
-@@ -96,6 +96,18 @@
+@@ -98,6 +98,17 @@
  		};
  	};
  
@@ -28,20 +28,14 @@ index 3f7be49..dc485a6 100644
 +                };
 +        };
 +
-+
  	regulators {
  		compatible = "simple-bus";
  		#address-cells = <1>;
-@@ -505,11 +517,16 @@
- 				MX7D_PAD_UART2_TX_DATA__GPIO4_IO3	0x59  /* ethphy1 reset */
- 				MX7D_PAD_GPIO1_IO10__GPIO1_IO10		0x59  /* hsic hub reset */
- 				MX7D_PAD_GPIO1_IO12__GPIO1_IO12		0x59  /* hsic hub connect */
--				MX7D_PAD_GPIO1_IO13__GPIO1_IO13		0x59  /* LED */
- 				MX7D_PAD_SD1_WP__CCM_CLKO2		0xb0  /* camera clock */
+@@ -540,6 +551,12 @@
  			>;
  		};
  
-+	        pinctrl_led_1: ledgrp-1 {
++               pinctrl_led_1: ledgrp-1 {
 +                         fsl,pins = <
 +                                MX7D_PAD_GPIO1_IO13__GPIO1_IO13         0x1b0b0
 +                        >;
@@ -51,5 +45,5 @@ index 3f7be49..dc485a6 100644
  			fsl,pins = <
  				MX7D_PAD_EPDC_BDR0__GPIO2_IO28		0x32
 -- 
-2.7.4
+2.17.1
 
