@@ -80,6 +80,8 @@ IMAGE_INSTALL_append_imx7-var-som = " \
 				     brcm-patchram-plus \
 				     pm-utils \
 				     pm-services \
+				     linux-firmware-imx-sdma-imx7d \
+				     firmware-imx-epdc \
 "
 
 IMAGE_INSTALL_append_imx6ul-var-dart = " \
