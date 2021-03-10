@@ -3,8 +3,6 @@
 #MACHINE ?= "var-som-mx6"
 #MACHINE ?= "imx7-var-som"
 
-BBMASK .= "|.*/meta-variscite-fslc/recipes-graphics/drm/libdrm_%.bbappend"
-
 # We use the overlayfs docker storage driver for the imx6ul-var-dart machine
 BALENA_STORAGE = "overlay2"
 
