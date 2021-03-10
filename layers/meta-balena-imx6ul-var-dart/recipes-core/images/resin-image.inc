@@ -82,6 +82,7 @@ IMAGE_INSTALL_append_imx7-var-som = " \
 				     pm-services \
 				     linux-firmware-imx-sdma-imx7d \
 				     firmware-imx-epdc \
+				     kernel-devicetree \
 "
 
 IMAGE_INSTALL_append_imx6ul-var-dart = " \
