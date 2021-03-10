@@ -24,4 +24,4 @@ COMPATIBLE_MACHINE = "(var-som-mx6|imx6ul-var-dart|imx7-var-som)"
  
 S = "${WORKDIR}/git"
 # u-boot wants to build a libfdt Python module
-inherit pythonnative
+inherit python3native
