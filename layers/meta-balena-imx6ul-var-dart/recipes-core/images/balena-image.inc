@@ -1,9 +1,9 @@
-IMAGE_FSTYPES_append_imx6ul-var-dart = " resinos-img"
-IMAGE_FSTYPES_append_var-som-mx6 = " resinos-img"
-IMAGE_FSTYPES_append_imx7-var-som = " resinos-img"
+IMAGE_FSTYPES_append_imx6ul-var-dart = " balenaos-img"
+IMAGE_FSTYPES_append_var-som-mx6 = " balenaos-img"
+IMAGE_FSTYPES_append_imx7-var-som = " balenaos-img"
 
-# Customize resinos-img
-RESIN_BOOT_PARTITION_FILES_imx6ul-var-dart = " \
+# Customize balenaos-img
+BALENA_BOOT_PARTITION_FILES_imx6ul-var-dart = " \
     zImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/zImage \
     ${MACHINE}-6ulcustomboard-emmc-sd-card.dtb:/ \
     ${MACHINE}-6ulcustomboard-emmc-wifi.dtb:/ \
@@ -31,12 +31,12 @@ RESIN_BOOT_PARTITION_FILES_imx6ul-var-dart = " \
     imx6ulz-var-som-concerto-board-nand-wifi.dtb:/ \
     "
 
-IMAGE_CMD_resinos-img_append_imx6ul-var-dart () {
-    dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY} of=${RESIN_RAW_IMG} conv=notrunc seek=2 bs=512
-    dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img of=${RESIN_RAW_IMG} conv=notrunc seek=69 bs=1K
+IMAGE_CMD_balenaos-img_append_imx6ul-var-dart () {
+    dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY} of=${BALENA_RAW_IMG} conv=notrunc seek=2 bs=512
+    dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img of=${BALENA_RAW_IMG} conv=notrunc seek=69 bs=1K
 }
 
-RESIN_BOOT_PARTITION_FILES_var-som-mx6 = " \
+BALENA_BOOT_PARTITION_FILES_var-som-mx6 = " \
     uImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/uImage \
     imx6dl-var-som-cap.dtb:/imx6dl-var-som-cap.dtb \
     imx6dl-var-som-res.dtb:/imx6dl-var-som-res.dtb \
@@ -55,12 +55,12 @@ RESIN_BOOT_PARTITION_FILES_var-som-mx6 = " \
     u-boot-${MACHINE}.img-nand: \
     "
 
-IMAGE_CMD_resinos-img_append_var-som-mx6 () {
-    dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY} of=${RESIN_RAW_IMG} conv=notrunc seek=2 bs=512
-    dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img of=${RESIN_RAW_IMG} conv=notrunc seek=69 bs=1K
+IMAGE_CMD_balenaos-img_append_var-som-mx6 () {
+    dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY} of=${BALENA_RAW_IMG} conv=notrunc seek=2 bs=512
+    dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img of=${BALENA_RAW_IMG} conv=notrunc seek=69 bs=1K
 }
 
-RESIN_BOOT_PARTITION_FILES_imx7-var-som = " \
+BALENA_BOOT_PARTITION_FILES_imx7-var-som = " \
     zImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/zImage \
     imx7d-var-som-emmc-m4.dtb:/imx7d-var-som-emmc-m4.dtb \
     imx7d-var-som-emmc.dtb:/imx7d-var-som-emmc.dtb \
@@ -68,9 +68,9 @@ RESIN_BOOT_PARTITION_FILES_imx7-var-som = " \
     imx7d-var-som-nand.dtb:/imx7d-var-som-nand.dtb \
     "
 
-IMAGE_CMD_resinos-img_append_imx7-var-som () {
-    dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY}-sd of=${RESIN_RAW_IMG} conv=notrunc seek=2 bs=512
-    dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img-sd of=${RESIN_RAW_IMG} conv=notrunc seek=69 bs=1K
+IMAGE_CMD_balenaos-img_append_imx7-var-som () {
+    dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY}-sd of=${BALENA_RAW_IMG} conv=notrunc seek=2 bs=512
+    dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img-sd of=${BALENA_RAW_IMG} conv=notrunc seek=69 bs=1K
 }
 
 IMAGE_INSTALL_append_imx7-var-som = " \
@@ -99,4 +99,4 @@ IMAGE_INSTALL_append_var-som-mx6 = " \
     imx-kobs \
 "
 
-do_image_resinos-img[depends] += " virtual/bootloader:do_deploy"
+do_image_balenaos-img[depends] += " virtual/bootloader:do_deploy"

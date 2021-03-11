@@ -1,4 +1,4 @@
-include resin-image.inc
+include balena-image.inc
 
 # The machine conf forces some unwanted types
 # Remnove them all
