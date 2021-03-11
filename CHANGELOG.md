@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.71.3+rev2
+## (2021-03-10)
+
+* conf/samples: Switch to using meta-balena dunfell [Alexandru Costache]
+
 # v2.71.3+rev1
 ## (2021-03-09)
 

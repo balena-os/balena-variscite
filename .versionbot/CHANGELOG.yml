@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'conf/samples: Switch to using meta-balena dunfell'
+      hash: 0e7488794d82071049023d13ca261f3c3676722b
+      body: ''
+      footer:
+        Changelog-entry: 'conf/samples: Switch to using meta-balena dunfell'
+        changelog-entry: 'conf/samples: Switch to using meta-balena dunfell'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.71.3+rev2
+  date: 2021-03-10T13:03:28.935Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.10.3
       hash: 39cad5cc2bbe24cd2b9e40d3871723390a67dc56
       body: ''
