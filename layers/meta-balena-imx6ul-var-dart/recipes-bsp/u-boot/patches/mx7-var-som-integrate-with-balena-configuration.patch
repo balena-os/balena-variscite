@@ -1,7 +1,7 @@
-From 588ae7998535ad7e70aeee6af3bc8ed9cfb9e270 Mon Sep 17 00:00:00 2001
+From fe7dd12f762b19c240aceb881c2605380e01af75 Mon Sep 17 00:00:00 2001
 From: Alexandru Costache <alexandru@balena.io>
 Date: Tue, 9 Mar 2021 09:46:28 +0100
-Subject: [PATCH] Integrate Balena u-boot environment
+Subject: [PATCH] Integrate Balena u-boot environment for mx7
 
 Upstream-Status: Inappropriate [configuration]
 
@@ -9,8 +9,8 @@ Signed-off-by: Sebastian Panceac <sebastian@balena.io>
 Signed-off-by: Alexandru Costache <alexandru@resin.io>
 ---
  configs/mx7dvar_som_defconfig | 12 ++++++++++--
- include/configs/mx7dvar_som.h |  6 +++++-
- 2 files changed, 15 insertions(+), 3 deletions(-)
+ include/configs/mx7dvar_som.h | 10 +++++++---
+ 2 files changed, 17 insertions(+), 5 deletions(-)
 
 diff --git a/configs/mx7dvar_som_defconfig b/configs/mx7dvar_som_defconfig
 index 717d1efd3b..fd48f5574b 100644
@@ -40,7 +40,7 @@ index 717d1efd3b..fd48f5574b 100644
 +CONFIG_CMD_SETEXPR=y
 +CONFIG_ENV_IS_NOWHERE=y
 diff --git a/include/configs/mx7dvar_som.h b/include/configs/mx7dvar_som.h
-index 0b43b54419..b6728519ed 100644
+index b1c729d04d..c35d167d0d 100644
 --- a/include/configs/mx7dvar_som.h
 +++ b/include/configs/mx7dvar_som.h
 @@ -133,7 +133,7 @@
@@ -52,6 +52,19 @@ index 0b43b54419..b6728519ed 100644
  	"loadbootenv=" \
  		"load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${bootenv}\0" \
  	"importbootenv=echo Importing environment from mmc ...; " \
+@@ -142,10 +142,10 @@
+ 		"load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${script};\0" \
+ 	"bootscript=echo Running bootscript from mmc ...; " \
+ 		"source\0" \
+-	"loadimage=load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${image}\0" \
++	"loadimage=load mmc ${mmcdev}:${resin_root_part} ${loadaddr} boot/${image}\0" \
+ 	"loadfdt=run findfdt; " \
+ 		"echo fdt_file=${fdt_file}; " \
+-		"load mmc ${mmcdev}:${mmcbootpart} ${fdt_addr} ${bootdir}/${fdt_file}\0" \
++		"load mmc ${mmcdev}:${resin_root_part} ${fdt_addr} boot/${fdt_file}\0" \
+ 	"mmcboot=echo Booting from mmc ...; " \
+ 		"run mmcargs; " \
+ 		"run optargs; " \
 @@ -184,6 +184,10 @@
  #define CONFIG_BOOTCOMMAND \
  	"mmc dev ${mmcdev};" \
