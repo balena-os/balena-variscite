@@ -35,10 +35,10 @@ module.exports =
 
 	yocto:
 		machine: 'var-som-mx6'
-		image: 'resin-image-flasher'
-		fstype: 'resinos-img'
+		image: 'balena-image-flasher'
+		fstype: 'balenaos-img'
 		version: 'yocto-thud'
-		deployArtifact: 'resin-image-flasher-var-som-mx6.resinos-img'
+		deployArtifact: 'balena-image-flasher-var-som-mx6.balenaos-img'
 		compressed: true
 
 	options: [ networkOptions.group ]
