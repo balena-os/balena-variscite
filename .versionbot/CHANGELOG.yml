@@ -1,4 +1,19 @@
 - commits:
+    - subject: 'linux-variscite: Don''t use commit sha in version'
+      hash: 0a5df0fbbe260f16397b0bcde9cd5b1b1737a17f
+      body: |
+        We don't want git revisions to be included in the
+        kernel version, which was imposed by linux-imx bbclass
+      footer:
+        Changelog-entry: 'linux-variscite: Don''t use commit sha in version'
+        changelog-entry: 'linux-variscite: Don''t use commit sha in version'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.71.3+rev3
+  date: 2021-03-11T16:51:29.887Z
+- commits:
     - subject: 'conf/samples: Switch to using meta-balena dunfell'
       hash: 0e7488794d82071049023d13ca261f3c3676722b
       body: ''

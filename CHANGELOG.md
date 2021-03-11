@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.71.3+rev3
+## (2021-03-11)
+
+* linux-variscite: Don't use commit sha in version [Alexandru Costache]
+
 # v2.71.3+rev2
 ## (2021-03-10)
 
