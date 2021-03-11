@@ -17,3 +17,5 @@ RESIN_CONFIGS_append = " dummy"
 RESIN_CONFIGS[dummy] = " \
 	CONFIG_DUMMY=m \
 "
+
+PV = "${LINUX_VERSION}"
