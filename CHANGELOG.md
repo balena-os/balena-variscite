@@ -1,6 +1,42 @@
 Change log
 -----------
 
+# v2.95.8
+## (2022-04-12)
+
+
+<details>
+<summary> Update balena-yocto-scripts to v1.17.7 [Alexandru Costache] </summary>
+
+> ## balena-yocto-scripts-1.17.7
+> ### (2022-03-15)
+> 
+> * jenkins_generate_ami: surface preload app commit as variable [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.17.6
+> ### (2022-03-08)
+> 
+> * barys: Remove RESINHUP setting [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.17.5
+> ### (2022-03-08)
+> 
+> * balena-deploy: Avoid patching test suites config.js during deploy [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.4
+> ### (2022-03-03)
+> 
+> * Init and update submodules when switching meta-balena branches [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.3
+> ### (2022-03-02)
+> 
+> * jenkins_build: Use recurse-submodules when checking out meta-balena [Kyle Harding]
+> 
+</details>
+
+* Update meta-balena from v2.85.4 to v2.95.8 [Alexandru Costache]
+
 # v2.85.4+rev9
 ## (2022-03-29)
 

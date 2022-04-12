@@ -1,4 +1,120 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.17.7
+      hash: ff6197660e4dfa65929c5c053f6bfef6b865f261
+      body: |
+        Update balena-yocto-scripts from v1.17.2 to v1.17.7
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to v1.17.7
+        changelog-entry: Update balena-yocto-scripts to v1.17.7
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested:
+        - commits:
+            - subject: "jenkins_generate_ami: surface preload app commit as variable"
+              hash: 7248b344198ba09a219ee227ffea4b6f0a4850d7
+              body: >
+                Surface the preloaded app commit as a variable that can be
+                overridden in
+
+                the build job. Default to "current" to maintain existing behavior when
+
+                the variable isn't set.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: balena-yocto-scripts-1.17.7
+          title: "'jenkins_generate_ami: surface preload app commit as variable'"
+          date: 2022-03-15T16:36:33.654Z
+        - commits:
+            - subject: "barys: Remove RESINHUP setting"
+              hash: 367f153009928f36de8edcd97a56d6f58b5d6773
+              body: |
+                This has now been removed from meta-balena.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.17.6
+          title: "'barys: Remove RESINHUP setting'"
+          date: 2022-03-08T19:00:31.730Z
+        - commits:
+            - subject: "balena-deploy: Avoid patching test suites config.js during deploy"
+              hash: 21c27cd41cda7ee7f5041752cca1f79280c51a7e
+              body: >
+                This will allow us to make changes to config.js in meta-balena
+                without
+
+                breaking the deploy steps. If additional changes are needed at runtime
+
+                the substitutions can be made by the leviathan Jenkins job.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.17.5
+          title: "'balena-deploy: Avoid patching test suites config.js during deploy'"
+          date: 2022-03-08T13:38:17.771Z
+        - commits:
+            - subject: Init and update submodules when switching meta-balena branches
+              hash: 5162e7c9fa39498488303caab7d746456fc9abd4
+              body: >
+                If the submodule was recently added to meta-balena, the checkout
+
+                command will not initialize it without a separate submodule update
+
+                command.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.17.4
+          title: "'Init and update submodules when switching meta-balena branches'"
+          date: 2022-03-03T16:46:17.542Z
+        - commits:
+            - subject: "jenkins_build: Use recurse-submodules when checking out meta-balena"
+              hash: 00fb29b9a7a00dc1209be497ef171736e6229954
+              body: >
+                If meta-balena has submodule updates we want to make sure to use
+                them.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.17.3
+          title: "'jenkins_build: Use recurse-submodules when checking out meta-balena'"
+          date: 2022-03-02T17:17:21.631Z
+    - subject: Update meta-balena from v2.85.4 to v2.95.8
+      hash: ca3a398847252ea613294c2c3f3e40f297a5c51b
+      body: |
+        Update meta-balena from 2.85.4 to 2.95.8
+      footer:
+        Changelog-entry: Update meta-balena from v2.85.4 to v2.95.8
+        changelog-entry: Update meta-balena from v2.85.4 to v2.95.8
+        Signed-off-by: Alexandru Costache <alexndru@balena.io>
+        signed-off-by: Alexandru Costache <alexndru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.95.8
+  title: "'Update to v2.95.8'"
+  date: 2022-04-12T09:39:59.283Z
+- commits:
     - subject: Specify full path in repo.yml upstreams
       hash: 42d8d224460fd765889df657f2c93f139fcc5dcc
       body: |
