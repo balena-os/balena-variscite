@@ -1,11 +1,13 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
-GOOEE_DART_6_UL_FLASH = 'Power up the <%= TYPE_NAME %>. Holding down the SW2 button, press the SW1 button and then first release SW1 followed by SW2.'
+SET_JUMPER_SD_BOOT = 'Set SW1 and SW2 dip switches to 0(off position). Power up the <%= TYPE_NAME %>.'
+SET_JUMPER_EMMC_BOOT = 'Set SW2 dip switch to 1(on position).'
 
 postProvisioningInstructions = [
 	instructions.BOARD_SHUTDOWN
 	instructions.REMOVE_INSTALL_MEDIA
+	SET_JUMPER_EMMC_BOOT
 	instructions.BOARD_REPOWER
 ]
 
@@ -23,7 +25,7 @@ module.exports =
 		instructions.ETCHER_SD
 		instructions.EJECT_SD
 		instructions.FLASHER_WARNING
-		GOOEE_DART_6_UL_FLASH
+		SET_JUMPER_SD_BOOT
 	].concat(postProvisioningInstructions)
 
 	gettingStartedLink:
