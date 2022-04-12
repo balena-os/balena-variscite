@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.95.8+rev1
+## (2022-04-12)
+
+* Fix provisioning instructions for imx6ul-var-dart [Florin Sarbu]
+
 # v2.95.8
 ## (2022-04-12)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix provisioning instructions for imx6ul-var-dart
+      hash: 13eba36ae3f1052cac08855ea18516ae067a476c
+      body: ""
+      footer:
+        Changelog-entry: Fix provisioning instructions for imx6ul-var-dart
+        changelog-entry: Fix provisioning instructions for imx6ul-var-dart
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.95.8+rev1
+  title: "'Various improvements'"
+  date: 2022-04-12T14:38:11.420Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.17.7
       hash: ff6197660e4dfa65929c5c053f6bfef6b865f261
       body: |
