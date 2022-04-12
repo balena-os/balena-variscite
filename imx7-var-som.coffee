@@ -37,7 +37,7 @@ module.exports =
 		machine: 'imx7-var-som'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
-		version: 'yocto-thud'
+		version: 'yocto-dunfell'
 		deployArtifact: 'balena-image-flasher-imx7-var-som.balenaos-img'
 		compressed: true
 
