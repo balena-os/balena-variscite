@@ -17,7 +17,6 @@ module.exports =
 	name: 'Variscite VAR-SOM-MX7'
 	arch: 'armv7hf'
 	state: 'released'
-	private: false
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
