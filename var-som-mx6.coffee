@@ -17,7 +17,6 @@ module.exports =
 	name: 'Variscite VAR-SOM-MX6'
 	arch: 'armv7hf'
 	state: 'released'
-	private: false
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
@@ -37,7 +36,7 @@ module.exports =
 		machine: 'var-som-mx6'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
-		version: 'yocto-thud'
+		version: 'yocto-dunfell'
 		deployArtifact: 'balena-image-flasher-var-som-mx6.balenaos-img'
 		compressed: true
 

@@ -1,11 +1,13 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
-GOOEE_DART_6_UL_FLASH = 'Power up the <%= TYPE_NAME %>. Holding down the SW2 button, press the SW1 button and then first release SW1 followed by SW2.'
+SET_JUMPER_SD_BOOT = 'Set SW1 and SW2 dip switches to 0(off position). Power up the <%= TYPE_NAME %>.'
+SET_JUMPER_EMMC_BOOT = 'Set SW2 dip switch to 1(on position).'
 
 postProvisioningInstructions = [
 	instructions.BOARD_SHUTDOWN
 	instructions.REMOVE_INSTALL_MEDIA
+	SET_JUMPER_EMMC_BOOT
 	instructions.BOARD_REPOWER
 ]
 
@@ -15,7 +17,6 @@ module.exports =
 	name: 'Variscite DART-6UL'
 	arch: 'armv7hf'
 	state: 'released'
-	private: false
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
@@ -24,7 +25,7 @@ module.exports =
 		instructions.ETCHER_SD
 		instructions.EJECT_SD
 		instructions.FLASHER_WARNING
-		GOOEE_DART_6_UL_FLASH
+		SET_JUMPER_SD_BOOT
 	].concat(postProvisioningInstructions)
 
 	gettingStartedLink:
@@ -32,13 +33,11 @@ module.exports =
 		osx: 'http://docs.resin.io/dart6ul/nodejs/getting-started/#adding-your-first-device'
 		linux: 'http://docs.resin.io/dart6ul/nodejs/getting-started/#adding-your-first-device'
 
-	supportsBlink: true
-
 	yocto:
 		machine: 'imx6ul-var-dart'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
-		version: 'yocto-thud'
+		version: 'yocto-dunfell'
 		deployArtifact: 'balena-image-flasher-imx6ul-var-dart.balenaos-img'
 		compressed: true
 

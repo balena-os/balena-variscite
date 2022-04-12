@@ -17,7 +17,6 @@ module.exports =
 	name: 'Variscite VAR-SOM-MX7'
 	arch: 'armv7hf'
 	state: 'released'
-	private: false
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
@@ -34,13 +33,11 @@ module.exports =
 		osx: 'http://docs.resin.io/imx7-var-som/getting-started/#adding-your-first-device'
 		linux: 'http://docs.resin.io/imx7-var-som/getting-started/#adding-your-first-device'
 
-	supportsBlink: true
-
 	yocto:
 		machine: 'imx7-var-som'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
-		version: 'yocto-thud'
+		version: 'yocto-dunfell'
 		deployArtifact: 'balena-image-flasher-imx7-var-som.balenaos-img'
 		compressed: true
 
