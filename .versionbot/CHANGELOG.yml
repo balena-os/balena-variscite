@@ -1,4 +1,39 @@
 - commits:
+    - subject: Update layers/meta-balena to b7490ca45f22591b1e6f7fddc1bf5853f373c125
+      hash: e0a1622984f69512e061d5e3a7c43b1a9631b1fe
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b7490ca45f22591b1e6f7fddc1bf5853f373c125
+        changelog-entry: Update layers/meta-balena to b7490ca45f22591b1e6f7fddc1bf5853f373c125
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "mobynit: Update to v0.2.0"
+              hash: 1a6dbc795aa2546f38bbd4cef30d77f167e60182
+              body: |
+                Fixes #2589
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.96.0
+          title: "'mobynit: Update to v0.2.0'"
+          date: 2022-04-22T12:42:16.844Z
+    - subject: Update balena-yocto-scripts to 63e2b61fa462be4f68a2b7d8ca5084fd2d7d09b2
+      hash: 7ef75f37260eaca998061b80bd767aff269511d4
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 63e2b61fa462be4f68a2b7d8ca5084fd2d7d09b2
+        changelog-entry: Update balena-yocto-scripts to 63e2b61fa462be4f68a2b7d8ca5084fd2d7d09b2
+      author: Renovate Bot
+      nested: []
+  version: 2.96.0
+  title: "'Update layers/meta-balena digest to b7490ca'"
+  date: 2022-04-22T18:25:10.126Z
+- commits:
     - subject: Update layers/meta-balena to 7730a5a3808f7d154b47831f930adedecde1cbba
       hash: 8f7cb082000472241a836dd4304a81f39b883d23
       body: Update layers/meta-balena
