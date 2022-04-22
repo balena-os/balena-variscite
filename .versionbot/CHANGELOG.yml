@@ -1,4 +1,64 @@
 - commits:
+    - subject: Update layers/meta-balena to 7730a5a3808f7d154b47831f930adedecde1cbba
+      hash: 8f7cb082000472241a836dd4304a81f39b883d23
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 7730a5a3808f7d154b47831f930adedecde1cbba
+        changelog-entry: Update layers/meta-balena to 7730a5a3808f7d154b47831f930adedecde1cbba
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "resin-device-register: avoid blocking the flasher when not connected"
+              hash: b5c521404c14df8a5d14e2789c97eebe79eb7d96
+              body: >
+                Starting with v2.91.6 device provisioning will not start if the
+                device
+
+                was unable to register in the cloud due to lack of internet connectivity.
+
+                To avoid this, we switch to retrying 3 times with the usual 2 second delay
+
+                between attempts, after which the flashing process will start.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-2.95.17
+          title: "'resin-device-register: improve provisioning'"
+          date: 2022-04-22T08:33:14.274Z
+        - commits:
+            - subject: Package iwlwifi-QuZ-a0-hr-b0 firmware separately
+              hash: 261534942e5fe5b60680f51b129f33f00363a88e
+              body: |
+                We add this fw on its own package so that boards can add it to
+                rootfs (for Intel NUC 11th generation more specifically)
+              footer:
+                Changelog-entry: Package iwlwifi-QuZ-a0-hr-b0 firmware separately
+                changelog-entry: Package iwlwifi-QuZ-a0-hr-b0 firmware separately
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.95.16
+          title: "'linux-firmware: Package iwlwifi-QuZ-a0-hr-b0 firmware'"
+          date: 2022-04-19T13:00:33.214Z
+    - subject: Update balena-yocto-scripts to ff9465a20e32843b3b01ec3efa0d8a5390e6d66c
+      hash: 2da3537d862f2cbd4cfe33ca5aeb5ad713ec68be
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to ff9465a20e32843b3b01ec3efa0d8a5390e6d66c
+        changelog-entry: Update balena-yocto-scripts to ff9465a20e32843b3b01ec3efa0d8a5390e6d66c
+      author: Renovate Bot
+      nested: []
+  version: 2.95.17
+  title: "'Update layers/meta-balena digest to 7730a5a'"
+  date: 2022-04-22T12:36:15.719Z
+- commits:
     - subject: Update balena-yocto-scripts to a5b7cacc6dd4e3a3e03c77513760b6d3a89a68d0
       hash: cdce8ecb4164a66c1b6513078d8216fe21ea952c
       body: Update balena-yocto-scripts
