@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update BSP in order to fix WiFi for Variscite DART-6UL
+      hash: c5a996d27188d0854546111ef30217be2bae742b
+      body: |
+        We update so we have a fix for WiFi not available for
+        Variscite DART-6UL because of missing i2c-tools in the rootfs.
+      footer:
+        Changelog-entry: Update BSP in order to fix WiFi for Variscite DART-6UL
+        changelog-entry: Update BSP in order to fix WiFi for Variscite DART-6UL
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+    - subject: Update layers/meta-balena to 54c754e97eb0ba3dcb4119908cc368e200c2f4ca
+      hash: 52cc203ca94b03af60eb19b4159753cced87b7d4
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 54c754e97eb0ba3dcb4119908cc368e200c2f4ca
+        changelog-entry: Update layers/meta-balena to 54c754e97eb0ba3dcb4119908cc368e200c2f4ca
+      author: Renovate Bot
+      nested: []
+  version: 2.98.1
+  title: "'layers/meta-variscite-fslc: Update BSP layer'"
+  date: 2022-04-25T10:36:51.565Z
+- commits:
     - subject: Update layers/meta-balena to 5498ce099c7316a58d21c35d970292f1e2443d97
       hash: 5c70397eada8b0a79ebd6a77fb5cb0957349a036
       body: Update layers/meta-balena

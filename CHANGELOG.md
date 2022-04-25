@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.98.1
+## (2022-04-25)
+
+* Update BSP in order to fix WiFi for Variscite DART-6UL [Florin Sarbu]
+* Update layers/meta-balena to 54c754e97eb0ba3dcb4119908cc368e200c2f4ca [Renovate Bot]
+
 # v2.98.0
 ## (2022-04-23)
 
