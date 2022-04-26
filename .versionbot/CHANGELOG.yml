@@ -1,4 +1,52 @@
 - commits:
+    - subject: Update layers/meta-balena to edda207aee705431cd02443bdfe8d6271228b96d
+      hash: 45305d752c3c61597cfa277be6da72239bf0530c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to edda207aee705431cd02443bdfe8d6271228b96d
+        changelog-entry: Update layers/meta-balena to edda207aee705431cd02443bdfe8d6271228b96d
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "networkmanager: Use default DHCP timeout"
+              hash: 6175420731baa349c8d197151189462a23b2f460
+              body: >
+                This reverts 5047757 where we set the global DHCP timeout for
+                ipv4 to
+
+                infinity to mitigate problems with routers that do not respond to DHCP
+
+                requests in time.
+
+
+                This however causes issues on some routers, which after power cycle fail to
+
+                renew leases after they are expired.
+
+
+                The same ipv4.dhcp-timeout can be specified on per connection basis. Since
+
+                the case with lease renewal due to router power cycle is a more common case,
+
+                it is better to keep the global dhcp-timeout default unmodified. If the
+
+                setting needs adjustment then it can be overwritten in the particular
+
+                connection profile.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+              nested: []
+          version: meta-balena-2.98.5
+          title: "'networkmanager: Use default DHCP timeout'"
+          date: 2022-04-26T11:36:14.839Z
+  version: 2.98.5
+  title: "'Update layers/meta-balena digest to edda207'"
+  date: 2022-04-26T16:51:51.034Z
+- commits:
     - subject: Update balena-yocto-scripts to 13da1d2fd4483ba9a2cf9d3d7146985bbd720c6b
       hash: 643f10dbe319aa628c2b9775e7f36663b1169113
       body: Update balena-yocto-scripts
