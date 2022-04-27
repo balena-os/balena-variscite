@@ -1,4 +1,54 @@
 - commits:
+    - subject: Update layers/meta-balena to 9431a0dcafd13d0218b875f40e7e642d042ae4aa
+      hash: 03b90ba8be8d421e1ec1628ce4ae7b86a00c325c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 9431a0dcafd13d0218b875f40e7e642d042ae4aa
+        changelog-entry: Update layers/meta-balena to 9431a0dcafd13d0218b875f40e7e642d042ae4aa
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "linux-firmware: package QuZ-a0-jf-b0 separately"
+              hash: 20695e32e0e8b3d60267090530b3cd41a3450d56
+              body: |
+                This is used by Intel Wireless-AC 9462
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.98.7
+          title: "'linux-firmware: package QuZ-a0-jf-b0 separately'"
+          date: 2022-04-27T09:22:39.188Z
+        - commits:
+            - subject: "timeinit/timesync-https: Update rtc after setting system time"
+              hash: f16451b49b77bd7d3f5f82d20e0605a9797832eb
+              body: >
+                This solves a problem seen on a device on which, although
+
+                timeinit-rtc finishes running before timesync-https, chronyd
+
+                sets the system time to the incorrect rtc time
+
+                as soon as timesync-https finished running and setting the correct date
+
+                from the servers.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-2.98.6
+          title: "'timeinit/timesync-https: Update rtc after setting system time'"
+          date: 2022-04-26T19:32:46.066Z
+  version: 2.98.7
+  title: "'Update layers/meta-balena digest to 9431a0d'"
+  date: 2022-04-27T16:46:37.038Z
+- commits:
     - subject: Update layers/meta-balena to edda207aee705431cd02443bdfe8d6271228b96d
       hash: 45305d752c3c61597cfa277be6da72239bf0530c
       body: Update layers/meta-balena
