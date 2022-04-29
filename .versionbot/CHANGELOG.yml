@@ -1,4 +1,52 @@
 - commits:
+    - subject: Update layers/meta-balena to e13f4afb2c6311450db3fc4e9cb74ef31132e8d6
+      hash: 5e20f5cebe69f7cb80234bb6dfd10adc6be45e79
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to e13f4afb2c6311450db3fc4e9cb74ef31132e8d6
+        changelog-entry: Update layers/meta-balena to e13f4afb2c6311450db3fc4e9cb74ef31132e8d6
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: os: create swap test"
+              hash: cb19043d77a68e24e48a96acb2391938acd7cd71
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.98.11
+          title: "'tests: os: create swap test'"
+          date: 2022-04-29T19:55:50.927Z
+    - subject: Update layers/meta-balena to 45726c6e1009bd1988071131762c483193a5ef59
+      hash: f0df32e70ca1fba42ae80ab1d6e7b79539fc6ce1
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 45726c6e1009bd1988071131762c483193a5ef59
+        changelog-entry: Update layers/meta-balena to 45726c6e1009bd1988071131762c483193a5ef59
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: os: create swap test"
+              hash: cb19043d77a68e24e48a96acb2391938acd7cd71
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.98.11
+          title: "'tests: os: create swap test'"
+          date: 2022-04-29T19:55:50.927Z
+  version: 2.98.11
+  title: "'Update layers/meta-balena digest to e13f4af'"
+  date: 2022-04-29T23:06:15.238Z
+- commits:
     - subject: Update layers/meta-balena to fc45fb36cc79e5b7eab1017f4e5713773aba7ed1
       hash: d333347e7de28bb43c4b5826e832b6c3f974a6d0
       body: Update layers/meta-balena
