@@ -1,0 +1,78 @@
+From da77713e03447f3cd106b00d97ab03441aeceb09 Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Wed, 27 Apr 2022 11:05:20 +0200
+Subject: [PATCH] More debug
+
+---
+ arch/arm/mm/fault.c                   | 14 +++++++++++++-
+ arch/arm/mm/fsr-2level.c              |  6 +++---
+ drivers/pci/controller/dwc/pci-imx6.c |  2 +-
+ 3 files changed, 17 insertions(+), 5 deletions(-)
+
+diff --git a/arch/arm/mm/fault.c b/arch/arm/mm/fault.c
+index bd0f4821f7e1..2ccaf37176bf 100644
+--- a/arch/arm/mm/fault.c
++++ b/arch/arm/mm/fault.c
+@@ -17,7 +17,7 @@
+ #include <linux/sched/debug.h>
+ #include <linux/highmem.h>
+ #include <linux/perf_event.h>
+-
++//#include <linux/sched.h> 
+ #include <asm/pgtable.h>
+ #include <asm/system_misc.h>
+ #include <asm/system_info.h>
+@@ -536,6 +536,18 @@ do_DataAbort(unsigned long addr, unsigned int fsr, struct pt_regs *regs)
+ 	pr_alert("8<--- cut here ---\n");
+ 	pr_alert("Unhandled fault: %s (0x%03x) at 0x%08lx\n",
+ 		inf->name, fsr, addr);
++	pr_alert("<<>>\n");
++
++	if (current) {
++        	if (regs && user_mode(regs)) {
++			pr_alert("In user mode - Name :%s \n Process id: %d\n ",current->comm,current->pid);
++		} else {
++			pr_alert("In kernel mode or no regs");
++		}
++		
++	} else {
++		pr_alert("NO CURRENT!");
++	}
+ 	show_pte(KERN_ALERT, current->mm, addr);
+ 
+ 	arm_notify_die("", regs, inf->sig, inf->code, (void __user *)addr,
+diff --git a/arch/arm/mm/fsr-2level.c b/arch/arm/mm/fsr-2level.c
+index f2be95197265..6c971e625aa9 100644
+--- a/arch/arm/mm/fsr-2level.c
++++ b/arch/arm/mm/fsr-2level.c
+@@ -8,11 +8,11 @@ static struct fsr_info fsr_info[] = {
+ 	{ do_bad,		SIGBUS,	 BUS_ADRALN,	"alignment exception"		   },
+ 	{ do_bad,		SIGKILL, 0,		"terminal exception"		   },
+ 	{ do_bad,		SIGBUS,	 BUS_ADRALN,	"alignment exception"		   },
+-	{ do_bad,		SIGBUS,	 0,		"external abort on linefetch"	   },
++	{ do_bad,		SIGBUS,	 0,		"external abort on linefetch 1"	   },
+ 	{ do_translation_fault,	SIGSEGV, SEGV_MAPERR,	"section translation fault"	   },
+-	{ do_bad,		SIGBUS,	 0,		"external abort on linefetch"	   },
++	{ do_bad,		SIGBUS,	 0,		"external abort on linefetch 2"	   },
+ 	{ do_page_fault,	SIGSEGV, SEGV_MAPERR,	"page translation fault"	   },
+-	{ do_bad,		SIGBUS,	 0,		"external abort on non-linefetch"  },
++	{ do_bad,		SIGBUS,	 0,		"external abort on non-linefetch 3"  },
+ 	{ do_bad,		SIGSEGV, SEGV_ACCERR,	"section domain fault"		   },
+ 	{ do_bad,		SIGBUS,	 0,		"external abort on non-linefetch"  },
+ 	{ do_bad,		SIGSEGV, SEGV_ACCERR,	"page domain fault"		   },
+diff --git a/drivers/pci/controller/dwc/pci-imx6.c b/drivers/pci/controller/dwc/pci-imx6.c
+index b58c0180ae63..d21871df053e 100644
+--- a/drivers/pci/controller/dwc/pci-imx6.c
++++ b/drivers/pci/controller/dwc/pci-imx6.c
+@@ -3137,7 +3137,7 @@ static int __init imx6_pcie_init(void)
+ 	 * accessing some uninitialized driver state.
+ 	 */
+ 	hook_fault_code(8, imx6q_pcie_abort_handler, SIGBUS, 0,
+-			"external abort on non-linefetch");
++			"external abort on non-linefetch pcie");
+ #endif
+ 
+ 	return platform_driver_register(&imx6_pcie_driver);
+-- 
+2.17.1
+

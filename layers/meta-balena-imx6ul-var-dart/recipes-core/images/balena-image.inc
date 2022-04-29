@@ -92,6 +92,8 @@ IMAGE_INSTALL_append_imx6ul-var-dart = " \
     brcm-patchram-plus \
     pm-utils \
     pm-services \
+    linux-firmware-imx-sdma-imx6q \
+    strace \
 "
 
 IMAGE_INSTALL_append_var-som-mx6 = " \
