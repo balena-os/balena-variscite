@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.20+rev1
+## (2022-05-11)
+
+* Add support for additional Quectel modems [Zahari Petkov]
+
 # v2.98.20
 ## (2022-05-11)
 

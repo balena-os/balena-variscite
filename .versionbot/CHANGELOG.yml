@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add support for additional Quectel modems
+      hash: 7ba57702e4924db8dff8f8eec817e251d2fc2cd6
+      body: |
+        Kernel changes as done for linux-raspberrypi according to
+        https://github.com/balena-os/balena-raspberrypi/issues/736
+      footer:
+        Changelog-entry: Add support for additional Quectel modems
+        changelog-entry: Add support for additional Quectel modems
+        Signed-off-by: Zahari Petkov <zahari@balena.io>
+        signed-off-by: Zahari Petkov <zahari@balena.io>
+      author: Zahari Petkov
+      nested: []
+  version: 2.98.20+rev1
+  title: "'linux-variscite: Backport support for Quectel EG91 in option driver'"
+  date: 2022-05-11T05:06:26.891Z
+- commits:
     - subject: Update layers/meta-balena to c98cda89f0be6c168599a2a155ec42a148d0a6cc
       hash: 8ee5fcd1a12d3bb63c20838d5e484cb9406f7e0e
       body: Update layers/meta-balena
