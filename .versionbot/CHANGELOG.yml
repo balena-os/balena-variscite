@@ -1,4 +1,26 @@
 - commits:
+    - subject: Update layers/meta-balena to 7ca0039a8faf417f55cbd72b85a346e6407da04f
+      hash: e841bc9b065f0482bcf3d2bb6b0f6981b28e6195
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 7ca0039a8faf417f55cbd72b85a346e6407da04f
+        changelog-entry: Update layers/meta-balena to 7ca0039a8faf417f55cbd72b85a346e6407da04f
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "patch: Fix heading anchor links in CDS doc index"
+              hash: 0886fe3323fa2431a780fc701d45ac601b5b0980
+              body: ""
+              footer: {}
+              author: Vipul Gupta
+              nested: []
+          version: meta-balena-2.98.27
+          title: "'patch: Fix heading anchor links in CDS doc index'"
+          date: 2022-05-18T12:53:30.139Z
+  version: 2.98.27
+  title: "'Update layers/meta-balena digest to 7ca0039'"
+  date: 2022-05-18T16:31:04.288Z
+- commits:
     - subject: Update layers/meta-balena to 5399363b3758860b22ac93a4406d62de5d88b229
       hash: 092a0d878f12b465ad80cc45b1ed999e1a268316
       body: Update layers/meta-balena
