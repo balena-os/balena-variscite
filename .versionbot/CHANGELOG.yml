@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 6a236f469fbc796adc3c5f63031466fc1dbab013
+      hash: 104b29df2217b4f872a1bd541bc00d54a8d9b8bf
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 6a236f469fbc796adc3c5f63031466fc1dbab013
+        changelog-entry: Update contracts to 6a236f469fbc796adc3c5f63031466fc1dbab013
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add Topic tdpzu9 device"
+              hash: 2ae943a46316f71da324dbfaa8c855cafc8eb0ae
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+                signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+              author: Francois
+          version: contracts-1.13.74
+          title: "'hw.device-type: Add Topic tdpzu9 device'"
+          date: 2022-05-20T14:27:05.871Z
+  version: 2.98.28+rev1
+  title: "'Update contracts digest to 6a236f4'"
+  date: 2022-05-20T21:27:56.861Z
+- commits:
     - subject: Update layers/meta-balena to 7e98e8f49aee1f5538da16ff564c7d8fb009800e
       hash: fd6b3b163ecf22c15114c1c49865c98b68f20116
       body: Update layers/meta-balena
