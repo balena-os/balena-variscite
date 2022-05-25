@@ -1,4 +1,30 @@
 - commits:
+    - subject: "balena-image: Fix ttymxc2 not working on DART6UL"
+      hash: 9986b8719f9b30637d5ba15a0cd63c82d33fe629
+      body: |
+        If the sdma firmware is not present in the rootfs,
+        the imx_sdma driver loads the firmware from ROM. However, the
+        sdma firmware provided by the BSP is the one that
+        should be used for uarts to work properly.
+      footer:
+        Changelog-entry: "balena-image: Fix ttymxc2 not working on DART6UL"
+        changelog-entry: "balena-image: Fix ttymxc2 not working on DART6UL"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+    - subject: Update contracts to 6ffb1c8d87c8d0940405cbbc954aa625b4b1f94a
+      hash: 75c42b5c890004ac5a5d2c98674acd283d1bbe3b
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 6ffb1c8d87c8d0940405cbbc954aa625b4b1f94a
+        changelog-entry: Update contracts to 6ffb1c8d87c8d0940405cbbc954aa625b4b1f94a
+      author: Renovate Bot
+      nested: []
+  version: 2.98.28+rev3
+  title: "'balena-image: Fix ttymxc2 not working on DART6UL'"
+  date: 2022-05-25T12:51:25.578Z
+- commits:
     - subject: Update balena-yocto-scripts to ae2cc2c2a69beec1c39333dd08624e4fec02c6e4
       hash: 5d09088b50bf20a0a147713456429884fc55c67b
       body: Update balena-yocto-scripts

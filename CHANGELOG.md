@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.98.28+rev3
+## (2022-05-25)
+
+* balena-image: Fix ttymxc2 not working on DART6UL [Alexandru Costache]
+* Update contracts to 6ffb1c8d87c8d0940405cbbc954aa625b4b1f94a [Renovate Bot]
+
 # v2.98.28+rev2
 ## (2022-05-20)
 
