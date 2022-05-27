@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v2.98.32
+## (2022-05-27)
+
+
+<details>
+<summary> Update layers/meta-balena to cc2bc321c33d9c2af1f4566793e16b075e425a7c [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.32
+> ### (2022-05-27)
+> 
+> * supervisor: Update balena-supervisor to v13.1.11 [Felipe Lalanne]
+> 
+> ## meta-balena-2.98.31
+> ### (2022-05-26)
+> 
+> * tests: os: config-json: fix race by waiting for InvocationID change [Joseph Kogut]
+> * tests: os: reformat config-json tests [Joseph Kogut]
+> 
+</details>
+
 # v2.98.30
 ## (2022-05-26)
 
