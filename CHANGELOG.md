@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.33+rev1
+## (2022-05-31)
+
+* conf/layer: Blacklist BSP splash logos [Alexandru Costache]
+
 # v2.98.33
 ## (2022-05-28)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: "conf/layer: Blacklist BSP splash logos"
+      hash: 1be4857d268f141b8454a945af4b6e8ac0ae49cc
+      body: ""
+      footer:
+        Changelog-entry: "conf/layer: Blacklist BSP splash logos"
+        changelog-entry: "conf/layer: Blacklist BSP splash logos"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.98.33+rev1
+  title: "'Remove boot splash provided by BSP'"
+  date: 2022-05-31T09:47:14.263Z
+- commits:
     - subject: Update layers/meta-balena to 95c96e0624507fd9701912c67d3ae5ec5dbdf6f9
       hash: 4e941c7f25286d260977c23d5f6d2daf4b9622ce
       body: Update layers/meta-balena
