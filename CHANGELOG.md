@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.41+rev1
+## (2022-06-06)
+
+* docker-disk: Specify LED for 6ul-var-dart [Alexandru Costache]
+
 # v2.98.41
 ## (2022-06-06)
 

@@ -1,4 +1,23 @@
 - commits:
+    - subject: "docker-disk: Specify LED for 6ul-var-dart"
+      hash: 55e99f0eb391c813cc31de70de04d9aa5e3ddb4c
+      body: |
+        Commit 4bb6eb1f732957e605f00e47b068199f14ff1765 in the
+        contracts repository switched the LED support for this
+        device-type to 'true'. We thus need to add the LED path
+        in the supervisor.
+      footer:
+        Changelog-entry: "docker-disk: Specify LED for 6ul-var-dart"
+        changelog-entry: "docker-disk: Specify LED for 6ul-var-dart"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.98.41+rev1
+  title: "'Add led path to 6UL-VAR-DART, update provisioning instructions for
+    iMX7-VAR-SOM'"
+  date: 2022-06-06T09:18:53.709Z
+- commits:
     - subject: Update layers/meta-balena to dafd28999c58f4b4ae7e6fb28a4923e0b65d4a54
       hash: 2947dd2113d33a481f8ed6b445e988af3e56b699
       body: Update layers/meta-balena
