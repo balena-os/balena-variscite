@@ -1,13 +1,14 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
-GOOEE_IMX7_VAR_SOM_FLASH = 'Set the SW1 BOOT SELECT switch to SDCARD. Insert SD CARD. Power up the <%= TYPE_NAME %>.'
-GOOEE_IMX7_VAR_SOM_POST_FLASH = 'Set the SW1 BOOT SELECT switch to eMMC.'
+IMX7_VAR_SOM_FLASH = 'Set the SW1 BOOT SELECT switch to SDCARD. Insert SD CARD. Power up the <%= TYPE_NAME %>.'
+IMX7_VAR_SOM_POST_PROVISIONING = 'The device is performing a shutdown, please wait until the  LEDs are off and the device enters post-provisioning state in Balena cloud.'
+IMX7_VAR_SOM_POST_FLASH = 'Set the SW1 BOOT SELECT switch to eMMC.'
 
 postProvisioningInstructions = [
-	instructions.BOARD_SHUTDOWN
+	IMX7_VAR_SOM_POST_PROVISIONING
 	instructions.REMOVE_INSTALL_MEDIA
-	GOOEE_IMX7_VAR_SOM_POST_FLASH
+	IMX7_VAR_SOM_POST_FLASH
 	instructions.BOARD_REPOWER
 ]
 
@@ -25,7 +26,7 @@ module.exports =
 		instructions.ETCHER_SD
 		instructions.EJECT_SD
 		instructions.FLASHER_WARNING
-		GOOEE_IMX7_VAR_SOM_FLASH
+		IMX7_VAR_SOM_FLASH
 	].concat(postProvisioningInstructions)
 
 	gettingStartedLink:
