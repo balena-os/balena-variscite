@@ -1,4 +1,22 @@
 - commits:
+    - subject: Add build and deploy workflow
+      hash: 8c89454e34a65855a8ac64fdee819161a9ee5359
+      body: >
+        This workflow will launch a Jenkins build and draft deploy job when a
+        new
+
+        tag is made.
+      footer:
+        Changelog-entry: Add build and deploy workflow
+        changelog-entry: Add build and deploy workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.41+rev2
+  title: "'workflows: Add build and deploy on release tag workflow'"
+  date: 2022-06-06T19:35:54.283Z
+- commits:
     - subject: "docker-disk: Specify LED for 6ul-var-dart"
       hash: 55e99f0eb391c813cc31de70de04d9aa5e3ddb4c
       body: |
