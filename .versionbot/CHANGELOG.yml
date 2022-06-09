@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to fa207fb198e4e4736d3937901b5ef6d25562eb32
+      hash: 6336f43e425ace5d165fdd35b25522e7f16ae5d1
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to fa207fb198e4e4736d3937901b5ef6d25562eb32
+        changelog-entry: Update layers/meta-balena to fa207fb198e4e4736d3937901b5ef6d25562eb32
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: cloud: update container names"
+              hash: 8b85216ea886c77788ceaf377ee775e9c48913df
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.98.43
+          title: "'tests: cloud: update container names'"
+          date: 2022-06-09T11:03:45.627Z
+  version: 2.98.43
+  title: "'Update layers/meta-balena digest to fa207fb'"
+  date: 2022-06-09T22:04:59.334Z
+- commits:
     - subject: "linux-variscite: add spi ind device tree for 6UL Custom board"
       hash: f16c6cfeddea11a7a94642eb45cf2a3d3904574d
       body: ""
