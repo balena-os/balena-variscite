@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.42+rev1
+## (2022-06-09)
+
+* linux-variscite: add spi ind device tree for 6UL Custom board [Alexandru Costache]
+
 # v2.98.42
 ## (2022-06-07)
 

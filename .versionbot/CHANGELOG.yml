@@ -1,4 +1,18 @@
 - commits:
+    - subject: "linux-variscite: add spi ind device tree for 6UL Custom board"
+      hash: f16c6cfeddea11a7a94642eb45cf2a3d3904574d
+      body: ""
+      footer:
+        Changelog-entry: "linux-variscite: add spi ind device tree for 6UL Custom board"
+        changelog-entry: "linux-variscite: add spi ind device tree for 6UL Custom board"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.98.42+rev1
+  title: "'linux-variscite: add spi ind device tree for 6UL Custom board'"
+  date: 2022-06-09T10:35:54.811Z
+- commits:
     - subject: Update layers/meta-balena to 3a62a83ec12b05377b46d46bee9661b8b6b4a090
       hash: fcca4364198efbd9a95259e081c71e83b242e81f
       body: Update layers/meta-balena
