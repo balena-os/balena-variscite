@@ -1,4 +1,23 @@
 - commits:
+    - subject: "balena-image: Instal dtbs in the rootfs"
+      hash: ac0cf4b7a8179633f66aafd041440f437673a577
+      body: |
+        but keep the in the boot partition of the
+        flasher images, for cases where they can be
+        loaded by the generic u-boot without balena
+        customizations. Loading dtbs from the rootfs
+        should be done for all device types, where possible.
+      footer:
+        Changelog-entry: "balena-image: Instal dtbs in the rootfs"
+        changelog-entry: "balena-image: Instal dtbs in the rootfs"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.98.45+rev1
+  title: "'variscite imx6 - load dtbs from the rootfs image'"
+  date: 2022-06-10T10:10:51.453Z
+- commits:
     - subject: Update layers/meta-balena to 466c0e3a56da6605f033d8fd1b37c301c96af979
       hash: 19c48dc7907341c8cb5b5f72380a9295eb1c8683
       body: Update layers/meta-balena

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.45+rev1
+## (2022-06-10)
+
+* balena-image: Instal dtbs in the rootfs [Alexandru Costache]
+
 # v2.98.45
 ## (2022-06-10)
 
