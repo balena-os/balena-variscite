@@ -1,0 +1,40 @@
+From 4861f6e1b1fbc33712c0a82179a38d77f061fe4a Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Fri, 10 Jun 2022 11:52:56 +0200
+Subject: [PATCH] mx6-var-som: Load dtb and kernel from rootfs
+
+Attempt to first load the dtb and kernel pair from
+the rootfs, and fallback to the boot partition in
+case of a rollback to an older release which does not
+yet store them in the rootfs.
+
+Upstream-status: Inappropriate [configuration]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ include/configs/mx6var_som.h | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+diff --git a/include/configs/mx6var_som.h b/include/configs/mx6var_som.h
+index b5321da580..689da22db6 100644
+--- a/include/configs/mx6var_som.h
++++ b/include/configs/mx6var_som.h
+@@ -112,10 +112,14 @@
+ 		"load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${script};\0" \
+ 	"bootscript=echo Running bootscript from mmc ...; " \
+ 		"source\0" \
+-	"loaduimage=load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${uimage}\0" \
++	"loadimage=if load mmc ${mmcdev}:${resin_root_part} ${loadaddr} boot/${image}; then echo Loaded ${image} from rootfs; " \
++		"else if load mmc ${mmcdev}:${resin_boot_part} ${loadaddr} ${image}; then echo Loaded ${image} from boot partition; " \
++		"else echo Failed to load ${image}; fi; fi; \0" \
+ 	"loadfdt=run findfdt; " \
+ 		"echo fdt_file=${fdt_file}; " \
+-		"load mmc ${mmcdev}:${mmcbootpart} ${fdt_addr} ${bootdir}/${fdt_file}\0" \
++		"if load mmc ${mmcdev}:${resin_root_part} ${fdt_addr} boot/${fdt_file}; then echo Loaded ${fdt_file} from rootfs; " \
++		"else if load mmc ${mmcdev}:${resin_boot_part} ${fdt_addr} ${fdt_file}; then echo Loaded ${fdt_file} from boot partition; " \
++		"else echo Failed to load ${fdt_file}; fi; fi; \0" \
+ 	"mmcboot=echo Booting from mmc ...; " \
+ 		"run mmcargs; " \
+ 		"run videoargs; " \
+-- 
+2.17.1
+
