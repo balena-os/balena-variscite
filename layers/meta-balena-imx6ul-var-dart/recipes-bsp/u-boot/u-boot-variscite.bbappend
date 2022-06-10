@@ -10,11 +10,13 @@ SRC_URI_append = " \
     file://0001-Fix-SPL-compile-error-with-gcc-7.3.0.patch \
     file://mx6-var-som-integrate-with-resin-configuration.patch \
     file://0001-fat-Fix-file-write-failure-when-saving-bootcount.patch \
+    file://0001-imx6ul-Load-dtb-from-rootfs-first.patch \
 "
 
 SRC_URI_append_var-som-mx6 = " \
     file://0001-Load-kernel-and-rootfs-from-MMC-when-booting-from-NA.patch \
     file://0001-load-splash-emmc.patch \
+    file://0001-mx6-var-som-Load-dtb-and-kernel-from-rootfs.patch \
 "
 
 SRC_URI_append_imx7-var-som = " \

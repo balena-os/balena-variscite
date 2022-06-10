@@ -5,31 +5,7 @@ IMAGE_FSTYPES_append_imx7-var-som = " balenaos-img"
 # Customize balenaos-img
 BALENA_BOOT_PARTITION_FILES_imx6ul-var-dart = " \
     zImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/zImage \
-    ${MACHINE}-6ulcustomboard-emmc-sd-card.dtb:/ \
-    ${MACHINE}-6ulcustomboard-emmc-wifi.dtb:/ \
-    ${MACHINE}-6ulcustomboard-nand-sd-card.dtb:/ \
-    ${MACHINE}-6ulcustomboard-nand-wifi.dtb:/ \
-    imx6ul-var-som-concerto-board-emmc-sd-card.dtb:/ \
-    imx6ul-var-som-concerto-board-emmc-wifi.dtb:/ \
-    imx6ul-var-som-concerto-board-nand-sd-card.dtb:/ \
-    imx6ul-var-som-concerto-board-nand-wifi.dtb:/ \
-    imx6ull-var-dart-6ulcustomboard-emmc-sd-card.dtb:/ \
-    imx6ull-var-dart-6ulcustomboard-emmc-wifi.dtb:/ \
-    imx6ull-var-dart-6ulcustomboard-nand-sd-card.dtb:/ \
-    imx6ull-var-dart-6ulcustomboard-nand-wifi.dtb:/ \
-    imx6ull-var-som-concerto-board-emmc-sd-card.dtb:/ \
-    imx6ull-var-som-concerto-board-emmc-wifi.dtb:/ \
-    imx6ull-var-som-concerto-board-nand-sd-card.dtb:/ \
-    imx6ull-var-som-concerto-board-nand-wifi.dtb:/ \
-    imx6ulz-var-dart-6ulcustomboard-emmc-sd-card.dtb:/ \
-    imx6ulz-var-dart-6ulcustomboard-emmc-wifi.dtb:/ \
-    imx6ulz-var-dart-6ulcustomboard-nand-sd-card.dtb:/ \
-    imx6ulz-var-dart-6ulcustomboard-nand-wifi.dtb:/ \
-    imx6ulz-var-som-concerto-board-emmc-sd-card.dtb:/ \
-    imx6ulz-var-som-concerto-board-emmc-wifi.dtb:/ \
-    imx6ulz-var-som-concerto-board-nand-sd-card.dtb:/ \
-    imx6ulz-var-som-concerto-board-nand-wifi.dtb:/ \
-    "
+"
 
 IMAGE_CMD_balenaos-img_append_imx6ul-var-dart () {
     dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY} of=${BALENA_RAW_IMG} conv=notrunc seek=2 bs=512
@@ -38,22 +14,9 @@ IMAGE_CMD_balenaos-img_append_imx6ul-var-dart () {
 
 BALENA_BOOT_PARTITION_FILES_var-som-mx6 = " \
     uImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/uImage \
-    imx6dl-var-som-cap.dtb:/imx6dl-var-som-cap.dtb \
-    imx6dl-var-som-res.dtb:/imx6dl-var-som-res.dtb \
-    imx6dl-var-som-solo-cap.dtb:/imx6dl-var-som-solo-cap.dtb \
-    imx6dl-var-som-solo-res.dtb:/imx6dl-var-som-solo-res.dtb \
-    imx6dl-var-som-solo-vsc.dtb:/imx6dl-var-som-solo-vsc.dtb \
-    imx6dl-var-som-vsc.dtb:/imx6dl-var-som-vsc.dtb \
-    imx6q-var-dart.dtb:/imx6q-var-dart.dtb \
-    imx6q-var-som-cap.dtb:/imx6q-var-som-cap.dtb \
-    imx6q-var-som-res.dtb:/imx6q-var-som-res.dtb \
-    imx6q-var-som-vsc.dtb:/imx6q-var-som-vsc.dtb \
-    imx6qp-var-som-cap.dtb:/imx6qp-var-som-cap.dtb \
-    imx6qp-var-som-res.dtb:/imx6qp-var-som-res.dtb \
-    imx6qp-var-som-vsc.dtb:/imx6qp-var-som-vsc.dtb \
     ${SPL_BINARY}-nand: \
     u-boot-${MACHINE}.img-nand: \
-    "
+"
 
 IMAGE_CMD_balenaos-img_append_var-som-mx6 () {
     dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY} of=${BALENA_RAW_IMG} conv=notrunc seek=2 bs=512
@@ -62,16 +25,16 @@ IMAGE_CMD_balenaos-img_append_var-som-mx6 () {
 
 BALENA_BOOT_PARTITION_FILES_imx7-var-som = " \
     zImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/zImage \
-    imx7d-var-som-emmc-m4.dtb:/imx7d-var-som-emmc-m4.dtb \
-    imx7d-var-som-emmc.dtb:/imx7d-var-som-emmc.dtb \
-    imx7d-var-som-nand-m4.dtb:/imx7d-var-som-nand-m4.dtb \
-    imx7d-var-som-nand.dtb:/imx7d-var-som-nand.dtb \
-    "
+"
 
 IMAGE_CMD_balenaos-img_append_imx7-var-som () {
     dd if=${DEPLOY_DIR_IMAGE}/${SPL_BINARY}-sd of=${BALENA_RAW_IMG} conv=notrunc seek=2 bs=512
     dd if=${DEPLOY_DIR_IMAGE}/u-boot-${MACHINE}.img-sd of=${BALENA_RAW_IMG} conv=notrunc seek=69 bs=1K
 }
+
+IMAGE_INSTALL_append = " \
+	kernel-devicetree \
+"
 
 IMAGE_INSTALL_append_imx7-var-som = " \
 				     bcm43xx-utils \
@@ -82,7 +45,6 @@ IMAGE_INSTALL_append_imx7-var-som = " \
 				     pm-services \
 				     linux-firmware-imx-sdma-imx7d \
 				     firmware-imx-epdc \
-				     kernel-devicetree \
 "
 
 IMAGE_INSTALL_append_imx6ul-var-dart = " \
@@ -98,6 +60,7 @@ IMAGE_INSTALL_append_imx6ul-var-dart = " \
 IMAGE_INSTALL_append_var-som-mx6 = " \
     mtd-utils \
     imx-kobs \
+    linux-firmware-imx-sdma-imx6q \
 "
 
 do_image_balenaos-img[depends] += " virtual/bootloader:do_deploy"
