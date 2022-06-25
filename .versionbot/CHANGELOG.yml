@@ -1,4 +1,79 @@
 - commits:
+    - subject: Update layers/meta-balena to 34e139b190f7aef385f9d7a831fe90e5efee007d
+      hash: e80bd55cdec535666c88b8052559d2b89d0cd712
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 34e139b190f7aef385f9d7a831fe90e5efee007d
+        changelog-entry: Update layers/meta-balena to 34e139b190f7aef385f9d7a831fe90e5efee007d
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: make apiKey an optional parameter"
+              hash: 5b959d374810ab1d5e82d3017b91e678d50e4a2d
+              body: >
+                When accessing a test device as part of a fleet, a cloud API key
+                is
+
+                required in order to generate an SSH key and access the device through
+
+                the VPN. However, when accessing a device locally, such as a QEMU
+
+                instance running on the workstation itself, we have a direct path, and
+
+                no VPN is necessary.
+
+
+                Make the apiKey optional, and don't login when it's not specified. This
+
+                allows direct connections to work without it.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.99.20
+          title: "'tests: os: make apiKey an optional parameter'"
+          date: 2022-06-24T20:23:18.792Z
+        - commits:
+            - subject: "tests: os: purge-data: reduce intervals in waitUntil"
+              hash: 1d1bc06cfbaf7be838190cf33427aa63f5b61788
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.99.19
+          title: "'tests: os: purge-data: reduce intervals in waitUntil'"
+          date: 2022-06-24T02:35:03.988Z
+        - commits:
+            - subject: "tests: os: config-json: fix race in udevRules test"
+              hash: 8825d721ca64d523dc6faf8c317f4a09796457b6
+              body: >
+                Readlink can fail when the path is non-existent, raising an
+                error and
+
+                making the udevRules test fail. Test that the link exists before
+
+                attempting to use readlink.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.99.18
+          title: "'tests: os: config-json: fix race in udevRules test'"
+          date: 2022-06-23T22:09:44.331Z
+  version: 2.99.20
+  title: "'Update layers/meta-balena digest to 34e139b'"
+  date: 2022-06-24T23:35:01.623Z
+- commits:
     - subject: Update layers/meta-balena to 1c9301223cfcf611347b13e07f9058602af975c1
       hash: ab48f9886646a02ae8a43208f85e629cc20ba151
       body: Update layers/meta-balena
