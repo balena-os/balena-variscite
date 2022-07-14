@@ -1,4 +1,76 @@
 - commits:
+    - subject: Update contracts to e6f7ecd2977facdc5ee141b4bb7dc2719001df45
+      hash: 65acac04b4e540aa48e480bb8f12427513189380
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to e6f7ecd2977facdc5ee141b4bb7dc2719001df45
+        changelog-entry: Update contracts to e6f7ecd2977facdc5ee141b4bb7dc2719001df45
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Add node v18.6.0
+              hash: 9c2c0aeb2570a4c34e02d118c82d0ab548c01832
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add golang v1.8.4 and v1.17.12
+              hash: ba582ac955d9f8c50634556860289ee1473770fd
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add node v18.5.0 v16.16.0 and v14.20.0
+              hash: 036940834afc4231e89caffe4ea94dbfc2f665d2
+              body: |
+                Drop v17.x series
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Remove Debian Stretch as it is EOL
+              hash: 623e9032a3e81cf42d11736e7eed3ed54a24ebbc
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.5
+          title: "'Few base images updates'"
+          date: 2022-07-14T10:50:25.683Z
+    - subject: Update build and deploy workflow to support ESR tags
+      hash: d23a9166e65128fd8f6802571a7dec82b2768992
+      body: |
+        This adds support for build and deploy of ESR tags.
+      footer:
+        Changelog-entry: Update build and deploy workflow to support ESR tags
+        changelog-entry: Update build and deploy workflow to support ESR tags
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update layers/meta-balena to 1f79bcbb751f8715c49b207fdf737a2a089aff4c
+      hash: 9e9530eabb01759cd514950d73311b72f0afbec3
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1f79bcbb751f8715c49b207fdf737a2a089aff4c
+        changelog-entry: Update layers/meta-balena to 1f79bcbb751f8715c49b207fdf737a2a089aff4c
+      author: renovate[bot]
+      nested: []
+  version: 2.99.26
+  title: "'Update contracts digest to e6f7ecd'"
+  date: 2022-07-14T15:50:10.049Z
+- commits:
     - subject: Update balena-yocto-scripts to 5e003d52ac8e118af3cce662362d45f780ade704
       hash: 084ffbb601f19e6cfb2bfb109357cfde9e748d4c
       body: Update balena-yocto-scripts
