@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update layers/meta-balena to 2438d75a2515240ef254b956da08094b3f4e2d61
+      hash: 23de6085b3e9abf32103cd9131450b2a5a3968ba
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 2438d75a2515240ef254b956da08094b3f4e2d61
+        changelog-entry: Update layers/meta-balena to 2438d75a2515240ef254b956da08094b3f4e2d61
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "balena-config-vars: Do not use cache in flasher images"
+              hash: c99ac402222d3187f5b7c71d6a40400328fd3327
+              body: >
+                Flasher images use an alternative configuration storage so skip
+                caching.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.100.6
+          title: "'balena-config-vars: Do not use cache in flasher images'"
+          date: 2022-07-21T11:41:09.297Z
+  version: 2.100.6
+  title: "'Update layers/meta-balena digest to 2438d75'"
+  date: 2022-07-21T16:02:52.208Z
+- commits:
     - subject: Update layers/meta-balena to 5eb7bb59aaeab9e80ea540f122f44057a64ade92
       hash: 4d14141159be9e3ac4f556a0b938e877e680c1a1
       body: Update layers/meta-balena
