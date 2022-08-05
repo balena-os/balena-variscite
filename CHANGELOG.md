@@ -1,6 +1,24 @@
 Change log
 -----------
 
+# v2.101.1
+## (2022-08-05)
+
+
+<details>
+<summary> Update contracts to 3d133659481f38ee1bba63d3835a231c70c11eec [renovate[bot]] </summary>
+
+> ## contracts-2.0.9
+> ### (2022-08-04)
+> 
+> * generic-amd64: match genericx86-64-ext connectivity [Joseph Kogut]
+> * generic-amd64: update name to include GPT qualifier [Joseph Kogut]
+> * genericx86-64-ext: update name to include MBR qualifier [Joseph Kogut]
+> 
+</details>
+
+* Update layers/meta-balena to 7a62296718a363abd393107933f30e611ec27d1e [renovate[bot]]
+
 # v2.101.0+rev2
 ## (2022-08-03)
 
