@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update layers/meta-balena to ab80d0fbfbd28e10b7aa14739203a680d37815bd
+      hash: 8d8b80ca377bca9d7e4fae6743a1ad49587e0389
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ab80d0fbfbd28e10b7aa14739203a680d37815bd
+        changelog-entry: Update layers/meta-balena to ab80d0fbfbd28e10b7aa14739203a680d37815bd
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-io/balena-supervisor to v14.0.14
+              hash: b4bc31f23aac390eb8ad99fc361dc39d14b0c92e
+              body: Update balena-io/balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.101.8
+          title: "'Update balena-io/balena-supervisor to v14.0.14'"
+          date: 2022-08-23T00:10:09.726Z
+  version: 2.101.8
+  title: "'Update layers/meta-balena digest to ab80d0f'"
+  date: 2022-08-23T05:06:21.631Z
+- commits:
     - subject: Update contracts to 39a79c43f1b8ab4426d7a9c1cdeb9a9514101061
       hash: 4c71707fc04c00ce95dea54a795b7a9499e91cb4
       body: Update contracts
