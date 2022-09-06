@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to e7520599758cae5f507d7189a3415e95e2ff0309
+      hash: 2af03567152e116f1fae5230e3d5bc523347d572
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to e7520599758cae5f507d7189a3415e95e2ff0309
+        changelog-entry: Update contracts to e7520599758cae5f507d7189a3415e95e2ff0309
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Add node v18.8.0
+              hash: 22cc7c47e7582fa9ecf05d0b607b0e8619b5ac4e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.14
+          title: "'Add node v18.8.0'"
+          date: 2022-09-06T04:10:31.763Z
+  version: 2.102.1+rev2
+  title: "'Update contracts digest to e752059'"
+  date: 2022-09-06T06:10:35.897Z
+- commits:
     - subject: Update contracts to 3bd4b2097a2796afc9a56a580e555982aad4f10b
       hash: a7cb59337a5b2c74053149b21e1d5e0c3484ddb0
       body: Update contracts
