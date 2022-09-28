@@ -1,6 +1,23 @@
 Change log
 -----------
 
+# v2.105.1
+## (2022-09-28)
+
+
+<details>
+<summary> Update contracts to 766eb7591fe2b2f2cbc36af68d58627057f38193 [renovate[bot]] </summary>
+
+> ## contracts-2.0.17
+> ### (2022-09-27)
+> 
+> * Add node v18.9.1, v16.17.1 and v14.20.1 [Trong Nghia Nguyen]
+> * Add Golang v1.19.1 and v1.18.6 [Trong Nghia Nguyen]
+> 
+</details>
+
+* Update layers/meta-balena to ce91b3f1807f5dc1d1ee861a164957215757d8a0 [renovate[bot]]
+
 # v2.105.0+rev1
 ## (2022-09-21)
 
