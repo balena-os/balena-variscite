@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.105.12+rev4
+## (2022-10-24)
+
+* Remove unused meta-rust submodule since we rely on rust from meta-balena now [Florin Sarbu]
+
 # v2.105.12+rev3
 ## (2022-10-24)
 

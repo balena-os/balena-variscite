@@ -1,4 +1,22 @@
 - commits:
+    - subject: Remove unused meta-rust submodule since we rely on rust from
+        meta-balena now
+      hash: 57841b8593f32977162c6a6bad21936448859c4d
+      body: |
+        This layer is now deprecated in favor of rust from meta-balena
+      footer:
+        Changelog-entry: Remove unused meta-rust submodule since we rely on rust from
+          meta-balena now
+        changelog-entry: Remove unused meta-rust submodule since we rely on rust from
+          meta-balena now
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.105.12+rev4
+  title: ""
+  date: 2022-10-24T22:32:32.238Z
+- commits:
     - subject: Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0
       hash: de71b533f0fb8c8b99bf34fad97bb06308454d91
       body: Update contracts
