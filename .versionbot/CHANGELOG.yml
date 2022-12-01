@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 3fbd0884bd7d599664587d0ab25fea22d77323ba
+      hash: 2c227c3d491afc715a1481a57a06ce9505348e0e
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 3fbd0884bd7d599664587d0ab25fea22d77323ba
+        changelog-entry: Update balena-yocto-scripts to 3fbd0884bd7d599664587d0ab25fea22d77323ba
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "jenkins_generate_ami: use a different token"
+              hash: 3fcb9cb302b3f50e5fd8943fdafe2934fb0de182
+              body: >
+                The AMI preload application no longer lives in the balena_os organization
+
+                so allow to provide a different token.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.14
+          title: "'jenkins_generate_ami: use a different token'"
+          date: 2022-11-10T15:10:52.071Z
+  version: 2.105.12+rev11
+  title: ""
+  date: 2022-12-01T03:01:36.560Z
+- commits:
     - subject: Update contracts to 5d83fa7ad3a0c95db49ee465c9a77845611f3a3b
       hash: 99dbc79344ff4c4fb7fe84efc610780c4324c154
       body: Update contracts
