@@ -1,6 +1,33 @@
 Change log
 -----------
 
+# v2.108.18
+## (2023-01-10)
+
+
+<details>
+<summary> Update layers/meta-balena to 7b8d9a8b591487aefcdcd522d385ec14abaa1be6 [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.18
+> ### (2023-01-09)
+> 
+> * Revert "flasher: output logs to serial console" [Joseph Kogut]
+> 
+
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 8347887ab69018c1e4bcf0a7aecbf6faf85af2bd [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.18
+> ### (2023-01-09)
+> 
+> * Revert "flasher: output logs to serial console" [Joseph Kogut]
+> 
+
+</details>
+
 # v2.108.15+rev2
 ## (2023-01-09)
 
