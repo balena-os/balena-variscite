@@ -1,4 +1,68 @@
 - commits:
+    - subject: Update layers/meta-balena to f420c91e38843f5cf9b3f68122ee8cb71f9f605f
+      hash: 9c7563e633920999c37c5f9e84e7539adb64c15f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to f420c91e38843f5cf9b3f68122ee8cb71f9f605f
+        changelog-entry: Update layers/meta-balena to f420c91e38843f5cf9b3f68122ee8cb71f9f605f
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "resin-init-flasher: Format encrypted partitions as LUKS2"
+              hash: 9e01a5d485ee93975b531b9dbd304db9b73de3fa
+              body: >
+                This should be the default but with no explicit argument we
+                still
+
+                end up with LUKS1 partitions. This patch adds the parameter to enforce
+
+                LUKS2 formatting and adds conversion to LUKS2 to the cryptsetup
+
+                initrd script.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.115.10
+          title: ""
+          date: 2023-06-21T05:08:09.995Z
+    - subject: Update layers/meta-balena to 4a9a1b6ce3abacf025fe01b5b4292be2f791c13b
+      hash: 381851e91e93d47aca72ca6dc9a460826c41c9b5
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 4a9a1b6ce3abacf025fe01b5b4292be2f791c13b
+        changelog-entry: Update layers/meta-balena to 4a9a1b6ce3abacf025fe01b5b4292be2f791c13b
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "resin-init-flasher: Format encrypted partitions as LUKS2"
+              hash: 9e01a5d485ee93975b531b9dbd304db9b73de3fa
+              body: >
+                This should be the default but with no explicit argument we
+                still
+
+                end up with LUKS1 partitions. This patch adds the parameter to enforce
+
+                LUKS2 formatting and adds conversion to LUKS2 to the cryptsetup
+
+                initrd script.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.115.10
+          title: ""
+          date: 2023-06-21T05:08:09.995Z
+  version: 2.115.10
+  title: ""
+  date: 2023-06-21T07:58:09.726Z
+- commits:
     - subject: Update balena-yocto-scripts to 91474e62b74d6390c285d1033b34f77092fe1824
       hash: 74e5787b2f926f14a52f39f93a53d6e46661dfc8
       body: Update balena-yocto-scripts
