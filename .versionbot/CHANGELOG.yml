@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to d61d9118688241409d15a3ba10e963f9a202e347
+      hash: fc5489b158e406cba0fb0318ed1022b440afb995
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to d61d9118688241409d15a3ba10e963f9a202e347
+        changelog-entry: Update contracts to d61d9118688241409d15a3ba10e963f9a202e347
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Add alpine 3.18
+              hash: d0c33e6434de4e194a3e940a339f58d248b11709
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+          version: contracts-2.0.70
+          title: ""
+          date: 2023-08-23T12:54:03.746Z
+  version: 3.2.5+rev1
+  title: ""
+  date: 2023-08-23T15:59:17.213Z
+- commits:
     - subject: Update layers/meta-balena to b65f4a096bfae592e7f02acf7dd0be2110c84ae9
       hash: 7ab9c1ec090f99a7a66f99838ff65d5381b23620
       body: Update layers/meta-balena
