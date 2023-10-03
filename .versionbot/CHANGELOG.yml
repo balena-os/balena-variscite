@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        0f10a0d394ddffeeb1db0ea94046d86792d704fe
+      hash: 006ef3ccabe9c3b2ae5353a135cac148f0927947
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          0f10a0d394ddffeeb1db0ea94046d86792d704fe
+        changelog-entry: Update layers/meta-openembedded to
+          0f10a0d394ddffeeb1db0ea94046d86792d704fe
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.16+rev5
+  title: ""
+  date: 2023-10-03T18:49:00.043Z
+- commits:
     - subject: Update balena-os/github-workflows to
       hash: da1f686964675964bea89dd4bab6f62dad622cdd
       body: Update balena-os/github-workflows
