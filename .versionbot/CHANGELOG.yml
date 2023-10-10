@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update layers/meta-balena to 010ff351b1875554aa86fbaa4f1ac5b8f865cc7f
+      hash: 49205df6b0cd534a05593d807fc25cf9bdedbc88
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 010ff351b1875554aa86fbaa4f1ac5b8f865cc7f
+        changelog-entry: Update layers/meta-balena to 010ff351b1875554aa86fbaa4f1ac5b8f865cc7f
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update tibdex/github-app-token action to v2.1.0
+              hash: 033be56bc0ff464afb21488430dfea7d0d16c847
+              body: |
+                Update tibdex/github-app-token from v2.0.0 to v2.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: meta-balena-4.0.22
+          title: ""
+          date: 2023-10-09T23:14:49.240Z
+  version: 4.0.22
+  title: ""
+  date: 2023-10-10T03:59:35.048Z
+- commits:
     - subject: Update layers/poky to 278d77034e08df0d49860705aa72d91e4af73d61
       hash: 5c29bfedfc4b8c74df69440192f3661b7afd49aa
       body: Update layers/poky
