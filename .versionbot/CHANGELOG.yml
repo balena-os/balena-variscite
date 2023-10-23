@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update layers/meta-balena to c1ed98a9e945d0f1ba684204c2fc10d3fdf59072
+      hash: cce8165c1ec071d6fe3775f74a5996dcb5e6ff21
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c1ed98a9e945d0f1ba684204c2fc10d3fdf59072
+        changelog-entry: Update layers/meta-balena to c1ed98a9e945d0f1ba684204c2fc10d3fdf59072
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "resin-device-progress: Add status code check and error reporting"
+              hash: 43ad69ed6a770c90e43a9ea844a32d7308a8ad45
+              body: >
+                This script is used by balenaHup to report provisioning failures
+                to
+
+                the cloud. Adding retries, return status code check and error output
+
+                should make it more resilient and easier to debug.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-4.0.29
+          title: ""
+          date: 2023-10-23T13:07:12.186Z
+  version: 4.0.29
+  title: ""
+  date: 2023-10-23T15:50:07.520Z
+- commits:
     - subject: Update layers/poky to 374e198436be1df8bbf1e5bc2487c3cde22c265a
       hash: f1f837f06decf72aaf753b12362dd217797820d2
       body: Update layers/poky
