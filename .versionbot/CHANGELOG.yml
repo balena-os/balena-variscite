@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 12fab85ba186f2a372c40f733b0881f0efc46024
+      hash: 1a2aa9230209e0e37e12455dfc99fef35c1d22ac
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 12fab85ba186f2a372c40f733b0881f0efc46024
+        changelog-entry: Update layers/poky to 12fab85ba186f2a372c40f733b0881f0efc46024
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.1.26+rev2
+  title: ""
+  date: 2024-02-08T08:43:30.128Z
+- commits:
     - subject: Update balena-yocto-scripts to 57b2f7c97e4d95e74b76a0827e910d46e3b3ce2f
       hash: c907c5bb9133f25890e7803b3596bcb6b2c2c0e4
       body: Update balena-yocto-scripts
