@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to cb86da70496b25de7b826abbacd7c7feedf2fa54
+      hash: 07d60f8d9bfe4c00d71a8c7a33dc86acae7c374c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to cb86da70496b25de7b826abbacd7c7feedf2fa54
+        changelog-entry: Update layers/meta-balena to cb86da70496b25de7b826abbacd7c7feedf2fa54
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "patch: upgrade recipes/devtools/go to 1.17.13"
+              hash: 0845ea2914e0b784a022d3c9414168d8a2212c4b
+              body: ""
+              footer:
+                cherry-pick: c93239706f70b0cea59797814a409cfc376b3e0f
+              author: JOASSART Edwin
+              nested: []
+            - subject: "patch: removes recipes/devtools/go to 1.16"
+              hash: 6017fdaaae799b8e5cd6b8f3b52e9c51f46e9450
+              body: ""
+              footer:
+                cherry-pick: git://git.yoctoproject.org/poky@c93239706f70b0cea59797814a409cfc376b3e0f
+              author: JOASSART Edwin
+              nested: []
+          version: meta-balena-5.1.27
+          title: ""
+          date: 2024-02-09T17:47:17.512Z
+  version: 5.1.27
+  title: ""
+  date: 2024-02-09T19:53:27.607Z
+- commits:
     - subject: Update balena-yocto-scripts to 6ccd3b1013b6d25ea9990a07a06bee864fe0a172
       hash: 1b7b243c6675fa93d9d9b5460e69328011ed5a1d
       body: Update balena-yocto-scripts
