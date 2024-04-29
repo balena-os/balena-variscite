@@ -1,6 +1,23 @@
 Change log
 -----------
 
+# v5.3.2
+## (2024-04-29)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 9467c78fa81511321fe952477b316e830742760c [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.21.8
+> ### (2024-04-29)
+> 
+> * Support commit tags when extracting version tag from git [Kyle Harding]
+> 
+
+</details>
+
+* Update layers/meta-balena to f212a46b75701da1ad174eaca183c5b9f55075ec [Self-hosted Renovate Bot]
+
 # v5.3.1
 ## (2024-04-24)
 
