@@ -1,4 +1,70 @@
 - commits:
+    - subject: Update layers/meta-balena to 762839409d5c94cd3592c41841657e5cfdc469f3
+      hash: ee9cbb83c5ca9489de4546af9c16350147c3b4bc
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 762839409d5c94cd3592c41841657e5cfdc469f3
+        changelog-entry: Update layers/meta-balena to 762839409d5c94cd3592c41841657e5cfdc469f3
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "NetworkManager: do not use FW rule numbers in shared dispatcher
+                script"
+              hash: ab8d61194d84045e4b74f60e4172a69dd52a3509
+              body: >
+                Manipulating the firewall rules by index introduces a race
+                condition.
+
+                Both NetworkManager and balenaEngine add the rules to the top
+
+                of the FORWARD chain instead of appending, so if we first look
+                up
+
+                a rule by number and then use the number to refer to it, we can
+                not
+
+                guarantee that the rule number has not changed (iow the rule has
+                not
+
+                been moved down) in the meantime.
+
+
+                This patch removes the use of rule numbers completely and makes
+
+                the "shared" dispatcher script refer to the rules by definition.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-5.3.9
+          title: ""
+          date: 2024-05-24T12:34:18.221Z
+        - commits:
+            - subject: "tests: safe-reboot: fetch and modify target state"
+              hash: af4d36646c2c301fceadcd10143096b187b67bd1
+              body: >
+                This is a fix targeted for the revpi-connect-4 which requires a
+                config.txt param to be present to connect to wifi. The old way
+                we did this test results in the config.txt being wiped - so now
+                we fetch and change the current state to maintain the existing
+                configuration and avoid this
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-5.3.8
+          title: ""
+          date: 2024-05-23T11:43:26.464Z
+  version: 5.3.9
+  title: ""
+  date: 2024-05-24T17:32:18.424Z
+- commits:
     - subject: Update layers/meta-balena to 98a8dc813fb1df71c510732e14fa31446ef883e6
       hash: 4ea24aafd80c4cd106d8a8131d571c6eb4f8ae45
       body: Update layers/meta-balena

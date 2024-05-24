@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v5.3.9
+## (2024-05-24)
+
+
+<details>
+<summary> Update layers/meta-balena to 762839409d5c94cd3592c41841657e5cfdc469f3 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.3.9
+> ### (2024-05-24)
+> 
+> * NetworkManager: do not use FW rule numbers in shared dispatcher script [Michal Toman]
+> 
+> ## meta-balena-5.3.8
+> ### (2024-05-23)
+> 
+> * tests: safe-reboot: fetch and modify target state [rcooke-warwick]
+> 
+
+</details>
+
 # v5.3.7
 ## (2024-05-22)
 
