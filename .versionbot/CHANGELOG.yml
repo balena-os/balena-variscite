@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update contracts to 8adfb6d81fb673d26e3ab7038b3ef2264c1d1fe7
+      hash: c44002f8f67eab88827c5bbe9595dc4a62df7d10
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 8adfb6d81fb673d26e3ab7038b3ef2264c1d1fe7
+        changelog-entry: Update contracts to 8adfb6d81fb673d26e3ab7038b3ef2264c1d1fe7
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "sw.os+hw.device-type: Update Jetson Orin distro configs for L4T 35.5.0
+                repositories"
+              hash: 12fb5f18b054878ded4124b555a725f7f446b902
+              body: >
+                All public Jetson Orin based device-types have just been updated
+                to L4T 35.5.0,
+
+                thus we need to update the base images to use the updated L4T
+                repositories.
+
+
+                We also add the distro configs for the upcoming Orin Nano 4GB
+                Seeed J3010
+
+                device-type.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.105
+          title: ""
+          date: 2024-06-06T15:12:51.267Z
+  version: 5.3.14+rev1
+  title: ""
+  date: 2024-06-06T17:23:08.577Z
+- commits:
     - subject: Update layers/meta-balena to 9e95be489587395fec796dc6969fc7d78cf81f77
       hash: 3c8305aafca812e1ddc76c85d84e8d6aed5287c1
       body: Update layers/meta-balena
