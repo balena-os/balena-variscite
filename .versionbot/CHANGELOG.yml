@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-freescale to 501032fb30abbad54616a2d9bb4555c297fc35b6
+      hash: fd289e42739f24f1c6cd0428ea89f0da99aeb14f
+      body: Update layers/meta-freescale
+      footer:
+        Changelog-entry: Update layers/meta-freescale to
+          501032fb30abbad54616a2d9bb4555c297fc35b6
+        changelog-entry: Update layers/meta-freescale to
+          501032fb30abbad54616a2d9bb4555c297fc35b6
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.4.1+rev2
+  title: ""
+  date: 2024-07-18T17:06:37.484Z
+- commits:
     - subject: Update balena-yocto-scripts to d59fac4cce1dcff0b423ac97aeccbd7f4486b9c2
       hash: 57aff20c6ee2d78cc847ca23f50293a70595417a
       body: Update balena-yocto-scripts
