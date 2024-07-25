@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 1d499fe7d33791e1ac6dccfe031e178b7d520bb4
+      hash: 003505b31ca011b6310ffefa148502ac22134f4c
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 1d499fe7d33791e1ac6dccfe031e178b7d520bb4
+        changelog-entry: Update contracts to 1d499fe7d33791e1ac6dccfe031e178b7d520bb4
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add new device-type Jetson AGX Orin 64GB Devkit"
+              hash: b329046af8d6427955627231ba0d332d23dc0f87
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.108
+          title: ""
+          date: 2024-07-25T08:53:00.318Z
+  version: 6.0.6+rev1
+  title: ""
+  date: 2024-07-25T16:33:21.748Z
+- commits:
     - subject: Update layers/meta-balena to 137a7882c5f56d505ee5c757cedfb27ab20d89a8
       hash: 9893cc745036fef9817d7540f30ce6f3852c27ac
       body: Update layers/meta-balena
