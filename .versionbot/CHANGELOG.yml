@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update balena-yocto-scripts to a3dfa265480986251193a989b1077939f38c4dc3
+      hash: 8b68661c51bcf3338c2a8d945cf8d44afef84b15
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to a3dfa265480986251193a989b1077939f38c4dc3
+        changelog-entry: Update balena-yocto-scripts to a3dfa265480986251193a989b1077939f38c4dc3
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Fix if condition for checking merge commit test results
+              hash: c7b37652661b12832a2a40a39e4548632478b8ef
+              body: >
+                The logic for this step was broken - even when no test matrix
+                was provided, it was chekcing for test results, which we don't
+                want (as they won't exist)
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.25.26
+          title: ""
+          date: 2024-08-27T16:58:34.259Z
+  version: 6.0.13+rev1
+  title: ""
+  date: 2024-08-27T20:42:58.762Z
+- commits:
     - subject: Update layers/meta-balena to f95917dab4a9e2f6b7e6830c22ba26d461fac816
       hash: d7954f62b1bdfa7a968fe8082bcbe12bfae9233e
       body: Update layers/meta-balena
