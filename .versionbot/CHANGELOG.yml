@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b
+      hash: f9332b6dc3b1db2265ff32f437c592e128a745ae
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b
+        changelog-entry: Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: config: restore both network options to false"
+              hash: a1ed821735940bd56b3f6b92ae3db85bba4dd241
+              body: |
+                See: https://github.com/balena-os/meta-balena/pull/3117
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.0.20
+          title: ""
+          date: 2024-08-31T14:20:53.330Z
+  version: 6.0.20
+  title: ""
+  date: 2024-08-31T15:57:55.548Z
+- commits:
     - subject: Update balena-yocto-scripts to 5c8805dcd0013ca3aab6ec82e094595ad8f6780b
       hash: d0001974010d59865c1ee8ad24ac8585c4ead73e
       body: Update balena-yocto-scripts
