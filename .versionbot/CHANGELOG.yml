@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-variscite-fslc to
+        9aa418657abd9948eb756d3993b1c91a89ad001f
+      hash: 438a79d9e492d9f42900d7eb11ece5b0d8d9b0ff
+      body: Update layers/meta-variscite-fslc
+      footer:
+        Changelog-entry: Update layers/meta-variscite-fslc to
+          9aa418657abd9948eb756d3993b1c91a89ad001f
+        changelog-entry: Update layers/meta-variscite-fslc to
+          9aa418657abd9948eb756d3993b1c91a89ad001f
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.0.15+rev2
+  title: ""
+  date: 2024-08-31T03:55:49.151Z
+- commits:
     - subject: Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5
       hash: 4805b02bbd747f3aa2af488346822721f72e6413
       body: Update balena-yocto-scripts

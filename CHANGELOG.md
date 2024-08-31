@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.0.15+rev2
+## (2024-08-31)
+
+* Update layers/meta-variscite-fslc to 9aa418657abd9948eb756d3993b1c91a89ad001f [balena-renovate[bot]]
+
 # v6.0.15+rev1
 ## (2024-08-29)
 
