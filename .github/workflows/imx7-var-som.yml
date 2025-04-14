@@ -1,4 +1,4 @@
-name: Variscite DART-6UL
+name: Variscite VAR-SOM-MX7
 
 on:
   # https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onpushbranchestagsbranches-ignoretags-ignore
@@ -8,11 +8,8 @@ on:
       - main
       - master
       # ESR branches glob pattern
-      - 20[0-9][0-9].[0-1]?[1470].x
-  pull_request_target:
-    branches:
-      - main
-      - master
+      #- 20[0-9][0-9].[0-1]?[1470].x
+
   push:
     tags:
       # Semver tags glob pattern (includes ESR in format v20YY.MM.PATCH)
@@ -49,17 +46,8 @@ jobs:
     if: (github.event.pull_request.head.repo.full_name == github.repository) == (github.event_name == 'pull_request')
     secrets: inherit
     with:
-      machine: imx6ul-var-dart
-      # worker_type defaults to testbot
-      # worker_fleets defaults to balena/testbot-rig,balena/testbot-rig-partners,balena/testbot-rig-x86,balena/testbot-rig-partners-x86
-      test_matrix: >
-        {
-          "test_suite": ["os","cloud","hup"],
-          "environment": ["bm.balena-dev.com"],
-          "runs_on": [["ubuntu-latest"]]
-        }
+      machine: imx7-var-som
       # Allow manual workflow runs to force finalize without checking previous test runs
       force-finalize: ${{ inputs.force-finalize || false }}
       # Default to balena-staging.com for workflow dispatch, but balena-cloud.com for other events
       deploy-environment: ${{ inputs.deploy-environment || 'balena-cloud.com' }}
-
