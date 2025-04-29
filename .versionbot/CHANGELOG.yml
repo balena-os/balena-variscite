@@ -1,4 +1,146 @@
 - commits:
+    - subject: Update layers/meta-balena to c5b8f50a26c661b11806e943ffb4c09761e3b186
+      hash: 65f22974411d6eeeeb9852673c09820dd5fbface
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c5b8f50a26c661b11806e943ffb4c09761e3b186
+        changelog-entry: Update layers/meta-balena to c5b8f50a26c661b11806e943ffb4c09761e3b186
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/setup-python digest to a26af69
+              hash: 0946c15d23411563fae3fd38b2e4bfa5f11f89fb
+              body: >
+                Update actions/setup-python to
+                a26af69be951a213d495a4c3e4e4022e16d87065
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.5.24
+          title: ""
+          date: 2025-04-24T10:53:52.990Z
+        - commits:
+            - subject: Update actions/setup-python digest to 8d9ed9a
+              hash: 50dd1e53238b004511d2854291c81afa6bd9604e
+              body: >
+                Update actions/setup-python to
+                8d9ed9ac5c53483de85588cdf95a591a75ab9f55
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.5.23
+          title: ""
+          date: 2025-04-22T10:52:53.386Z
+        - commits:
+            - subject: Use workflow_call for balena-generic device type tests
+              hash: 685b74e962f6805713118c887e8574fadf4148f3
+              body: >
+                This includes adding secure boot tests to the generic-amd64 test
+                matrix.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.5.22
+          title: ""
+          date: 2025-04-21T21:24:03.843Z
+        - commits:
+            - subject: Update tests/leviathan digest to 5ecdcd3
+              hash: 0e98a555c2f4ba4003502b3e01c054828a74c67d
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.9.59
+                      hash: 3664862394cf24a370ae3679d2fba9517c1bf7de
+                      body: |
+                        Update balena-os/leviathan-worker from 2.9.58 to 2.9.59
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.104
+                  title: ""
+                  date: 2025-04-16T11:21:05.396Z
+          version: meta-balena-6.5.21
+          title: ""
+          date: 2025-04-19T11:24:43.032Z
+        - commits:
+            - subject: "kernel-balena: add aufs commit for v6.6.84"
+              hash: 6a63c9f2e9e064be591e4e29d6c50f86393c752f
+              body: >
+                We will continue to update to the stable head of v6.6 until
+                v6.12 is
+
+                officially deployed.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.5.20
+          title: ""
+          date: 2025-04-19T06:11:53.850Z
+        - commits:
+            - subject: "os-helpers-tpm2: Always use password protection for TPM NVRAM writes"
+              hash: e91e64315c06327d4592ad4c9d72658ae88c4fba
+              body: >
+                At this moment tpm_nvram_store_passphrase checks whether the
+                expected
+
+                policy is currently met or not, and acts differently in each
+                case.
+
+                If the policy doesn't match, the TPM write is protected by a
+                one-time
+
+                password that is lost when the function exits.
+
+                If the policy matches, it will be used to protect the write
+                directly.
+
+                The latter seems to be broken at least in some scenarios
+                (retrying
+
+                HUP after a rollback).
+
+
+                This patch removes the special-casing and makes
+
+                tpm_nvram_store_passphrase always use the password protection.
+                While
+
+                using the current PCR states directly is a nice optimization,
+                always
+
+                using the password is more universal and makes the code simpler.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.5.19
+          title: ""
+          date: 2025-04-17T08:41:50.848Z
+  version: 6.5.24
+  title: ""
+  date: 2025-04-29T12:45:27.276Z
+- commits:
     - subject: Update balena-yocto-scripts to daf6415faa163a311cf887400aa8bc4e07067a15
       hash: c257de26c14a09a9baf28610da1394d6b27a91fd
       body: Update balena-yocto-scripts
