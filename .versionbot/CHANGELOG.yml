@@ -1,4 +1,137 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 449116e7aa0d02a3a27147d4570bc6929bc71732
+      hash: 68b02512fb95c99afad5134559b000afe0cac67e
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 449116e7aa0d02a3a27147d4570bc6929bc71732
+        changelog-entry: Update balena-yocto-scripts to 449116e7aa0d02a3a27147d4570bc6929bc71732
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.27.11
+              hash: ab9729ed4ac8ae32a34112f117c9afdae82ea5b4
+              body: |
+                Update aws/aws-cli from 2.27.10 to 2.27.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.32.3
+          title: ""
+          date: 2025-05-09T10:02:04.803Z
+        - commits:
+            - subject: Use GH CLI to download build artifacts
+              hash: 8c626a994c211fd24dbcfbf862cfd44a3c590ef6
+              body: |
+                This is reported to have fewer failures than the action.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Disable GHA compression for build artifacts
+              hash: eb8aec7e232f0693d5684e2cb1d8379b10d421a0
+              body: |
+                These artifacts are already compressed with zstd and encrypted
+                files cannot be compressed further.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Provide yocto scripts ref to test build pipeline
+              hash: 2352a2dbbc15f9dfd8cb4bc4595dc740b4ec3c0b
+              body: |
+                This will make sure the automation scripts are aligned
+                with the workflow for testing.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Remove leviathan test suites from build artifacts
+              hash: 6595f2ab0a90d42a7bfa8edceee72f97a821466f
+              body: >
+                These were previously used by Jenkins to align the tests
+
+                with the meta-balena release, but the GHA workflowsn don't use
+                them.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.32.2
+          title: ""
+          date: 2025-05-09T06:25:21.589Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.27.10
+              hash: ad04c2a299700fa469039114ee97c9daf091cafd
+              body: |
+                Update aws/aws-cli from 2.27.8 to 2.27.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.32.1
+          title: ""
+          date: 2025-05-07T22:45:59.670Z
+        - commits:
+            - subject: Remove legacy Jenkins deploy scripts
+              hash: 43645a8075784913dfa522ea60b14ab4556f21e9
+              body: |
+                These scripts have been unrolled into the GitHub Action workflow
+                and are no longer kept up-to-date or tested.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.32.0
+          title: ""
+          date: 2025-05-07T18:38:01.404Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v21.1.11
+              hash: 51790edaaab7338e3df08c3b28a22a3b27cd2803
+              body: |
+                Update balena-io/balena-cli from 21.1.10 to 21.1.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.97
+          title: ""
+          date: 2025-05-07T08:16:54.469Z
+        - commits:
+            - subject: Update aws-actions/configure-aws-credentials action to v4.2.0
+              hash: 4c4cad3b4385d5e970a44247c47d7d314f5a0f57
+              body: |
+                Update aws-actions/configure-aws-credentials from 4.1.0 to 4.2.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.96
+          title: ""
+          date: 2025-05-07T02:58:18.416Z
+  version: 6.5.30+rev1
+  title: ""
+  date: 2025-05-10T02:46:15.680Z
+- commits:
     - subject: Update layers/meta-balena to 1b1b97518ab3fb4cafd9e0c51ac10622cf037008
       hash: dc53c3baee993584dba94c8d63b6370fec7a88f7
       body: Update layers/meta-balena
