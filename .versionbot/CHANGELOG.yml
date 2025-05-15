@@ -1,4 +1,23 @@
 - commits:
+    - subject: Revert ti firmware SRC_URI change
+      hash: 06ea3221000f897d8d3cb68e86a2212c7123dd63
+      body: >
+        This reverts commit f4d1e78e1764a1e47cc4d58c4659cc1174bb4de1.
+
+
+        The old link started working again while the new ones we added stopped
+        working
+      footer:
+        Changelog-entry: Revert ti firmware SRC_URI change
+        changelog-entry: Revert ti firmware SRC_URI change
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.5.30+rev4
+  title: ""
+  date: 2025-05-15T20:31:20.431Z
+- commits:
     - subject: Update balena-yocto-scripts to 8fdb0300c960e01e0655a38d1de76e1f9978c81d
       hash: 253ffd43284f851ce459450e26299902585e4c48
       body: Update balena-yocto-scripts

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.30+rev4
+## (2025-05-15)
+
+* Revert ti firmware SRC_URI change [Florin Sarbu]
+
 # v6.5.30+rev3
 ## (2025-05-14)
 
