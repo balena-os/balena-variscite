@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v6.5.30+rev5
+## (2025-05-16)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 14ab57c116d32c17f7645c43772fc879c0bdada7 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.32.8
+> ### (2025-05-15)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.2.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.7
+> ### (2025-05-14)
+> 
+> * Update aws/aws-cli to v2.27.15 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.6
+> ### (2025-05-14)
+> 
+> * AMI deploy: parameterise test org + use TEST api key [Ryan Cooke]
+> 
+
+</details>
+
 # v6.5.30+rev4
 ## (2025-05-15)
 
