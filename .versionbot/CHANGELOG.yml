@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 653a61f905528381db2a7f893bba6c7cd19c64a0
+      hash: 5d43e9e61d93df62b872fc24d6b9aedf5968b9bf
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 653a61f905528381db2a7f893bba6c7cd19c64a0
+        changelog-entry: Update balena-yocto-scripts to 653a61f905528381db2a7f893bba6c7cd19c64a0
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tespkg/actions-cache action to v1.9.0
+              hash: 8cfe2d2358dad7224cfeb28174ef02008a33cf7b
+              body: |
+                Update tespkg/actions-cache from 1.8.0 to 1.9.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.32.16
+          title: ""
+          date: 2025-05-20T12:04:27.146Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.27.18
+              hash: 9d3c9dec69cf0e282be51c7fc2243ad107c194ff
+              body: |
+                Update aws/aws-cli from 2.27.17 to 2.27.18
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.32.15
+          title: ""
+          date: 2025-05-19T22:01:45.688Z
+  version: 6.5.32+rev4
+  title: ""
+  date: 2025-05-20T16:59:04.931Z
+- commits:
     - subject: Update contracts to 417aec2b1a551295d855acd551cd810d2b69420e
       hash: 0cb5e8425aa1e08eef934191d3546ed01bda9dde
       body: Update contracts
