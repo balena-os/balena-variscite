@@ -1,6 +1,46 @@
 Change log
 -----------
 
+# v6.5.34+rev3
+## (2025-05-27)
+
+
+<details>
+<summary> Update balena-yocto-scripts to ac04a4285f9d318bf4d93d7cb684d234dca33226 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.32.27
+> ### (2025-05-27)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.26
+> ### (2025-05-26)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.12 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.25
+> ### (2025-05-26)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.10 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.24
+> ### (2025-05-24)
+> 
+> * Update balena-io/balena-cli to v21.1.14 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.23
+> ### (2025-05-24)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.9 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.22
+> ### (2025-05-24)
+> 
+> * Update balena-os/leviathan action to v2.32.1 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.34+rev2
 ## (2025-05-24)
 
