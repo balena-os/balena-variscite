@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v6.5.44+rev1
+## (2025-07-10)
+
+
+<details>
+<summary> Update contracts to fc76558c384c10bf228b10909eca346ee9d6b564 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.137
+> ### (2025-07-02)
+> 
+> * hw.device-type: Update J4012 device type name [Alexandru]
+> 
+
+</details>
+
 # v6.5.44
 ## (2025-07-10)
 
