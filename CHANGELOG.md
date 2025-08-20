@@ -1,6 +1,36 @@
 Change log
 -----------
 
+# v6.5.53+rev2
+## (2025-08-20)
+
+
+<details>
+<summary> Update balena-yocto-scripts to fc8c535752ed62f8c141dc792b17bffe305b5386 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.38.3
+> ### (2025-08-20)
+> 
+> * Update aws/aws-cli to v2.28.13 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.2
+> ### (2025-08-19)
+> 
+> * Update actions/checkout action to v5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.1
+> ### (2025-08-18)
+> 
+> * Update balena-io/balena-cli to v22.2.4 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.0
+> ### (2025-08-18)
+> 
+> * Split testing artifacts into individual files [Kyle Harding]
+> 
+
+</details>
+
 # v6.5.53+rev1
 ## (2025-08-18)
 
