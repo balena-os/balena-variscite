@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v6.6.14+rev2
+## (2025-10-23)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 803cf087ada25c3ea70c8a772b0cb6a635b64198 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.38.59
+> ### (2025-10-23)
+> 
+> * Update aws/aws-cli to v2.31.20 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.58
+> ### (2025-10-23)
+> 
+> * Update balena-io/balena-cli to v22.4.15 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.57
+> ### (2025-10-23)
+> 
+> * Check test_matrix is non-null before transforming as JSON [Kyle Harding]
+> 
+
+</details>
+
 # v6.6.14+rev1
 ## (2025-10-22)
 
