@@ -1,6 +1,51 @@
 Change log
 -----------
 
+# v6.6.14+rev3
+## (2025-10-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2b4b4b95065ba9b50e6d8c1deb86b57546f73036 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.38.66
+> ### (2025-10-29)
+> 
+> * Update aws/aws-cli to v2.31.25 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.65
+> ### (2025-10-29)
+> 
+> * Update aws/aws-cli to v2.31.24 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.64
+> ### (2025-10-29)
+> 
+> * Use the target deploy env to preload the supervisor [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.38.63
+> ### (2025-10-25)
+> 
+> * Update aws/aws-cli to v2.31.22 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.62
+> ### (2025-10-25)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.52 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.61
+> ### (2025-10-25)
+> 
+> * Update actions/upload-artifact action to v5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.60
+> ### (2025-10-23)
+> 
+> * Update aws/aws-cli to v2.31.21 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.6.14+rev2
 ## (2025-10-23)
 
