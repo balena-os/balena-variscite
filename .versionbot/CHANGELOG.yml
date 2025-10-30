@@ -1,4 +1,63 @@
 - commits:
+    - subject: Update layers/meta-balena to 74730286dcb409eebcf490061cc37bf1c5b4de83
+      hash: 3cb335e70dcd58c25ed2fca3f6c3989597b78ccb
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 74730286dcb409eebcf490061cc37bf1c5b4de83
+        changelog-entry: Update layers/meta-balena to 74730286dcb409eebcf490061cc37bf1c5b4de83
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "recipes-support/balena-config-vars: Avoid failure caused by race in
+                cache file creation"
+              hash: 6ec251e48f3eaae6e3fded5b003d11f2fae2d418
+              body: >
+                Services like os-fan-profile or os-power-mode may fail
+
+                at startup due to a race in the creation of the
+                balena-config-vars
+
+                cache:
+
+                    mv: cannot create regular file '/var/cache/balena-config-vars': File exists
+
+                The cache file may bee generated at the same time by another
+
+                instance of the same helper function. To avoid that,
+
+                we now introduce the lock file
+                /var/cache/balena-config-vars.lock
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.6.16
+          title: ""
+          date: 2025-10-29T12:52:25.561Z
+        - commits:
+            - subject: Remove non-autokit DTs from build list
+              hash: 45e7c8c715168f16fea4eb8b52914da71116c7c1
+              body: >
+                These DT's are currently not tested, so are not getting new
+                releases - no value added in having them built as part of
+                meta-balena PRs
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.6.15
+          title: ""
+          date: 2025-10-28T15:05:49.954Z
+  version: 6.6.16
+  title: ""
+  date: 2025-10-30T11:57:10.828Z
+- commits:
     - subject: Update balena-yocto-scripts to 2b4b4b95065ba9b50e6d8c1deb86b57546f73036
       hash: e624c0588ab245a7abaa80bd772d26dbbfbba233
       body: Update balena-yocto-scripts

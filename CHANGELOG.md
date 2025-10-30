@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v6.6.16
+## (2025-10-30)
+
+
+<details>
+<summary> Update layers/meta-balena to 74730286dcb409eebcf490061cc37bf1c5b4de83 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.6.16
+> ### (2025-10-29)
+> 
+> * recipes-support/balena-config-vars: Avoid failure caused by race in cache file creation [Alexandru Costache]
+> 
+> ## meta-balena-6.6.15
+> ### (2025-10-28)
+> 
+> * Remove non-autokit DTs from build list [Ryan Cooke]
+> 
+
+</details>
+
 # v6.6.14+rev3
 ## (2025-10-30)
 
