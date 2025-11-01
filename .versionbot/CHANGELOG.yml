@@ -1,4 +1,86 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 1184d75bd1a0e77591f2f2d87af755e5d035f7a6
+      hash: f36cf81636489d5f809a87fcffac365b372c6064
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 1184d75bd1a0e77591f2f2d87af755e5d035f7a6
+        changelog-entry: Update balena-yocto-scripts to 1184d75bd1a0e77591f2f2d87af755e5d035f7a6
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update Pin actions/download-artifact action to 018cc2c
+              hash: cf5fd8eb8074dc1f4abe003aa3a1978fa909d18d
+              body: |
+                Update actions/download-artifact
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.71
+          title: ""
+          date: 2025-11-01T04:13:16.655Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.27
+              hash: 758bacfffe9df9cb82d615b0661801c82c7702fa
+              body: |
+                Update aws/aws-cli from 2.31.26 to 2.31.27
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.70
+          title: ""
+          date: 2025-10-31T23:23:40.112Z
+        - commits:
+            - subject: Switch back to official actions/download-artifact action @ v6.0.0
+              hash: 7b867eee714917517027d715c11e76287a0e0fdd
+              body: >
+                The original issue where promises were not rejected when a
+                download
+
+                timeout was reached was fixed by actions/toolkit#2124
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.38.69
+          title: ""
+          date: 2025-10-31T18:22:38.774Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.26
+              hash: 5f38abcb1a79e476cc8f459884cedda04a507b3e
+              body: |
+                Update aws/aws-cli from 2.31.25 to 2.31.26
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.68
+          title: ""
+          date: 2025-10-30T22:13:10.989Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.16
+              hash: 8ca6235e410644d30a829dbccafd59fd083f3b32
+              body: |
+                Update balena-io/balena-cli from 22.4.15 to 22.4.16
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.67
+          title: ""
+          date: 2025-10-30T12:25:41.091Z
+  version: 6.6.16+rev1
+  title: ""
+  date: 2025-11-01T10:42:37.101Z
+- commits:
     - subject: Update layers/meta-balena to 74730286dcb409eebcf490061cc37bf1c5b4de83
       hash: 3cb335e70dcd58c25ed2fca3f6c3989597b78ccb
       body: Update layers/meta-balena
