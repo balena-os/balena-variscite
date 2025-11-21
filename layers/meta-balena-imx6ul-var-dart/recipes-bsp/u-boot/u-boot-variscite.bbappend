@@ -1,31 +1,17 @@
-UBOOT_KCONFIG_SUPPORT = "1"
 inherit resin-u-boot
+FILESEXTRAPATHS:append := ":${THISDIR}/patches"
 
-DEPENDS_append = " dtc-native"
-
-FILESEXTRAPATHS_append := ":${THISDIR}/patches"
-
-SRC_URI_append = " \
+SRC_URI:append:imx6ul-var-dart = " \
     file://imx6ul-var-dart-integrate-with-resin-configuration.patch \
-    file://0001-Fix-SPL-compile-error-with-gcc-7.3.0.patch \
-    file://mx6-var-som-integrate-with-resin-configuration.patch \
-    file://0001-fat-Fix-file-write-failure-when-saving-bootcount.patch \
 "
 
-SRC_URI_append_var-som-mx6 = " \
+SRC_URI:append:var-som-mx6 = " \
+    file://mx6-var-som-integrate-with-resin-configuration.patch \
     file://0001-Load-kernel-and-rootfs-from-MMC-when-booting-from-NA.patch \
     file://0001-load-splash-emmc.patch \
     file://0001-mx6-var-som-Load-dtb-and-kernel-from-rootfs.patch \
 "
 
-SRC_URI_append_imx7-var-som = " \
+SRC_URI:append:imx7-var-som = " \
     file://mx7-var-som-integrate-with-balena-configuration.patch \
 "
-
-PROVIDES += "u-boot"
-
-COMPATIBLE_MACHINE = "(var-som-mx6|imx6ul-var-dart|imx7-var-som)"
- 
-S = "${WORKDIR}/git"
-# u-boot wants to build a libfdt Python module
-inherit python3native
