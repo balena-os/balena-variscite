@@ -1,1 +1,1 @@
-TTYS_append_imx7-var-som = " ttymxc0"
+TTYS:append:imx7-var-som = " ttymxc0"

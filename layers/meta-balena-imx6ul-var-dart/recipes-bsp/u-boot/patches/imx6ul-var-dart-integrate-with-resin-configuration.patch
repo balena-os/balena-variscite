@@ -1,50 +1,43 @@
-From 9ffd34ec395570bba5d05ca49de9fda1254e980f Mon Sep 17 00:00:00 2001
-From: Florin Sarbu <florin@resin.io>
-Date: Wed, 6 Nov 2019 15:27:21 +0100
-Subject: [PATCH] imx6ul-var-dart machine specific integration of resin
+From 23a9e14b956417e95ebe824f676998126fbc73e1 Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Fri, 21 Nov 2025 13:41:29 +0000
+Subject: [PATCH] imx6ul-var-dart machine specific integration of balena
  environment configuration.
 
 Upstream-Status: Inappropriate [configuration]
-Signed-off-by: Florin Sarbu <florin@resin.io>
+Signed-off-by: Florin Sarbu <florin@balena.io>
 ---
- configs/mx6ul_var_dart_mmc_defconfig |  5 +++-
- include/configs/mx6ul_var_dart.h     | 45 ++++++++++++++--------------
- 2 files changed, 27 insertions(+), 23 deletions(-)
+ configs/imx6ul_var_dart_mmc_defconfig |  4 ++--
+ include/configs/imx6ul_var_dart.h     | 15 +++++++++++----
+ 2 files changed, 13 insertions(+), 6 deletions(-)
 
-diff --git a/configs/mx6ul_var_dart_mmc_defconfig b/configs/mx6ul_var_dart_mmc_defconfig
-index ca1249a8ce..7c1b4c6d3e 100644
---- a/configs/mx6ul_var_dart_mmc_defconfig
-+++ b/configs/mx6ul_var_dart_mmc_defconfig
-@@ -36,7 +36,7 @@ CONFIG_CMD_EXT4=y
- CONFIG_CMD_EXT4_WRITE=y
- CONFIG_CMD_FAT=y
- CONFIG_CMD_FS_GENERIC=y
--CONFIG_ENV_IS_IN_MMC=y
-+#CONFIG_ENV_IS_IN_MMC=y
- CONFIG_USB=y
- CONFIG_USB_STORAGE=y
- CONFIG_USB_GADGET=y
-@@ -48,3 +48,6 @@ CONFIG_USB_GADGET_DOWNLOAD=y
- CONFIG_VIDEO=y
- # CONFIG_VIDEO_SW_CURSOR is not set
- CONFIG_OF_LIBFDT=y
-+CONFIG_PARTITION_UUIDS=y
-+CONFIG_CMD_PART=y
-+CONFIG_ENV_IS_NOWHERE=y
-diff --git a/include/configs/mx6ul_var_dart.h b/include/configs/mx6ul_var_dart.h
-index 9bcb72d826..44662ff0ab 100644
---- a/include/configs/mx6ul_var_dart.h
-+++ b/include/configs/mx6ul_var_dart.h
-@@ -31,7 +31,7 @@
- #define CONFIG_SYS_SPL_MALLOC_SIZE	0x100000	/* 1 MB */
- 
- #undef CONFIG_LOADADDR
--#define CONFIG_LOADADDR			0x82000000
-+#define CONFIG_LOADADDR			0x830A0000
- 
- /* No need to instantiate the CAAM RNG in U-Boot */
- #undef CONFIG_IMX_SEC_INIT
-@@ -79,25 +79,31 @@
+diff --git a/configs/imx6ul_var_dart_mmc_defconfig b/configs/imx6ul_var_dart_mmc_defconfig
+index 3a89f9723cc..1c534c328cb 100644
+--- a/configs/imx6ul_var_dart_mmc_defconfig
++++ b/configs/imx6ul_var_dart_mmc_defconfig
+@@ -7,7 +7,7 @@ CONFIG_SPL_GPIO=y
+ CONFIG_SPL_LIBCOMMON_SUPPORT=y
+ CONFIG_SPL_LIBGENERIC_SUPPORT=y
+ CONFIG_NR_DRAM_BANKS=8
+-CONFIG_ENV_SIZE=0x2000
++CONFIG_ENV_SIZE=0x4000
+ CONFIG_ENV_OFFSET=0xE0000
+ CONFIG_MX6UL=y
+ CONFIG_TARGET_IMX6UL_VAR_DART=y
+@@ -23,7 +23,7 @@ CONFIG_FIT=y
+ CONFIG_SPL_LOAD_FIT=y
+ CONFIG_DISTRO_DEFAULTS=y
+ CONFIG_BOOTDELAY=1
+-CONFIG_BOOTCOMMAND="run ramsize_check; mmc dev ${mmcdev}; mmc dev ${mmcdev}; if mmc rescan; then if run loadbootenv; then run importbootenv; fi; if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi"
++CONFIG_BOOTCOMMAND="setenv resin_kernel_load_addr ${loadaddr}; run resin_set_kernel_root; run set_os_cmdline; setenv mmcdev ${resin_dev_index}; setenv mmcbootpart ${resin_boot_part}; run ramsize_check; mmc rescan; if mmc dev 0; then setenv boot_dev sd; else if mmc dev 1; then setenv boot_dev emmc; fi; fi; mmc dev ${mmcdev}; if run loadimage; then run mmcboot; fi;"
+ CONFIG_SYS_PBSIZE=532
+ CONFIG_SILENT_CONSOLE=y
+ # CONFIG_SPL_SILENT_CONSOLE is not set
+diff --git a/include/configs/imx6ul_var_dart.h b/include/configs/imx6ul_var_dart.h
+index f09b8c1ea0f..6476ef81f81 100644
+--- a/include/configs/imx6ul_var_dart.h
++++ b/include/configs/imx6ul_var_dart.h
+@@ -71,25 +71,32 @@
  	"mmcbootpart=1\0" \
  	"mmcrootpart=2\0" \
  	"mmcargs=setenv bootargs console=${console},${baudrate} " \
@@ -60,7 +53,7 @@ index 9bcb72d826..44662ff0ab 100644
 +		"load mmc ${resin_dev_index}:${resin_boot_part} ${loadaddr} ${bootdir}/${script};\0" \
  	"bootscript=echo Running bootscript from mmc ...; " \
  		"source\0" \
--	"loadimage=load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${image}\0" \
+ 	"loadimage=load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${image}\0" \
 +	"loadimage=if load ${resin_dev_type} ${resin_dev_index}:${resin_root_part} ${loadaddr} boot/${image}; then run balena_kernel_load_crc_save; echo Loaded ${image} from rootfs; " \
 +		"else if load ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${loadaddr} ${image}; then  run balena_kernel_load_crc_save; echo Loaded ${image} from boot partition; " \
 +		"else echo Failed to load ${image}; fi; fi; \0" \
@@ -74,59 +67,13 @@ index 9bcb72d826..44662ff0ab 100644
 +	"mmcboot=echo Booting from ${resin_dev_type} ...; " \
  		"run mmcargs; " \
  		"run optargs; " \
- 		"if test ${boot_fdt} = yes || test ${boot_fdt} = try; then " \
+ 		"if test \"${boot_fdt}\" = yes || test \"${boot_fdt}\" = try; then " \
  			"if run loadfdt; then " \
 +				"run balena_kernel_load_crc_check; " \
 +				"run balena_fdt_load_crc_check; " \
  				"bootz ${loadaddr} - ${fdt_addr}; " \
  			"else " \
- 				"if test ${boot_fdt} = try; then " \
-@@ -121,21 +127,16 @@
- #else
- #define BOOT_ENV_SETTINGS	MMC_BOOT_ENV_SETTINGS
- #define CONFIG_BOOTCOMMAND \
-+	"setenv resin_kernel_load_addr ${loadaddr}; " \
-+	"run resin_set_kernel_root; run set_os_cmdline; " \
-+	"setenv mmcdev ${resin_dev_index}; " \
-+	"setenv mmcbootpart ${resin_boot_part}; " \
- 	"run ramsize_check; " \
--	"mmc dev ${mmcdev};" \
--	"mmc dev ${mmcdev}; if mmc rescan; then " \
--		"if run loadbootenv; then " \
--			"run importbootenv; " \
--		"fi; " \
--		"if run loadbootscript; then " \
--			"run bootscript; " \
--		"else " \
--			"if run loadimage; then " \
--				"run mmcboot; " \
--			"else run netboot; " \
--			"fi; " \
--		"fi; " \
--	"else run netboot; fi"
-+	"mmc rescan; if mmc dev 0; then setenv boot_dev sd; else if mmc dev 1; then setenv boot_dev emmc; fi; fi;" \
-+	"mmc dev ${mmcdev}; " \
-+	"if run loadimage; then " \
-+		"run mmcboot; " \
-+	"fi; "
- 
- #endif
- 
-@@ -287,12 +288,12 @@
- 
- #if defined(CONFIG_ENV_IS_IN_MMC)
- #define CONFIG_ENV_OFFSET		(14 * SZ_64K)
--#define CONFIG_ENV_SIZE			SZ_8K
- #elif defined(CONFIG_ENV_IS_IN_NAND)
- #define CONFIG_ENV_OFFSET		0x400000
--#define CONFIG_ENV_SIZE			SZ_128K
- #endif
- 
-+#define CONFIG_ENV_SIZE                 0x4000
-+
- #define CONFIG_FAT_WRITE
- 
- #ifdef CONFIG_CMD_NAND
+ 				"if test \"${boot_fdt}\" = try; then " \
 -- 
 2.34.1
 
