@@ -1,49 +1,51 @@
-From 966fcdf04ffe36b8b7b70d248702210dcf29c74c Mon Sep 17 00:00:00 2001
-From: Alexandru Costache <alexandru@balena.io>
-Date: Tue, 9 Mar 2021 07:57:20 +0100
+From 876185b9b6051df03242f40017b8750f91d36715 Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Thu, 20 Nov 2025 12:37:15 +0000
 Subject: [PATCH] imx7d-var-som.dtsi: Add LED D10 as identification led
 
 Upstream-Status: Inappropriate [configuration]
+
 Signed-off-by: Alexandru Costache <alexandru@balena.io>
+Signed-off-by: Florin Sarbu <florin@balena.io>
 ---
- arch/arm/boot/dts/imx7d-var-som.dtsi | 17 +++++++++++++++++
+ arch/arm/boot/dts/nxp/imx/imx7d-var-som.dtsi | 17 +++++++++++++++++
  1 file changed, 17 insertions(+)
 
-diff --git a/arch/arm/boot/dts/imx7d-var-som.dtsi b/arch/arm/boot/dts/imx7d-var-som.dtsi
-index b1791dece3db..3add19d8f10f 100644
---- a/arch/arm/boot/dts/imx7d-var-som.dtsi
-+++ b/arch/arm/boot/dts/imx7d-var-som.dtsi
-@@ -98,6 +98,17 @@
+diff --git a/arch/arm/boot/dts/nxp/imx/imx7d-var-som.dtsi b/arch/arm/boot/dts/nxp/imx/imx7d-var-som.dtsi
+index 560ff3f375b4..b2f8ba519ef5 100644
+--- a/arch/arm/boot/dts/nxp/imx/imx7d-var-som.dtsi
++++ b/arch/arm/boot/dts/nxp/imx/imx7d-var-som.dtsi
+@@ -48,6 +48,17 @@ simple-audio-card,cpu {
  		};
  	};
  
-+        leds {
-+                compatible = "gpio-leds";
-+                pinctrl-names = "default";
-+                pinctrl-0 = <&pinctrl_led_1>;
++	leds {
++		compatible = "gpio-leds";
++		pinctrl-names = "default";
++		pinctrl-0 = <&pinctrl_led_1>;
 +
-+                led1 {
-+                        label = "led1";
-+                        gpios = <&gpio1 13 GPIO_ACTIVE_HIGH>;
-+                };
-+        };
++		led1 {
++			label = "led1";
++			gpios = <&gpio1 13 GPIO_ACTIVE_HIGH>;
++		};
++	};
 +
- 	regulators {
- 		compatible = "simple-bus";
- 		#address-cells = <1>;
-@@ -540,6 +551,12 @@
- 			>;
- 		};
+ 	reg_vref_1v8: reg-vref-1v8 {
+ 		compatible = "regulator-fixed";
+ 		regulator-name = "vref-1v8";
+@@ -545,6 +556,12 @@ MX7D_PAD_I2C2_SCL__GPIO4_IO10	0x4000007f
+ 		>;
+ 	};
  
-+               pinctrl_led_1: ledgrp-1 {
-+                         fsl,pins = <
-+                                MX7D_PAD_GPIO1_IO13__GPIO1_IO13         0x1b0b0
-+                        >;
-+                };
++	pinctrl_led_1: ledgrp-1 {
++		fsl,pins = <
++			MX7D_PAD_GPIO1_IO13__GPIO1_IO13	0x1b0b0
++		>;
++	};
 +
- 		pinctrl_gpio_keys: gpio_keysgrp {
- 			fsl,pins = <
- 				MX7D_PAD_EPDC_BDR0__GPIO2_IO28		0x32
+ 	pinctrl_sai1: sai1grp {
+ 		fsl,pins = <
+ 			MX7D_PAD_ENET1_RX_CLK__SAI1_TX_BCLK	0x1f
 -- 
-2.17.1
+2.34.1
 

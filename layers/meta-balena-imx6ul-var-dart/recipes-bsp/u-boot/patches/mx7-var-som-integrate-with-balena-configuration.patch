@@ -1,49 +1,45 @@
-From cb5d7cec9b758db785a85c09ae994ff17fb6af8f Mon Sep 17 00:00:00 2001
-From: Alexandru Costache <alexandru@balena.io>
-Date: Fri, 22 Apr 2022 13:23:30 +0200
+From 8e42fe038843e0dd3e921f7fa74a666059eab10f Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Thu, 20 Nov 2025 14:27:29 +0000
 Subject: [PATCH] Integrate Balena u-boot environment for mx7
 
 Upstream-Status: Inappropriate [configuration]
 
 Signed-off-by: Sebastian Panceac <sebastian@balena.io>
 Signed-off-by: Alexandru Costache <alexandru@resin.io>
+Signed-off-by: Florin Sarbu <florin@balena.io>
 ---
- configs/mx7dvar_som_defconfig | 12 ++++++++++--
- include/configs/mx7dvar_som.h | 10 +++++++---
- 2 files changed, 17 insertions(+), 5 deletions(-)
+ configs/mx7dvar_som_defconfig | 4 ++--
+ include/configs/mx7dvar_som.h | 6 +++---
+ 2 files changed, 5 insertions(+), 5 deletions(-)
 
 diff --git a/configs/mx7dvar_som_defconfig b/configs/mx7dvar_som_defconfig
-index 717d1efd3b..fd48f5574b 100644
+index 6b2ab91220d..b059aebe21d 100644
 --- a/configs/mx7dvar_som_defconfig
 +++ b/configs/mx7dvar_som_defconfig
-@@ -23,8 +23,8 @@ CONFIG_HUSH_PARSER=y
- CONFIG_CMD_BOOTZ=y
- # CONFIG_CMD_IMI is not set
- # CONFIG_CMD_XIMG is not set
--# CONFIG_CMD_EXPORTENV is not set
--# CONFIG_CMD_IMPORTENV is not set
-+CONFIG_CMD_EXPORTENV is not set
-+CONFIG_CMD_IMPORTENV is not set
- CONFIG_CMD_MEMTEST=y
- CONFIG_CMD_DFU=y
- CONFIG_CMD_GPIO=y
-@@ -56,3 +56,11 @@ CONFIG_USB_GADGET_DOWNLOAD=y
- CONFIG_VIDEO=y
- CONFIG_ERRNO_STR=y
- CONFIG_OF_LIBFDT=y
-+CONFIG_PARTITION_UUIDS=y
-+CONFIG_CMD_FAT=y
-+CONFIG_CMD_PART=y
-+CONFIG_CMD_FS_UUID=y
-+CONFIG_CMD_EXPORTENV=y
-+CONFIG_CMD_EDITENV=y
-+CONFIG_CMD_SETEXPR=y
-+CONFIG_ENV_IS_NOWHERE=y
+@@ -5,7 +5,7 @@ CONFIG_SPL_GPIO=y
+ CONFIG_SPL_LIBCOMMON_SUPPORT=y
+ CONFIG_SPL_LIBGENERIC_SUPPORT=y
+ CONFIG_NR_DRAM_BANKS=1
+-CONFIG_ENV_SIZE=0x2000
++CONFIG_ENV_SIZE=0x3000
+ CONFIG_ENV_OFFSET=0xE0000
+ CONFIG_SYS_I2C_MXC_I2C1=y
+ CONFIG_SYS_I2C_MXC_I2C2=y
+@@ -25,7 +25,7 @@ CONFIG_SYS_MEMTEST_START=0x80000000
+ CONFIG_SYS_MEMTEST_END=0xa0000000
+ CONFIG_BOOTDELAY=1
+ CONFIG_USE_BOOTCOMMAND=y
+-CONFIG_BOOTCOMMAND="run ramsize_check; mmc dev ${mmcdev};if test ${use_m4} = yes; then run m4boot; fi; mmc dev ${mmcdev}; if mmc rescan; then if run loadbootenv; then run importbootenv; fi; if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi;"
++CONFIG_BOOTCOMMAND="run ramsize_check; mmc dev ${mmcdev};if test ${use_m4} = yes; then run m4boot; fi; setenv resin_kernel_load_addr ${loadaddr}; run resin_set_kernel_root; run set_os_cmdline; setenv mmcdev ${resin_dev_index}; setenv mmcbootpart ${resin_boot_part}; mmc dev ${mmcdev}; if mmc rescan; then if run loadbootenv; then run importbootenv; fi; if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi;"
+ CONFIG_SYS_CBSIZE=2048
+ CONFIG_SYS_PBSIZE=532
+ CONFIG_SILENT_CONSOLE=y
 diff --git a/include/configs/mx7dvar_som.h b/include/configs/mx7dvar_som.h
-index d375e9df5a..d99115936d 100644
+index d3d3fab6ffc..2c579b7de6b 100644
 --- a/include/configs/mx7dvar_som.h
 +++ b/include/configs/mx7dvar_som.h
-@@ -133,7 +133,7 @@
+@@ -49,7 +49,7 @@
  	"mmcbootpart=1\0" \
  	"mmcrootpart=2\0" \
  	"mmcargs=setenv bootargs console=${console},${baudrate} " \
@@ -52,7 +48,7 @@ index d375e9df5a..d99115936d 100644
  	"loadbootenv=" \
  		"load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${bootenv}\0" \
  	"importbootenv=echo Importing environment from mmc ...; " \
-@@ -142,10 +142,10 @@
+@@ -58,10 +58,10 @@
  		"load mmc ${mmcdev}:${mmcbootpart} ${loadaddr} ${bootdir}/${script};\0" \
  	"bootscript=echo Running bootscript from mmc ...; " \
  		"source\0" \
@@ -61,21 +57,10 @@ index d375e9df5a..d99115936d 100644
  	"loadfdt=run findfdt; " \
  		"echo fdt_file=${fdt_file}; " \
 -		"load mmc ${mmcdev}:${mmcbootpart} ${fdt_addr} ${bootdir}/${fdt_file}\0" \
-+		"load mmc ${mmcdev}:${resin_root_part} ${fdt_addr} boot/${fdt_file}\0" \
++		"load mmc ${lmmcdev}:${resin_root_part} ${fdt_addr} boot/${fdt_file}\0" \
  	"mmcboot=echo Booting from mmc ...; " \
  		"run mmcargs; " \
  		"run optargs; " \
-@@ -186,6 +186,10 @@
- 	"run ramsize_check; " \
- 	"mmc dev ${mmcdev};" \
- 	"if test ${use_m4} = yes; then run m4boot; fi; " \
-+	"setenv resin_kernel_load_addr ${loadaddr};" \
-+	"run resin_set_kernel_root; run set_os_cmdline;" \
-+	"setenv mmcdev ${resin_dev_index};" \
-+	"setenv mmcbootpart ${resin_boot_part};" \
- 	"mmc dev ${mmcdev}; if mmc rescan; then " \
- 		"if run loadbootenv; then " \
- 			"run importbootenv; " \
 -- 
-2.17.1
+2.34.1
 
