@@ -1,6 +1,134 @@
 Change log
 -----------
 
+# v6.7.5+rev3
+## (2025-12-04)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2c9a51d7ad90ba4625e859aefd503dff0ff6b678 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.39.0
+> ### (2025-12-03)
+> 
+> * verify that keys from SIGN_KMOD_KEY_APPEND ends up properly in kernel [Yann CARDAILLAC]
+> 
+> ## balena-yocto-scripts-1.38.99
+> ### (2025-12-03)
+> 
+> * Update aws/aws-cli to v2.32.8 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.98
+> ### (2025-12-02)
+> 
+> * Update balena-io/balena-cli to v23.2.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.97
+> ### (2025-11-29)
+> 
+> * Update GitHub Actions [balena-renovate[bot]]
+> * Update aws/aws-cli to v2.32.4 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.96
+> ### (2025-11-24)
+> 
+> * workflows: Add Generic x86_64 (GPT) and Generic AARCH64 device tests [Kyle Harding]
+> * Dockerfile_yocto-build-env: Avoid balena CLI duplicate install [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.38.95
+> ### (2025-11-22)
+> 
+> * Update actions/create-github-app-token action to v2.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.94
+> ### (2025-11-22)
+> 
+> * Update actions/checkout action to v6 [balena-renovate[bot]]
+> * Update balena-io/balena-cli to v23.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.93
+> ### (2025-11-22)
+> 
+> * Update aws/aws-cli to v2.32.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.92
+> ### (2025-11-20)
+> 
+> * Update aws/aws-cli to v2.32.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.91
+> ### (2025-11-19)
+> 
+> * Update aws/aws-cli to v2.31.39 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.90
+> ### (2025-11-19)
+> 
+> * Update balena-io/balena-cli to v23.1.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.89
+> ### (2025-11-18)
+> 
+> * Update balena-io/balena-cli to v23.1.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.88
+> ### (2025-11-18)
+> 
+> * Update balena-io/balena-cli to v23.0.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.87
+> ### (2025-11-18)
+> 
+> * Update aws/aws-cli to v2.31.38 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.86
+> ### (2025-11-17)
+> 
+> * Update balena-io/balena-cli to v23 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.85
+> ### (2025-11-15)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.60 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.84
+> ### (2025-11-14)
+> 
+> * Update aws/aws-cli to v2.31.37 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.83
+> ### (2025-11-14)
+> 
+> * Update balena-io/balena-cli to v22.5.5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.82
+> ### (2025-11-14)
+> 
+> * Update aws/aws-cli to v2.31.36 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.81
+> ### (2025-11-13)
+> 
+> * Update balena-io/balena-cli to v22.5.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.80
+> ### (2025-11-13)
+> 
+> * balena-build: Fix typo [Atanas Bunchev]
+> 
+> ## balena-yocto-scripts-1.38.79
+> ### (2025-11-13)
+> 
+> * Update balena-io/balena-cli to v22.5.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.78
+> ### (2025-11-13)
+> 
+> * Update aws/aws-cli to v2.31.35 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.7.5+rev2
 ## (2025-12-04)
 
