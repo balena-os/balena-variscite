@@ -1,21 +1,23 @@
-From 35432335fa8fa31403a383cb191aced147b078ca Mon Sep 17 00:00:00 2001
-From: Alexandru Costache <alexandru@balena.io>
-Date: Thu, 9 Jun 2022 12:13:17 +0200
+From e313027513d960915aa90addf0c6fc8b74c9dd19 Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Fri, 21 Nov 2025 12:48:15 +0000
 Subject: [PATCH] imx6ul-var-dart: Enable SPI in dts
 
 This is based on https://variwiki.com/index.php?title=DART-6UL_SPI
 
 Upstream-status: Inappropriate [configuration]
-Signed-off-by: Alexandru Costache <alexandru@balena.io>
----
- arch/arm/boot/dts/imx6ul-var-dart.dtsi | 24 ++++++++++++++++++++++++
- 1 file changed, 24 insertions(+)
 
-diff --git a/arch/arm/boot/dts/imx6ul-var-dart.dtsi b/arch/arm/boot/dts/imx6ul-var-dart.dtsi
-index 72893786b7d7..e6378b9307b9 100644
---- a/arch/arm/boot/dts/imx6ul-var-dart.dtsi
-+++ b/arch/arm/boot/dts/imx6ul-var-dart.dtsi
-@@ -24,9 +24,33 @@
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+Signed-off-by: Florin Sarbu <florin@balena.io>
+---
+ .../arm/boot/dts/nxp/imx/imx6ul-var-dart.dtsi | 23 +++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+
+diff --git a/arch/arm/boot/dts/nxp/imx/imx6ul-var-dart.dtsi b/arch/arm/boot/dts/nxp/imx/imx6ul-var-dart.dtsi
+index 7b83b666a312..251189932709 100644
+--- a/arch/arm/boot/dts/nxp/imx/imx6ul-var-dart.dtsi
++++ b/arch/arm/boot/dts/nxp/imx/imx6ul-var-dart.dtsi
+@@ -21,9 +21,32 @@ pinctrl_enet1_gpio: enet1_gpiogrp {
  			MX6UL_PAD_SNVS_TAMPER0__GPIO5_IO00	0x1b0b0 /* fec1 reset */
  		>;
  	};
@@ -28,7 +30,6 @@ index 72893786b7d7..e6378b9307b9 100644
 +			MX6UL_PAD_CSI_DATA05__GPIO4_IO26        0x100b1
 +		>;
 +	};
-+
  };
  
  &adc1 {
@@ -43,12 +44,12 @@ index 72893786b7d7..e6378b9307b9 100644
 +	pinctrl-0 = <&pinctrl_ecspi1_1>;
 +	status = "okay";
 +
-+        chip1: spidev@0 {
-+               compatible = "var,spidev";
-+               spi-max-frequency = <12000000>;
-+               reg = <0>;
-+        };
++	chip1: spidev@0 {
++		compatible = "var,spidev";
++		spi-max-frequency = <12000000>;
++		reg = <0>;
++	};
 +};
 -- 
-2.17.1
+2.34.1
 
