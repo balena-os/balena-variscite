@@ -1,4 +1,23 @@
 - commits:
+    - subject: Update to Scarthgap BSP version scarthgap_6.6.52-2.2.0_var01
+      hash: 75745280c0b385fa3a2961bf44fb595baf66b019
+      body: |
+        We are updating to Variscite release tag scarthgap_6.6.52-2.2.0_var01 as per
+        https://github.com/varigit/variscite-bsp-platform/blob/mx6ul-yocto-scarthgap-6.6.52_2.2.0-v1.1/imx-6.6.52-2.2.0.xml
+
+        This also requires adding additional BSP layers: meta-variscite-bsp-common and meta-variscite-bsp-imx
+        as well as meta-imx.
+      footer:
+        Changelog-entry: Update to Scarthgap BSP version scarthgap_6.6.52-2.2.0_var01
+        changelog-entry: Update to Scarthgap BSP version scarthgap_6.6.52-2.2.0_var01
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.7.5+rev2
+  title: ""
+  date: 2025-12-04T10:58:27.089Z
+- commits:
     - subject: Allow custom meta-balena ref on workflow dispatch
       hash: c6e2aa7d166e08bd201cc8379011cf79348d0346
       body: |

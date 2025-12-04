@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.7.5+rev2
+## (2025-12-04)
+
+* Update to Scarthgap BSP version scarthgap_6.6.52-2.2.0_var01 [Florin Sarbu]
+
 # v6.7.5+rev1
 ## (2025-11-21)
 
