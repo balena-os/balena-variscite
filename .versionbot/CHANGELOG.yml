@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add GHA workflows for var-som-mx6
+      hash: 97281e070490c9fd3a995662548c9d8179d92fc5
+      body: ""
+      footer:
+        Changelog-entry: Add GHA workflows for var-som-mx6
+        changelog-entry: Add GHA workflows for var-som-mx6
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 6.8.7+rev1
+  title: ""
+  date: 2025-12-06T18:19:48.233Z
+- commits:
     - subject: Update layers/meta-balena to 0f9c042a0961c07361fd516ccc93886b6234870c
       hash: 343bb093f47b7de14c9504c81e7d16eb4a15f78c
       body: Update layers/meta-balena

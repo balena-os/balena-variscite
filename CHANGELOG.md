@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.8.7+rev1
+## (2025-12-06)
+
+* Add GHA workflows for var-som-mx6 [Ryan Cooke]
+
 # v6.8.7
 ## (2025-12-04)
 
