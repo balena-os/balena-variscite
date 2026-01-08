@@ -1,4 +1,74 @@
 - commits:
+    - subject: Update layers/meta-balena to ddde29d03054dd90b92b95062c4d8021e1570edc
+      hash: 654fefdfc885b8e4faabe5c856f08c9e5a8972e2
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ddde29d03054dd90b92b95062c4d8021e1570edc
+        changelog-entry: Update layers/meta-balena to ddde29d03054dd90b92b95062c4d8021e1570edc
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Reduce the size of the balena bootloader by removing unused
+                functionality
+              hash: e658d4b92cb1622009fc5529d573345a426ff09b
+              body: >
+                Newer meta-balena updates are failing for iot-gate-imx8plus-sb
+                with the error:
+
+                ERROR: balena-image-flasher-1.0-r0
+                do_resin_boot_dirgen_and_deploy: resin-boot: Not enough space
+                for atomic copy operations.
+
+
+                In order to have the size reduction available for all
+                balena-bootloader users we do these changes
+
+                directly here in the balena-bootloader class.
+              footer:
+                Changelog-entry: Reduce the size of the balena bootloader by removing unused
+                  functionality
+                changelog-entry: Reduce the size of the balena bootloader by removing unused
+                  functionality
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.10.12
+          title: ""
+          date: 2026-01-08T09:48:14.494Z
+        - commits:
+            - subject: Update balena-supervisor to v17.4.2
+              hash: 7fb52fa3483857556bababd4b5d8d2b20b13fa41
+              body: |
+                Update balena-supervisor from 17.4.1 to 17.4.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Parse multiple child contracts listed under an `or` clause
+                      hash: 5560744c8061bc2e008b4d5a1816fea04b611fd3
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Christina Ying Wang <christina@balena.io>
+                        signed-off-by: Christina Ying Wang <christina@balena.io>
+                      author: Christina Ying Wang
+                      nested: []
+                  version: balena-supervisor-17.4.2
+                  title: ""
+                  date: 2026-01-06T19:34:23.699Z
+          version: meta-balena-6.10.11
+          title: ""
+          date: 2026-01-07T11:00:48.232Z
+  version: 6.10.12
+  title: ""
+  date: 2026-01-08T11:32:33.360Z
+- commits:
     - subject: Update layers/meta-balena to 7054e72ec48b6e64ad89547b1a4ed44602348efb
       hash: 3ca0fd9f3a5477ff7f61298cb2de8b34bb8115fb
       body: Update layers/meta-balena

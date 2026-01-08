@@ -1,6 +1,37 @@
 Change log
 -----------
 
+# v6.10.12
+## (2026-01-08)
+
+
+<details>
+<summary> Update layers/meta-balena to ddde29d03054dd90b92b95062c4d8021e1570edc [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.10.12
+> ### (2026-01-08)
+> 
+> * Reduce the size of the balena bootloader by removing unused functionality [Florin Sarbu]
+> 
+> ## meta-balena-6.10.11
+> ### (2026-01-07)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v17.4.2 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-17.4.2
+>> #### (2026-01-06)
+>> 
+>> * Parse multiple child contracts listed under an `or` clause [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v6.10.10
 ## (2026-01-07)
 
