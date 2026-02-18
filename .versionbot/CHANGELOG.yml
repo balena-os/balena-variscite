@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update layers/meta-balena to dcb45126741d9f454c1e98d4cf47cd37b46e2a2d
+      hash: e41000d9ccca46349ef28fde6670b8f2c1d82ead
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to dcb45126741d9f454c1e98d4cf47cd37b46e2a2d
+        changelog-entry: Update layers/meta-balena to dcb45126741d9f454c1e98d4cf47cd37b46e2a2d
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests:modem: Disable for kontron-come-xelx"
+              hash: ee77d4f792c0a4eb397b4ee084bce9fd64398fcd
+              body: |
+                Currently the modem is not used on this device type
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.11.2
+          title: ""
+          date: 2026-02-18T14:52:33.063Z
+        - commits:
+            - subject: "peak: Update to version 9.0"
+              hash: 37ab4aef27be7c9042757b3f3d2b91080a5b4259
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.11.1
+          title: ""
+          date: 2026-02-17T13:05:12.004Z
+  version: 6.11.2
+  title: ""
+  date: 2026-02-18T18:20:01.028Z
+- commits:
     - subject: Update balena-yocto-scripts to c6e9aac2a209790c00790d57b44fdce91a678159
       hash: 37c8d4d582c43112324c061506fffc537f9dc833
       body: Update balena-yocto-scripts
