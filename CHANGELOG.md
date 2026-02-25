@@ -1,6 +1,32 @@
 Change log
 -----------
 
+# v6.11.5
+## (2026-02-25)
+
+
+<details>
+<summary> Update layers/meta-balena to a1d617fd820c2d90a97f49e9fc14364204740c6e [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.11.5
+> ### (2026-02-25)
+> 
+> * kernel-balena.bbclass: Enable support for traditional iptables backends for newer kernels [Florin Sarbu]
+> 
+> ## meta-balena-6.11.4
+> ### (2026-02-23)
+> 
+> * tests/modem: Skip modem test on unsupported Orin device-type [Alexandru]
+> 
+> ## meta-balena-6.11.3
+> ### (2026-02-20)
+> 
+> * balena-bootloader.bbclass: disable more unnecessary drivers [Michal Toman]
+> * balena-bootloader.bbclass: add spaces to BALENA_CONFIGS appends [Michal Toman]
+> 
+
+</details>
+
 # v6.11.2
 ## (2026-02-18)
 
