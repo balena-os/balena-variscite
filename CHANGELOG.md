@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v6.11.10
+## (2026-03-09)
+
+
+<details>
+<summary> Update layers/meta-balena to 1c606f58f07b6746f6548bcc7c9301482cdced64 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.11.10
+> ### (2026-03-05)
+> 
+> * efitools: update to master [Michal Toman]
+> 
+> ## meta-balena-6.11.9
+> ### (2026-03-04)
+> 
+> * recipes-support/hostapp-update-hooks: Deploy blacklisted bootloader files [Alexandru Costache]
+> 
+
+</details>
+
 # v6.11.8+rev1
 ## (2026-03-09)
 
