@@ -1,6 +1,57 @@
 Change log
 -----------
 
+# v6.11.13
+## (2026-03-15)
+
+
+<details>
+<summary> Update layers/meta-balena to 3163559db59c23c55f81a18b5caabf422ee55499 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.11.13
+> ### (2026-03-14)
+> 
+> * tcgtool: update to v0.1.4 [Michal Toman]
+> 
+> ## meta-balena-6.11.12
+> ### (2026-03-14)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 6430fad [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.101
+>> #### (2026-03-11)
+>> 
+>> * Update core/contracts digest to ab2042b [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.100
+>> #### (2026-03-09)
+>> 
+>> * Update core/contracts digest to 73054ac [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.99
+>> #### (2026-03-09)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.98
+>> #### (2026-03-07)
+>> 
+>> * Update docker/setup-buildx-action action to v4 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.97
+>> #### (2026-03-02)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v6.11.11+rev1
 ## (2026-03-11)
 
