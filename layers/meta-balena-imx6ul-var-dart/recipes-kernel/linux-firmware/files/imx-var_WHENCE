@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------
+
+Driver: brcmfmac - Broadcom/Cypress FullMAC WLAN driver
+
+File: brcm/brcmfmac4339-sdio-fcc.txt
+File: brcm/brcmfmac4339-sdio-prod_v6.37.39.141.bin
+File: brcm/brcmfmac4339-sdio.txt
+File: brcm/brcmfmac4339-sdio.variscite,imx6ul-var-dart.bin
+File: brcm/brcmfmac4339-sdio.variscite,imx6ul-var-dart.txt
+File: brcm/brcmfmac4339-sdio.variscite,imx6ul-var-som.bin
+File: brcm/brcmfmac4339-sdio.variscite,imx6ul-var-som.txt
+File: brcm/brcmfmac43430-sdio-fcc.txt
+File: brcm/brcmfmac43430-sdio-prod_v7.45.98.132.bin
+File: brcm/brcmfmac43430-sdio.variscite,imx6ul-var-dart.bin
+File: brcm/brcmfmac43430-sdio.variscite,imx6ul-var-dart.txt
+File: brcm/brcmfmac43430-sdio.variscite,imx6ul-var-som.bin
+File: brcm/brcmfmac43430-sdio.variscite,imx6ul-var-som.txt
+File: brcm/brcmfmac4356-pcie.txt
+File: brcm/brcmfmac4339-sdio.variscite,imx7-var-som.bin
+File: brcm/brcmfmac4339-sdio.variscite,imx7-var-som.txt
+File: brcm/brcmfmac43430-sdio.variscite,imx7-var-som.bin
+File: brcm/brcmfmac43430-sdio.variscite,imx7-var-som.txt
+
+--------------------------------------------------------------------------
+
+Driver: TI_ST - TI Bluetooth HCI UART driver
+
+File: ti-connectivity/TIInit_10.6.15.bts
+File: ti-connectivity/TIInit_11.8.32.bts
+File: ti-connectivity/TIInit_12.10.28.bts
+File: ti-connectivity/TIInit_12.8.32.bts
+File: ti-connectivity/TIInit_6.12.26.bts
+File: ti-connectivity/TIInit_6.7.16.bts
+File: ti-connectivity/TIInit_7.6.15.bts
+
+--------------------------------------------------------------------------
