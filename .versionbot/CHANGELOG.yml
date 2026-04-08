@@ -1,4 +1,19 @@
 - commits:
+    - subject: Remove discontinued devices imx6ul-var-dart, imx7-var-som
+      hash: 304a7f73016dd449c8cef02d234cce13ed9194b8
+      body: |
+        As per https://docs.balena.io/reference/hardware/versioning#discontinued
+      footer:
+        Changelog-entry: Remove discontinued devices imx6ul-var-dart, imx7-var-som
+        changelog-entry: Remove discontinued devices imx6ul-var-dart, imx7-var-som
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.12.4+rev3
+  title: ""
+  date: 2026-04-08T12:25:41.798Z
+- commits:
     - subject: Update product-os/flowzone to 9ba87de4b6abf49c021894388f81de59bfa4a523
       hash: ed21d1f0db0c7e4868561524c0709eeecdb0c3b9
       body: Update product-os/flowzone

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.12.4+rev3
+## (2026-04-08)
+
+* Remove discontinued devices imx6ul-var-dart, imx7-var-som [Florin Sarbu]
+
 # v6.12.4+rev2
 ## (2026-04-04)
 
