@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-freescale to 902dde8c5bd29bb507ac8d37772565a6c9ab77cd
+      hash: 611eac044056fe477826e6d5d11ae9d9fa5ce2ea
+      body: Update layers/meta-freescale
+      footer:
+        Changelog-entry: Update layers/meta-freescale to
+          902dde8c5bd29bb507ac8d37772565a6c9ab77cd
+        changelog-entry: Update layers/meta-freescale to
+          902dde8c5bd29bb507ac8d37772565a6c9ab77cd
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.12.4+rev4
+  title: ""
+  date: 2026-04-08T12:47:20.288Z
+- commits:
     - subject: Remove discontinued devices imx6ul-var-dart, imx7-var-som
       hash: 304a7f73016dd449c8cef02d234cce13ed9194b8
       body: |
