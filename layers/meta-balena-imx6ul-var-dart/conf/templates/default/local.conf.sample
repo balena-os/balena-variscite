@@ -1,7 +1,5 @@
 # Supported machines
-#MACHINE ?= "imx6ul-var-dart"
 #MACHINE ?= "var-som-mx6"
-#MACHINE ?= "imx7-var-som"
 
 # More info meta-resin/README.md
 #TARGET_REPOSITORY ?= ""
