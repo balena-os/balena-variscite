@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to 47c5ec10e0a27cc1f25e96f679482b7e717177e4
+      hash: 533584a784b6e0aa81cb3baba3414f66e442b733
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 47c5ec10e0a27cc1f25e96f679482b7e717177e4
+        changelog-entry: Update layers/meta-balena to 47c5ec10e0a27cc1f25e96f679482b7e717177e4
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: ".github/workflows: Remove discontinued machines"
+              hash: 5f2ca2e4adaf3c7ef807e1f82e55c07537540dc2
+              body: |
+                It was decided to remove support for these machines based on
+                hardware being discontinued or lack of customer interest:
+
+                https://docs.balena.io/reference/hardware/versioning#discontinued
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.12.5
+          title: ""
+          date: 2026-04-09T01:53:25.209Z
+  version: 6.12.5
+  title: ""
+  date: 2026-04-09T03:29:54.874Z
+- commits:
     - subject: Update layers/meta-freescale to 902dde8c5bd29bb507ac8d37772565a6c9ab77cd
       hash: 611eac044056fe477826e6d5d11ae9d9fa5ce2ea
       body: Update layers/meta-freescale
