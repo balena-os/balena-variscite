@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update layers/meta-balena to b02004692e11591badd7e15fd6d03b8bc3f03b56
+      hash: f4125c146590181768b1eecb1f96d9a5937649ad
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b02004692e11591badd7e15fd6d03b8bc3f03b56
+        changelog-entry: Update layers/meta-balena to b02004692e11591badd7e15fd6d03b8bc3f03b56
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Fix modemmanager build on dunfell
+              hash: e945ee3d1610d387a7e29b482b678d9a38d72b9d
+              body: ""
+              footer:
+                Changelog-entry: Fix modemmanager build on dunfell
+                changelog-entry: Fix modemmanager build on dunfell
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.12.9
+          title: ""
+          date: 2026-04-16T17:50:24.850Z
+  version: 6.12.9
+  title: ""
+  date: 2026-04-16T18:52:31.173Z
+- commits:
     - subject: Update layers/meta-openembedded to
         5124ac4a658899158f4a7a2ddf1d2ca931ec7d0e
       hash: 1c4e84d3c994695bd78808684a5aa35f65574d74
