@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to 40263171117a11d10fcf1469214588e65a77b8d0
+      hash: bf033dcb737c195fc80b3246dab330f12d9791fa
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 40263171117a11d10fcf1469214588e65a77b8d0
+        changelog-entry: Update layers/meta-balena to 40263171117a11d10fcf1469214588e65a77b8d0
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "mobynit: update to v1.0.0"
+              hash: d3c6c79ec6ff747fdcec1534bd704950b163f63b
+              body: >
+                This mobynit version mounts the rootfs as lowerdirs and is
+                intrinsically
+
+                read-only.
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.0
+          title: ""
+          date: 2026-04-24T18:34:48.170Z
+  version: 7.0.0
+  title: ""
+  date: 2026-04-24T18:50:47.293Z
+- commits:
     - subject: Update layers/poky to 6a3d16d7b8b9adc096a048e0b2ad463688a23dec
       hash: 3f3d71f842da06c3d21d55984e4d2fcecae790c4
       body: Update layers/poky
