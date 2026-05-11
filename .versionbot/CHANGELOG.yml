@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update layers/meta-balena to 3f363dc14666d0d39b8f039b194198b5f5cf81f7
+      hash: 7d9ab43db1d6879c27d2adcb69662d43e6e6e928
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3f363dc14666d0d39b8f039b194198b5f5cf81f7
+        changelog-entry: Update layers/meta-balena to 3f363dc14666d0d39b8f039b194198b5f5cf81f7
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "kernel-balena: address CVE-2026-43284"
+              hash: f774fd5ea5dff8e1751c19a62825330fce043425
+              body: >
+                This commit removes the esp4/esp6 and rxrpc modules as they are
+                vulnerable.
+
+
+                Devices will not be able to use IPSEC based VPNs (esp4/esp6).
+                The only
+
+                consumer of rxrpc is the in-kernel AFS (Andrew File System)
+                which is
+
+                experimental anyway.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.2
+          title: ""
+          date: 2026-05-11T13:58:10.857Z
+  version: 7.0.2
+  title: ""
+  date: 2026-05-11T15:33:32.562Z
+- commits:
     - subject: Update product-os/flowzone to 3385aec28224936f1fde1bf75a2c02b60af8019d
       hash: f6df0fad279a224c4bf439c4780f03b2a12f2432
       body: Update product-os/flowzone
