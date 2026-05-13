@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to db668121d98162b8ad196ba6d8637f8330a1787d
+      hash: fcf38922a30a22190455907eb3e06370d69e431a
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to db668121d98162b8ad196ba6d8637f8330a1787d
+        changelog-entry: Update layers/poky to db668121d98162b8ad196ba6d8637f8330a1787d
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.0.2+rev1
+  title: ""
+  date: 2026-05-13T11:20:37.775Z
+- commits:
     - subject: Update layers/meta-balena to 3f363dc14666d0d39b8f039b194198b5f5cf81f7
       hash: 7d9ab43db1d6879c27d2adcb69662d43e6e6e928
       body: Update layers/meta-balena
