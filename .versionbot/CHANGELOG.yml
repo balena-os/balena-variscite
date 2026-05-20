@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to d4576e3c081a7ee7b57d48421c4c4f491cb4defe
+      hash: 00373c386525a0bce588b6ce2c03ff05c02361c2
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to d4576e3c081a7ee7b57d48421c4c4f491cb4defe
+        changelog-entry: Update layers/poky to d4576e3c081a7ee7b57d48421c4c4f491cb4defe
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.0.3+rev6
+  title: ""
+  date: 2026-05-20T09:42:21.286Z
+- commits:
     - subject: Update contracts to 9fe86f23e02c5d438a96ab3209239dcb5df4dc5b
       hash: 2b1d5b3e8aed94ab727413b28bd403f709625449
       body: Update contracts
