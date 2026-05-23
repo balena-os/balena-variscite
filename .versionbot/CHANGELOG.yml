@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update product-os/flowzone to 2255e2094e3491e2de7ebe019835edf0aebcb227
+      hash: ab233b31e70a82cc2be23ff5255c3a22bfa969c3
+      body: Update product-os/flowzone
+      footer:
+        Changelog-entry: Update product-os/flowzone to 2255e2094e3491e2de7ebe019835edf0aebcb227
+        changelog-entry: Update product-os/flowzone to 2255e2094e3491e2de7ebe019835edf0aebcb227
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.0.5+rev4
+  title: ""
+  date: 2026-05-23T01:27:13.197Z
+- commits:
     - subject: Update layers/meta-variscite-bsp-imx to
         5de89ff77101641e03d3440831c73c3f407c0c55
       hash: 8f742065681e3773d29ec75f84742cab17a4561c
