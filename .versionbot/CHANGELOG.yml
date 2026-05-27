@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to b5497e219f307a9dadf3ec6c51b4f07f42c7bddc
+      hash: 02a10212359ea4145b5e9d2f6be7498984eef7ea
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b5497e219f307a9dadf3ec6c51b4f07f42c7bddc
+        changelog-entry: Update layers/meta-balena to b5497e219f307a9dadf3ec6c51b4f07f42c7bddc
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: remove all bins from nss to save some place
+              hash: e7124736f403316e53f373ef61c7cd06773e06d3
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-7.1.0
+          title: ""
+          date: 2026-05-27T13:55:53.166Z
+  version: 7.1.0
+  title: ""
+  date: 2026-05-27T15:44:02.922Z
+- commits:
     - subject: Update layers/meta-balena to 4c90795522a62b3a914b90ee0d79dde9111458f8
       hash: 5a0b28368b02bb046d60e7b85c2defd3933fc421
       body: Update layers/meta-balena
