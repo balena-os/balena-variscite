@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        d8cc4e44001c7257273d290ce8c4496e93d32841
+      hash: 84f28ec014893b648c9c293cac4f1d2b882c51e5
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          d8cc4e44001c7257273d290ce8c4496e93d32841
+        changelog-entry: Update layers/meta-openembedded to
+          d8cc4e44001c7257273d290ce8c4496e93d32841
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.2.0+rev2
+  title: ""
+  date: 2026-05-31T11:00:36.145Z
+- commits:
     - subject: Update product-os/flowzone to ead3735a95070ffb7410abbfdd17641ed67ff59b
       hash: 2487577f233beee6090c6d9a46b9f7cba7927c89
       body: Update product-os/flowzone
