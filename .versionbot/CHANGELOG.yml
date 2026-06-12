@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-imx to be03d63729f59c1cbc4c33d01b985ccc057964e4
+      hash: 89bc8781dbc34dc2a0c2bd74461f0fa2ba6ebb58
+      body: Update layers/meta-imx
+      footer:
+        Changelog-entry: Update layers/meta-imx to be03d63729f59c1cbc4c33d01b985ccc057964e4
+        changelog-entry: Update layers/meta-imx to be03d63729f59c1cbc4c33d01b985ccc057964e4
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.0+rev1
+  title: ""
+  date: 2026-06-12T15:29:48.908Z
+- commits:
     - subject: Update layers/meta-balena to 41e0a2b58347b68c322346cbfe3513e7858dce6f
       hash: 7616556e5a085a7da2d51db453c7dc1e1d1e557e
       body: Update layers/meta-balena
