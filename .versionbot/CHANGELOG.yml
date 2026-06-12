@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to 41e0a2b58347b68c322346cbfe3513e7858dce6f
+      hash: 7616556e5a085a7da2d51db453c7dc1e1d1e557e
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 41e0a2b58347b68c322346cbfe3513e7858dce6f
+        changelog-entry: Update layers/meta-balena to 41e0a2b58347b68c322346cbfe3513e7858dce6f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "conf/layer.conf: Specify Wrynose compatibility"
+              hash: b5779e477068e55f3110cf735db17fdb33eb522b
+              body: |
+                ... and populate UNPACKDIR for the dunfell, kirkstone
+                and scarthgap layers, to ensure backwards compatibility.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Co-authored-by: Florin Sarbu <florin@balena.io>
+                co-authored-by: Florin Sarbu <florin@balena.io>
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-7.5.0
+          title: ""
+          date: 2026-06-12T08:17:26.427Z
+  version: 7.5.0
+  title: ""
+  date: 2026-06-12T09:55:31.102Z
+- commits:
     - subject: Update layers/poky to b56134ff90dec996e8aae45ed7e6ad6b1d5a84a0
       hash: ece64f0e9632dbcc3d49f5e3700196e5bd976b6e
       body: Update layers/poky
