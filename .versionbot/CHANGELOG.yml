@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update product-os/flowzone to 7db3b3261f71eb086ce6ce7cc623d63517926f07
+      hash: b594d4ec56148b9c082ac4a9331131d739d021fe
+      body: Update product-os/flowzone
+      footer:
+        Changelog-entry: Update product-os/flowzone to 7db3b3261f71eb086ce6ce7cc623d63517926f07
+        changelog-entry: Update product-os/flowzone to 7db3b3261f71eb086ce6ce7cc623d63517926f07
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.0+rev2
+  title: ""
+  date: 2026-06-13T01:33:41.280Z
+- commits:
     - subject: Update layers/meta-imx to be03d63729f59c1cbc4c33d01b985ccc057964e4
       hash: 89bc8781dbc34dc2a0c2bd74461f0fa2ba6ebb58
       body: Update layers/meta-imx
