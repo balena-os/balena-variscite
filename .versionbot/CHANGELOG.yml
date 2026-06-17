@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 70ed6f677234d32198371a030178d2f272cf2d94
+      hash: 6cad0c9bd44c8a78815794433247f34f9fbe3228
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 70ed6f677234d32198371a030178d2f272cf2d94
+        changelog-entry: Update layers/poky to 70ed6f677234d32198371a030178d2f272cf2d94
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.1+rev2
+  title: ""
+  date: 2026-06-17T11:57:45.581Z
+- commits:
     - subject: Update layers/meta-openembedded to
         b0c2c648a1af89e7a8dd4c2ec841f3bc0ed0ccb9
       hash: f7d58c0c17d735beec26de5dccca4261e00b8f8b
