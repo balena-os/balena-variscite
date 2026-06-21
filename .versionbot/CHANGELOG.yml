@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to 509f39187ffe70e7bb45ee0b8b052b3b58ae56b0
+      hash: e458cfa96d92611edbc747fc81a140de67544f92
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 509f39187ffe70e7bb45ee0b8b052b3b58ae56b0
+        changelog-entry: Update layers/meta-balena to 509f39187ffe70e7bb45ee0b8b052b3b58ae56b0
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "balena: bump balena-engine to restore 1777 default for bare tmpfs
+                mounts"
+              hash: 94d798cdc879b302f5fc481f63e0be8f12e8175c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-7.5.4
+          title: ""
+          date: 2026-06-21T20:25:17.143Z
+  version: 7.5.4
+  title: ""
+  date: 2026-06-21T20:56:07.788Z
+- commits:
     - subject: Update layers/poky to 36687ffb9c8bd156e24e6d1a8c4ac53e40f2c557
       hash: 47c0f4ca2020ea2e23c921a88fb06a90e71a918e
       body: Update layers/poky
