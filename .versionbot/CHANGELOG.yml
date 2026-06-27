@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 3482e7f32a46f6325a01201f52a4121816c6659d
+      hash: 14528653ad821e7410dcc575758870a7e7f71bb4
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 3482e7f32a46f6325a01201f52a4121816c6659d
+        changelog-entry: Update layers/poky to 3482e7f32a46f6325a01201f52a4121816c6659d
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.7+rev3
+  title: ""
+  date: 2026-06-27T09:27:29.416Z
+- commits:
     - subject: Update product-os/flowzone to 8ed35c2e3f040ce47e37306e8b07b287f9579263
       hash: 6c73183c620196fcada2e683e9cb7e7a70488148
       body: Update product-os/flowzone
