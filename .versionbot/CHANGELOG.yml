@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to bb98354685781296e3b3737e7762412100f359c2
+      hash: c56c1610ae18a0271f5a191a870e19d14339e4c0
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to bb98354685781296e3b3737e7762412100f359c2
+        changelog-entry: Update layers/poky to bb98354685781296e3b3737e7762412100f359c2
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.7+rev8
+  title: ""
+  date: 2026-07-03T09:29:49.088Z
+- commits:
     - subject: Update layers/meta-openembedded to
         29a044218285fdc7fcdd63d5f0929cb3a27b6fed
       hash: 64994fd25244de9483cefa7e2089599454e07e85
