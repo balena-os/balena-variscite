@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update product-os/flowzone to 6920e56ff99bc1679d85c9b23935bf35018b75fd
+      hash: 956a9fd5db7956b3f49e77f4eaf77fe8a7da7e82
+      body: Update product-os/flowzone
+      footer:
+        Changelog-entry: Update product-os/flowzone to 6920e56ff99bc1679d85c9b23935bf35018b75fd
+        changelog-entry: Update product-os/flowzone to 6920e56ff99bc1679d85c9b23935bf35018b75fd
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.7+rev9
+  title: ""
+  date: 2026-07-04T01:10:00.115Z
+- commits:
     - subject: Update layers/poky to bb98354685781296e3b3737e7762412100f359c2
       hash: c56c1610ae18a0271f5a191a870e19d14339e4c0
       body: Update layers/poky
