@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-imx to 1001299baf5a3b468c93e381c62aeb486a639aa1
+      hash: 22ead824d44fa1ccf51a60ffc5eab598bc3df94c
+      body: Update layers/meta-imx
+      footer:
+        Changelog-entry: Update layers/meta-imx to 1001299baf5a3b468c93e381c62aeb486a639aa1
+        changelog-entry: Update layers/meta-imx to 1001299baf5a3b468c93e381c62aeb486a639aa1
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.11+rev2
+  title: ""
+  date: 2026-07-13T17:22:42.314Z
+- commits:
     - subject: Update balena-yocto-scripts to 4dc231f968ed47c61149c1a7699108d4747070dc
       hash: 1c61b6c359f4096de80ac44a09c8934de9f2648c
       body: Update balena-yocto-scripts

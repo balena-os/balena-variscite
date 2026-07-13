@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.5.11+rev2
+## (2026-07-13)
+
+* Update layers/meta-imx to 1001299baf5a3b468c93e381c62aeb486a639aa1 [balena-renovate[bot]]
+
 # v7.5.11+rev1
 ## (2026-07-13)
 
