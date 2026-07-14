@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to b82363e38d36ba5f76b739b906f67f6d0b729464
+      hash: 9e3ae9b9f60916ab2f0e2bff37709f7a609dae48
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to b82363e38d36ba5f76b739b906f67f6d0b729464
+        changelog-entry: Update balena-yocto-scripts to b82363e38d36ba5f76b739b906f67f6d0b729464
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update product-os/review-commit-action action to v0.3.2
+              hash: d60f358679df56824fd0a24bfb5959e029152ab1
+              body: |
+                Update product-os/review-commit-action from 0.3.0 to 0.3.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.41.7
+          title: ""
+          date: 2026-07-14T15:56:52.158Z
+  version: 7.5.11+rev3
+  title: ""
+  date: 2026-07-14T17:00:03.464Z
+- commits:
     - subject: Update layers/meta-imx to 1001299baf5a3b468c93e381c62aeb486a639aa1
       hash: 22ead824d44fa1ccf51a60ffc5eab598bc3df94c
       body: Update layers/meta-imx
