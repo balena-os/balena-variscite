@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-imx to 5bde00498b041167629890563478eb89c7ca10b8
+      hash: 9714e3fd46e980e302f5d7ec1d91f42f7aa647ec
+      body: Update layers/meta-imx
+      footer:
+        Changelog-entry: Update layers/meta-imx to 5bde00498b041167629890563478eb89c7ca10b8
+        changelog-entry: Update layers/meta-imx to 5bde00498b041167629890563478eb89c7ca10b8
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.7.0+rev7
+  title: ""
+  date: 2026-07-21T13:02:04.596Z
+- commits:
     - subject: Update layers/poky to 6ccffb86e86b4d41f61dc0c06c2b732c72676537
       hash: daf77d71154f070c7f049026f755106e7bb68bb8
       body: Update layers/poky
