@@ -1,4 +1,20 @@
 - commits:
+    - subject: Set explicit partition size overrides for each machine
+      hash: 1d34fabcb83d6557010dade2a6889c0ec3e17349
+      body: |
+        Ensure IMAGE_ROOTFS_SIZE, BALENA_BOOT_SIZE, and BALENA_STATE_SIZE are
+        explicitly defined for every machine target
+      footer:
+        Changelog-entry: Set explicit partition size overrides for each machine
+        changelog-entry: Set explicit partition size overrides for each machine
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+  version: 7.7.2+rev4
+  title: ""
+  date: 2026-07-28T13:56:01.167Z
+- commits:
     - subject: unpin flowzone, track @master
       hash: b523a4aa4018da7284d9099176eb2066429af8a0
       body: |
