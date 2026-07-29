@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to 05f71c5607f293a7bc162db6570f40bd5522393f
+      hash: f5f39802ad19c19277c392cf641b6c7697e6061a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 05f71c5607f293a7bc162db6570f40bd5522393f
+        changelog-entry: Update layers/meta-balena to 05f71c5607f293a7bc162db6570f40bd5522393f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "mobynit: update to v1.1.0"
+              hash: b7f6b20d99d0bdd7ed489cb839324884acc920a2
+              body: |
+                Update from v1.0.1 to v1.1.0
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.8.0
+          title: ""
+          date: 2026-07-29T07:22:20.789Z
+  version: 7.8.0
+  title: ""
+  date: 2026-07-29T09:30:52.511Z
+- commits:
     - subject: Set explicit partition size overrides for each machine
       hash: 1d34fabcb83d6557010dade2a6889c0ec3e17349
       body: |
