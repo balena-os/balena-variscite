@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.8.0+rev2
+## (2026-07-31)
+
+* Update layers/meta-openembedded to ef3df29f2cfca6a9513b51ebcdccf82b6c8a836f [balena-renovate[bot]]
+
 # v7.8.0+rev1
 ## (2026-07-31)
 
