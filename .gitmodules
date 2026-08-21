@@ -25,9 +25,12 @@
 [submodule "layers/meta-variscite-bsp-imx"]
 	path = layers/meta-variscite-bsp-imx
 	url = https://github.com/varigit/meta-variscite-bsp-imx.git
+	branch = scarthgap_6.6.52-2.2.2_var01
 [submodule "layers/meta-variscite-bsp-common"]
 	path = layers/meta-variscite-bsp-common
 	url = https://github.com/varigit/meta-variscite-bsp-common.git
+	branch = scarthgap_6.6.52-2.2.2_var01
 [submodule "layers/meta-imx"]
 	path = layers/meta-imx
 	url = https://github.com/nxp-imx/meta-imx.git
+	branch = scarthgap-6.6.52-2.2.2
