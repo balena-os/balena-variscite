@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to fc3a49a7957b21a8a4f1f419b2d047c502080cd9
+      hash: 191e544c4015486c2bf4c56d31e120aada15e978
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to fc3a49a7957b21a8a4f1f419b2d047c502080cd9
+        changelog-entry: Update balena-yocto-scripts to fc3a49a7957b21a8a4f1f419b2d047c502080cd9
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update flowzonify to v0.4.2
+              hash: e2691a502ca964f83922e704328844a87eb16adf
+              body: |
+                Update flowzonify from 0.0.0 to 0.4.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.9
+          title: ""
+          date: 2026-08-28T13:50:44.967Z
+  version: 8.0.4+rev2
+  title: ""
+  date: 2026-08-28T16:47:03.205Z
+- commits:
     - subject: Update contracts to 93b30010e7441051d361fa319a6e395f5a3c94f4
       hash: 8d2887069d0b3825d2f9272d66a2bf285e8e4860
       body: Update contracts
