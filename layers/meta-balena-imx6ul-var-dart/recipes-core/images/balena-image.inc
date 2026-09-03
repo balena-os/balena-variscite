@@ -25,6 +25,7 @@ do_image_balenaos-img[depends] += " virtual/bootloader:do_deploy"
 # we do not use some packages installed by the BSP
 IMAGE_INSTALL:remove = "packagegroup-tools-bluetooth"
 IMAGE_INSTALL:remove = "packagegroup-variscite-devel"
+CORE_IMAGE_EXTRA_INSTALL:remove = "variscite-base-files"
 
 IMAGE_ROOTFS_SIZE:var-som-mx6 = "327680"
 BALENA_BOOT_SIZE:var-som-mx6 = "40960"
