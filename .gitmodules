@@ -25,9 +25,12 @@
 [submodule "layers/meta-variscite-bsp-imx"]
 	path = layers/meta-variscite-bsp-imx
 	url = https://github.com/varigit/meta-variscite-bsp-imx.git
+	branch = hardknott
 [submodule "layers/meta-variscite-bsp-common"]
 	path = layers/meta-variscite-bsp-common
 	url = https://github.com/varigit/meta-variscite-bsp-common.git
+	branch = main
 [submodule "layers/meta-imx"]
 	path = layers/meta-imx
 	url = https://github.com/nxp-imx/meta-imx.git
+	branch = wrynose-6.18.20-2.0.0
