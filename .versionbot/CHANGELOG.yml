@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update layers/meta-balena to 84a61cce6adbcb6bfe05cf08a96f6fe415359104
+      hash: 4a31d721e2f466e9c9873fbf1b68f7ba0a98e324
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 84a61cce6adbcb6bfe05cf08a96f6fe415359104
+        changelog-entry: Update layers/meta-balena to 84a61cce6adbcb6bfe05cf08a96f6fe415359104
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to 466e576
+              hash: 202b6b05fa009aec7c61883c419d94f7d72aa8bd
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Node.js
+                      hash: 17b2e1ed1544c90d8d63d97c8ff0edef7474a9c7
+                      body: |
+                        Update node from 22.14.0 to 22.23.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.132
+                  title: ""
+                  date: 2026-09-02T20:19:30.667Z
+          version: meta-balena-8.0.10
+          title: ""
+          date: 2026-09-11T10:47:29.394Z
+  version: 8.0.10
+  title: ""
+  date: 2026-09-11T12:57:12.880Z
+- commits:
     - subject: Update layers/meta-openembedded to
         b5874ea07d69919d9b40d59f2c2f0bbd24bc3259
       hash: b23a10116f0d6d1a94f71d79984037fb89470fb1
