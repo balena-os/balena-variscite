@@ -8,7 +8,7 @@ the rootfs, and fallback to the boot partition in
 case of a rollback to an older release which does not
 yet store them in the rootfs.
 
-Upstream-status: Inappropriate [configuration]
+Upstream-Status: Inappropriate [configuration]
 Signed-off-by: Alexandru Costache <alexandru@balena.io>
 ---
  include/configs/mx6var_som.h | 8 ++++++--
