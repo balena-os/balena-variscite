@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-freescale to 3f6c18a3e5e7443363fd30ff79983686cf6851db
+      hash: fe81bbafde40c52e4d28ba58ea67c733897e8ecd
+      body: Update layers/meta-freescale
+      footer:
+        Changelog-entry: Update layers/meta-freescale to
+          3f6c18a3e5e7443363fd30ff79983686cf6851db
+        changelog-entry: Update layers/meta-freescale to
+          3f6c18a3e5e7443363fd30ff79983686cf6851db
+      author: balena-renovate[bot]
+      nested: []
+  version: 8.0.10+rev6
+  title: ""
+  date: 2026-09-17T14:36:24.110Z
+- commits:
     - subject: Update contracts to 3b3e3a334e5aa3f67b99ee900b2d738f2fcf8574
       hash: dde3e20b5571297d201ae937f79a044a95c2f30c
       body: Update contracts
