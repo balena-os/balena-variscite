@@ -1,6 +1,14 @@
 Change log
 -----------
 
+# v8.0.13+rev3
+## (2026-09-30)
+
+* Build var-som-mx6 initramfs packages with -Os to reduce boot partition size [guille-vega]
+* Reduce var-som-mx6 kernel size to fit the boot partition budget [guille-vega]
+* Fix stale u-boot-variscite patches and move var-som-mx6 boot command to a Kconfig fragment [guille-vega]
+* Update Variscite BSP layers to scarthgap_6.6.52-2.2.2 [guille-vega]
+
 # v8.0.13+rev2
 ## (2026-09-29)
 

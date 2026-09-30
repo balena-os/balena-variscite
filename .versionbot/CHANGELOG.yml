@@ -1,4 +1,89 @@
 - commits:
+    - subject: Build var-som-mx6 initramfs packages with -Os to reduce boot partition
+        size
+      hash: 3b8174d203b1a98827a0353c68542a64a4db504c
+      body: |
+        Append -Os to CFLAGS for the packages that make up
+        balena-image-initramfs (busybox, bash, coreutils, openssl, systemd,
+        util-linux, e2fsprogs, and others), scoped to var-som-mx6 only via
+        per-recipe :pn-<recipe>:var-som-mx6 overrides in one place. Combined
+        with the kernel size reduction, this brings the boot partition back
+        under budget with real margin instead of a bare pass.
+      footer:
+        Changelog-entry: Build var-som-mx6 initramfs packages with -Os to reduce boot
+          partition size
+        changelog-entry: Build var-som-mx6 initramfs packages with -Os to reduce boot
+          partition size
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+    - subject: Reduce var-som-mx6 kernel size to fit the boot partition budget
+      hash: c0f1915df7028f6410ee64d1e192be9f1facbc6e
+      body: |
+        Disable USB3/xHCI (no such controller on i.MX6), the Etnaviv GPU
+        driver and clock support for i.MX6SL/SLL/SX/UL and i.MX7D/7ULP (none
+        of which var-som-mx6 uses -- its DTBs are imx6q/dl/qp only), and the
+        DA9063/MC13783 PMIC, WM8962/WM8994/ES8328/Eukrea-TLV320 audio codec,
+        and E1000E/SMC91X Ethernet drivers (this board uses PFUZE100 and
+        TLV320AIC3X instead, and no PCIe/legacy Ethernet chip at all).
+        Tighten CONFIG_LOG_BUF_SHIFT and enable CONFIG_CC_OPTIMIZE_FOR_SIZE.
+      footer:
+        Changelog-entry: Reduce var-som-mx6 kernel size to fit the boot partition budget
+        changelog-entry: Reduce var-som-mx6 kernel size to fit the boot partition budget
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+    - subject: Fix stale u-boot-variscite patches and move var-som-mx6 boot command to
+        a Kconfig fragment
+      hash: 7d0a756495c1971019d53d41efcc847adaad2132
+      body: >
+        Regenerate the resin-configuration, MMC-boot-from-NAND,
+        splash-from-emmc,
+
+        and dtb/kernel-from-rootfs patches against the scarthgap_6.6.52-2.2.2
+        base,
+
+        and move var-som-mx6's CONFIG_BOOTCOMMAND (and CONFIG_PARTITION_UUIDS)
+        out
+
+        of a header macro into a balenaos_mx6var_som.cfg Kconfig fragment merged
+
+        into both defconfigs, so it stops needing regeneration on every upstream
+
+        bump. Also fixes a stale `loaduimage` env-var reference (renamed to
+
+        `loadimage` upstream) that was silently falling back to netboot.
+      footer:
+        Changelog-entry: Fix stale u-boot-variscite patches and move var-som-mx6 boot
+          command to a Kconfig fragment
+        changelog-entry: Fix stale u-boot-variscite patches and move var-som-mx6 boot
+          command to a Kconfig fragment
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+    - subject: Update Variscite BSP layers to scarthgap_6.6.52-2.2.2
+      hash: a3cfaf9486db608db2d0f0434b1a0ed93d65eebe
+      body: |
+        Bump layers/meta-imx, layers/meta-variscite-bsp-common and
+        layers/meta-variscite-bsp-imx submodule pointers to their
+        scarthgap_6.6.52-2.2.2 revisions.
+
+        Drop variscite-base-files from CORE_IMAGE_EXTRA_INSTALL: it isn't
+        needed by var-som-mx6 and the image builds fine without it.
+      footer:
+        Changelog-entry: Update Variscite BSP layers to scarthgap_6.6.52-2.2.2
+        changelog-entry: Update Variscite BSP layers to scarthgap_6.6.52-2.2.2
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+  version: 8.0.13+rev3
+  title: ""
+  date: 2026-09-30T12:13:49.605Z
+- commits:
     - subject: Update layers/poky to 3a3d07f625aee7b87ea1026526b756447c357652
       hash: b4637952ce144146b7a5ae222b2f60810dffd802
       body: Update layers/poky
