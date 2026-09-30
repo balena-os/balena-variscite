@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-variscite-bsp-common to
+        2a03434fe537c93e008ce31c664ebe174aa82340
+      hash: def43ee4e0554cf022d73db25e029a7dcb07a894
+      body: Update layers/meta-variscite-bsp-common
+      footer:
+        Changelog-entry: Update layers/meta-variscite-bsp-common to
+          2a03434fe537c93e008ce31c664ebe174aa82340
+        changelog-entry: Update layers/meta-variscite-bsp-common to
+          2a03434fe537c93e008ce31c664ebe174aa82340
+      author: balena-renovate[bot]
+      nested: []
+  version: 8.0.13+rev4
+  title: ""
+  date: 2026-09-30T12:54:41.976Z
+- commits:
     - subject: Build var-som-mx6 initramfs packages with -Os to reduce boot partition
         size
       hash: 3b8174d203b1a98827a0353c68542a64a4db504c

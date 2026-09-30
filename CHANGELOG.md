@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v8.0.13+rev4
+## (2026-09-30)
+
+* Update layers/meta-variscite-bsp-common to 2a03434fe537c93e008ce31c664ebe174aa82340 [balena-renovate[bot]]
+
 # v8.0.13+rev3
 ## (2026-09-30)
 
