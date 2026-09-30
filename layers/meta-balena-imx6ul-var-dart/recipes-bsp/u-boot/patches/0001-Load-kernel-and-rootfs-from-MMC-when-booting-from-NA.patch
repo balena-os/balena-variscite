@@ -6,36 +6,53 @@ Subject: [PATCH] Load kernel and rootfs from MMC when booting from NAND
 Upstream-Status: Inappropriate [configuration]
 Signed-off-by: Sebastian Panceac <sebastian@balena.io>
 ---
- include/configs/mx6var_som.h | 36 ++++--------------------------------
- 1 file changed, 4 insertions(+), 32 deletions(-)
+ include/configs/mx6var_som.h | 52 +----------------------------------
+ 1 file changed, 1 insertion(+), 51 deletions(-)
 
 diff --git a/include/configs/mx6var_som.h b/include/configs/mx6var_som.h
-index 834cd7e9b8..046c21acb4 100644
 --- a/include/configs/mx6var_som.h
 +++ b/include/configs/mx6var_som.h
-@@ -57,7 +57,11 @@
- /* MMC Configs */
- #define CONFIG_SYS_FSL_ESDHC_ADDR	0
- #define CONFIG_SYS_FSL_USDHC_NUM	2
+@@ -29,7 +29,11 @@
+ #define CFG_SYS_FSL_ESDHC_ADDR	0
+ #define CFG_SYS_FSL_USDHC_NUM		2
+ #ifndef CONFIG_SYS_MMC_ENV_DEV
 +#ifndef CONFIG_NAND_BOOT
  #define CONFIG_SYS_MMC_ENV_DEV		0
 +#else
 +#define CONFIG_SYS_MMC_ENV_DEV		1
 +#endif
+ #endif
  #ifndef CONFIG_SYS_MMC_ENV_PART
  #define CONFIG_SYS_MMC_ENV_PART		0
- #endif
-@@ -152,40 +156,8 @@
- 		"fi; " \
- 	"else run netboot; fi;"
- 
+@@ -84,55 +88,7 @@
+ 			"bootm; " \
+ 		"fi;\0"
+
 -#ifdef CONFIG_NAND_BOOT
+-
+-#define MMC_BOOTCMD \
+-	"mmc dev ${mmcdev};" \
+-	"if mmc rescan; then " \
+-		"if run loadbootenv; then " \
+-			"run importbootenv; " \
+-		"fi; " \
+-		"if run loadbootscript; then " \
+-			"run bootscript; " \
+-		"else " \
+-			"if run loaduimage; then " \
+-				"run mmcboot; " \
+-			"else " \
+-				"run netboot; " \
+-			"fi; " \
+-		"fi; " \
+-	"else run netboot; fi;"
+-
 -#define NAND_BOOT_ENV_SETTINGS \
 -	"nandargs=setenv bootargs console=${console},${baudrate} ubi.mtd=3 " \
 -		"root=ubi0:rootfs rootfstype=ubifs\0" \
 -	"rootfs_device=nand\0" \
 -	"boot_device=nand\0" \
--	"nandboot=nand read ${loadaddr} 0x400000 0x800000; " \
+-	"nandboot=nand read ${loadaddr} 0x400000 0xc00000; " \
 -		"nand read ${fdt_addr} 0x3e0000 0x20000; " \
 -		"bootm ${loadaddr} - ${fdt_addr};\0" \
 -	"bootcmd=" \
@@ -53,19 +70,15 @@ index 834cd7e9b8..046c21acb4 100644
 -				"echo booting from nand (rootfs on emmc)...; " \
 -				"run nandboot; " \
 -			"else " \
--				"setenv mmcdev 1; " \
+-				"setenv mmcdev 0; " \
 -				MMC_BOOTCMD \
 -			"fi; " \
--		"fi;\0" \
--	"mtdids=" MTDIDS_DEFAULT "\0" \
--	"mtdparts=" MTDPARTS_DEFAULT "\0"
+-		"fi;\0"
 -#else
  #define NAND_BOOT_ENV_SETTINGS ""
- #define CONFIG_BOOTCOMMAND	MMC_BOOTCMD
 -#endif
- 
+
  #define OPT_ENV_SETTINGS \
  	"optargs=setenv bootargs ${bootargs} ${kernelargs};\0"
--- 
+--
 2.17.1
-
