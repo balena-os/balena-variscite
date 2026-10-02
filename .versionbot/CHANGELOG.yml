@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to f493532250022bcf723bddd055c3c8cb770ae649
+      hash: 42c29d014906b53c946efa8182e16ab5b43bbab2
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to f493532250022bcf723bddd055c3c8cb770ae649
+        changelog-entry: Update balena-yocto-scripts to f493532250022bcf723bddd055c3c8cb770ae649
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ubuntu:22.04 Docker digest to b8b6ee6
+              hash: 13d81e84787dfd8d7f090de65c38faeade4af4f8
+              body: |
+                Update ubuntu
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.16
+          title: ""
+          date: 2026-10-02T08:34:42.921Z
+  version: 8.0.14+rev3
+  title: ""
+  date: 2026-10-02T08:55:29.598Z
+- commits:
     - subject: Update layers/meta-variscite-bsp-imx to
         19e2648a3a9d315d0659ea6ef1f64c6ad03b0126
       hash: a93a150a259aa56b454febd01e568b96735289b7
