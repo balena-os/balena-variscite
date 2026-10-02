@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-variscite-bsp-common to
+        68d4cb9e6793539e370db340d6e8935a48442df1
+      hash: d6f0a7b2d69388811f41a3924ad04e8c8b80569a
+      body: Update layers/meta-variscite-bsp-common
+      footer:
+        Changelog-entry: Update layers/meta-variscite-bsp-common to
+          68d4cb9e6793539e370db340d6e8935a48442df1
+        changelog-entry: Update layers/meta-variscite-bsp-common to
+          68d4cb9e6793539e370db340d6e8935a48442df1
+      author: balena-renovate[bot]
+      nested: []
+  version: 8.0.14+rev4
+  title: ""
+  date: 2026-10-02T16:45:34.853Z
+- commits:
     - subject: Update balena-yocto-scripts to f493532250022bcf723bddd055c3c8cb770ae649
       hash: 42c29d014906b53c946efa8182e16ab5b43bbab2
       body: Update balena-yocto-scripts
