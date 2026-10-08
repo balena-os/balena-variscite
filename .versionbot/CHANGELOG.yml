@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-freescale to 114dda1a7639cac34e4e63c352e433d2d011a39c
+      hash: 7c0b44106d13845404d5a87fb5f754e55bd71d34
+      body: Update layers/meta-freescale
+      footer:
+        Changelog-entry: Update layers/meta-freescale to
+          114dda1a7639cac34e4e63c352e433d2d011a39c
+        changelog-entry: Update layers/meta-freescale to
+          114dda1a7639cac34e4e63c352e433d2d011a39c
+      author: balena-renovate[bot]
+      nested: []
+  version: 8.0.14+rev8
+  title: ""
+  date: 2026-10-08T14:44:24.682Z
+- commits:
     - subject: Update layers/poky to 4fb7016a07507683359ebd620f1951fd5ea44bfa
       hash: c21be866fa6a40b2143f28d606d61bfa44bfba4e
       body: Update layers/poky
