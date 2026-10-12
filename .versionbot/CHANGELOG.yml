@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-variscite-bsp-imx to
+        20fe60bf4ed185c4cf6204df551deaae19e236ca
+      hash: 0be157b3d6941045515bf900ea2e8e7981120d61
+      body: Update layers/meta-variscite-bsp-imx
+      footer:
+        Changelog-entry: Update layers/meta-variscite-bsp-imx to
+          20fe60bf4ed185c4cf6204df551deaae19e236ca
+        changelog-entry: Update layers/meta-variscite-bsp-imx to
+          20fe60bf4ed185c4cf6204df551deaae19e236ca
+      author: balena-renovate[bot]
+      nested: []
+  version: 8.0.14+rev9
+  title: ""
+  date: 2026-10-12T10:42:01.269Z
+- commits:
     - subject: Update layers/meta-freescale to 114dda1a7639cac34e4e63c352e433d2d011a39c
       hash: 7c0b44106d13845404d5a87fb5f754e55bd71d34
       body: Update layers/meta-freescale
