@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to e306fa0fec72c6182e3e514ed3d1959ecaee8432
+      hash: e4ad2242b5caa90a74802381ba5b18dfe9a606b4
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to e306fa0fec72c6182e3e514ed3d1959ecaee8432
+        changelog-entry: Update layers/poky to e306fa0fec72c6182e3e514ed3d1959ecaee8432
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.0.0+rev2
+  title: ""
+  date: 2026-10-17T08:41:20.764Z
+- commits:
     - subject: Update balena-os/github-workflows to
         75f1aaba4ccc7f4b0370c16a779a7113cc2bc596
       hash: 929370c95ae0bec64fb2f7e93855e89c8231712d
