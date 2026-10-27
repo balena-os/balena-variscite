@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        2db6aece32c7f8ebf6015b468e1b4e21de072e3b
+      hash: 055a5f82d894ac3f2c842b26c115bf99b89987ae
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          2db6aece32c7f8ebf6015b468e1b4e21de072e3b
+        changelog-entry: Update layers/meta-openembedded to
+          2db6aece32c7f8ebf6015b468e1b4e21de072e3b
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.0.3+rev4
+  title: ""
+  date: 2026-10-27T06:56:58.215Z
+- commits:
     - subject: Update layers/meta-variscite-bsp-imx to
         295d32f4717a3dcfb134d34a91980e0d5780d63a
       hash: 2342a4162d3d1af0d384418ce1153b1829383347
