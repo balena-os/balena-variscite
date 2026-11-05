@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v9.0.4+rev4
+## (2026-11-05)
+
+* Update layers/meta-variscite-bsp-imx to 6dc047911b13ec12e4ba61f5078f690ba1cd570f [balena-renovate[bot]]
+
 # v9.0.4+rev3
 ## (2026-11-04)
 
