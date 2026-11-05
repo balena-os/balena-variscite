@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update layers/meta-balena to a89848c3869823b40be382158dc4ad3ac1ab20c4
+      hash: 2337a2418dff4a22e9ec901ebf4e15cc7103df22
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to a89848c3869823b40be382158dc4ad3ac1ab20c4
+        changelog-entry: Update layers/meta-balena to a89848c3869823b40be382158dc4ad3ac1ab20c4
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to 2444d08
+              hash: d148c1502131deb876a029745f15c6e42f2997bc
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: "core/contracts: Update to v2.0.151"
+                      hash: 29495b3b6effeee3eba7eb818ee6aa7c134d8346
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                        signed-off-by: Alexandru Costache <alexandru@balena.io>
+                      author: Alexandru Costache
+                      nested: []
+                  version: leviathan-2.36.134
+                  title: ""
+                  date: 2026-11-05T13:20:08.264Z
+          version: meta-balena-9.0.5
+          title: ""
+          date: 2026-11-05T20:37:35.534Z
+  version: 9.0.5
+  title: ""
+  date: 2026-11-05T22:31:30.975Z
+- commits:
     - subject: Update layers/meta-variscite-bsp-imx to
         acb9224738177599eef8f4eb69b4acc1a478da0f
       hash: 24e38d8f2a61b734b3792d965d74ae8758b5f578
