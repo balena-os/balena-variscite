@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 6b7c1066f778db5a6b3e35400617b10342988fa8
+      hash: b00906cc370e47a5f89c02e0ca067b21f666d6a5
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 6b7c1066f778db5a6b3e35400617b10342988fa8
+        changelog-entry: Update layers/poky to 6b7c1066f778db5a6b3e35400617b10342988fa8
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.0.6+rev3
+  title: ""
+  date: 2026-11-11T08:31:57.581Z
+- commits:
     - subject: Update layers/meta-variscite-bsp-imx to
         1811467813623ff34b859c0ffec5fa1dd6e9660a
       hash: 25f1714425f49ff6f4640264636740f154a967fc
