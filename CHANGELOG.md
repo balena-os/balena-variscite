@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v9.0.7+rev1
+## (2026-11-12)
+
+* Update layers/meta-freescale to 44fb1b899a0405586f576a9ab21c7fe4bc5234c0 [balena-renovate[bot]]
+
 # v9.0.7
 ## (2026-11-12)
 
