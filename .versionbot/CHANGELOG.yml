@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-variscite-bsp-imx to
+        3fd359452ff69e0f38bbd7d51a4ccfb4e896b1e0
+      hash: a331a27f31f2447d623116977160b438aa768cb6
+      body: Update layers/meta-variscite-bsp-imx
+      footer:
+        Changelog-entry: Update layers/meta-variscite-bsp-imx to
+          3fd359452ff69e0f38bbd7d51a4ccfb4e896b1e0
+        changelog-entry: Update layers/meta-variscite-bsp-imx to
+          3fd359452ff69e0f38bbd7d51a4ccfb4e896b1e0
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.1.1+rev3
+  title: ""
+  date: 2026-11-19T14:33:55.813Z
+- commits:
     - subject: Update balena-yocto-scripts to 748e807bac710fad9771c25caab88bca8088a14b
       hash: 8c5e837bb28ad0221a1d86eed19c08fd609d4b2b
       body: Update balena-yocto-scripts
