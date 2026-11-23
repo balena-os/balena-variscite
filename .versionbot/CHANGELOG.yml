@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-variscite-bsp-imx to
+        da34162054ee079f1901d80ae4ceabf841de17f6
+      hash: 0a9eab851a42d44a261f3101f07d8c245529a0d6
+      body: Update layers/meta-variscite-bsp-imx
+      footer:
+        Changelog-entry: Update layers/meta-variscite-bsp-imx to
+          da34162054ee079f1901d80ae4ceabf841de17f6
+        changelog-entry: Update layers/meta-variscite-bsp-imx to
+          da34162054ee079f1901d80ae4ceabf841de17f6
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.1.1+rev8
+  title: ""
+  date: 2026-11-23T08:42:05.406Z
+- commits:
     - subject: Update balena-os/github-workflows to
         ab3dfdb723d81d9f3c25b67fee68a74eeb9ac48b
       hash: 2ab8a8ce2739b939ce9f65eb39cbf23978e7063b
