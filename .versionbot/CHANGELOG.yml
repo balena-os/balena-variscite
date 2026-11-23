@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 86a777b24f93803dcac8950c03c55da602186af8
+      hash: 1df0c410fa7003c087bcf60059d2b8cdfaaf2e33
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 86a777b24f93803dcac8950c03c55da602186af8
+        changelog-entry: Update layers/poky to 86a777b24f93803dcac8950c03c55da602186af8
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.1.1+rev10
+  title: ""
+  date: 2026-11-23T16:32:26.153Z
+- commits:
     - subject: Update layers/meta-imx to 474d2b45015f73e6b0d77729e2028b00e008f730
       hash: 61cd7e0a9ac794e6cab9a6c4c01c859e6775a73d
       body: Update layers/meta-imx
