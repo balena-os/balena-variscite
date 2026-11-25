@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 1397cd85032d1582fa4f2512a3f378d71ca39291
+      hash: 7384f254fb42edb6ebd7aab00513e331e7f7ffc5
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 1397cd85032d1582fa4f2512a3f378d71ca39291
+        changelog-entry: Update layers/poky to 1397cd85032d1582fa4f2512a3f378d71ca39291
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.1.1+rev14
+  title: ""
+  date: 2026-11-25T08:35:45.889Z
+- commits:
     - subject: Update layers/meta-freescale to 945dcd1c0c8684e6482cbf44c6b52be3c1c9ef87
       hash: fd1607ef1160aff44bed9f31a5a28ec8f117042b
       body: Update layers/meta-freescale
